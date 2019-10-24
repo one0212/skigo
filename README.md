@@ -16,4 +16,4 @@
 4. 啟動 Server - 終端機執行 `npm start`，看到 `Server started, listening on port xxxx` 代表啟動成功 :tada::tada::tada:
 
 ## 開發方式
-- `npm start` 會使用 `nodemon` 啟動 Server，任何副檔名為 `js / mjs / json` 檔案發生變更，Server會自動重啟，不用手動重啟
+- `npm start` 會使用 [nodemon](https://andy6804tw.github.io/2017/12/24/nodemon-tutorial/) 啟動 Server，任何副檔名為 `js / mjs / json` 檔案發生變更，Server會自動重啟，不用手動重啟
