@@ -30,7 +30,7 @@ window.onload = () => {
     function doSignup(email, password) {
         console.log(JSON.stringify({ email: email, password: password }));
         fetch(
-            "/api/member/signup", 
+            "/api/user/signup", 
             { 
                 method: 'post',
                 body: JSON.stringify({ email: email, password: password }),
@@ -53,7 +53,7 @@ window.onload = () => {
     function doLogin(email, password) {
         console.log(JSON.stringify({ email: email, password: password }));
         fetch(
-            "/api/member/login", 
+            "/api/user/login", 
             { 
                 method: 'post',
                 body: JSON.stringify({ email: email, password: password }),
