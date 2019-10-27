@@ -1,0 +1,40 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.product-container {
+    width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.breadcrumb-list {
+    display: flex;
+    list-style: none;
+    padding: 10px 0;
+    margin: auto 0;
+    margin-bottom: 14px
+}
+
+.breadcrumb-list li {
+    padding: 0 10px;
+}
+
+.breadcrumb-list li+li {
+    padding-left: 0;
+}
+
+.breadcrumb-list li+li::before {
+    content: '/';
+    color: #272F43;
+    margin-right: 10px;
+}
+
+.breadcrumb-list a {
+    color: #272F43;
+}
+
+.breadcrumb-list a:hover {
+    color: #FD702D;
+    text-decoration: none;
+}
