@@ -38,3 +38,26 @@ body {
     color: #FD702D;
     text-decoration: none;
 }
+
+
+/* ---------------------------- */
+.product-container {
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+
+
+/* ---------photo----------- */
+.product-photos {
+    margin-bottom: 36px;
+}
+
+.photo-holder {
+    height: 650px;
+    width: 650px;
+    background: #cccccc;
+}
