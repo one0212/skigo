@@ -6336,11 +6336,11 @@ a.close.disabled {
 }
 
 .carousel-control-prev {
-  left: 0;
+  left: -60px;
 }
 
 .carousel-control-next {
-  right: 0;
+  right: -60px;
 }
 
 .carousel-control-prev-icon,
