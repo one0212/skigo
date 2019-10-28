@@ -73,22 +73,15 @@ login.addEventListener('click', () => {
     return response.json();
   });
 });
-
-// 驗證
-allTextInputs.forEach((input) => {
-  // console.log('change')
-  input.addEventListener('keypress', initBorder)
-  // console.log('change')
-  // $(this).css('border', '1px solid #ccc');
-  // e.setAttribute('style', 'border: 1px solid #ccc');
-  // this.parentNode.nextElementSibling.setAttribute('style', 'display:none');
-  // this.style.backgroundColor = "#fff";
-  // this.style.border = "1px solid #ccc";
-});
 function initBorder() {
   this.setAttribute('style', 'border: 1px solid #ccc');
   this.parentNode.nextElementSibling.setAttribute('style', 'display:none');
 }
+// 驗證
+allTextInputs.forEach((input) => {
+  // console.log('change')
+  input.addEventListener('keypress', initBorder);
+});
 // 光箱開關
 document.querySelector('.navbar-btn').addEventListener('click', () => {
   document.querySelector('.bg-model').style.display = 'flex';
