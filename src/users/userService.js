@@ -1,21 +1,41 @@
 const usersDAL = require('./usersDAL');
 
-export function createUser(req, res) {
+
+function responseError(req, res, code = 500, msg) {
+  res.status(code).json({ message: msg });
+  res.end();
+}
+
+function saveSession(req, res, user) {
+  req.session.regenerate((err) => {
+    if (err) {
+      console.log(err);
+      responseError(req, res, 500, '登入失敗');
+    }
+
+    req.session.loginUser = user.email;
+    res.status(200).send();
+  });
+}
+
+export async function createUser(req, res) {
   const { email, password } = req.body;
   if (usersDAL.emailExist(email)) {
-    res.status(404).json({ message: '信箱已被註冊' });
-    res.end();
+    responseError(req, res, 400, '信箱已被註冊');
   }
+
   const user = usersDAL.createUser(email, password);
-  res.json(user);
+  if (!user) {
+    responseError(req, res, 500, '系統錯誤');
+  }
+  saveSession(req, res, user);
 }
 
 export function doLogin(req, res) {
   const { email, password } = req.body;
   const user = usersDAL.findBy(email, password);
   if (!user) {
-    res.status(404).json({ message: '帳號密碼錯誤' });
-    res.end();
+    responseError(req, res, 400, '帳號密碼錯誤');
   }
-  res.json({ message: `${user.email} login succeed` });
+  saveSession(req, res, user);
 }
