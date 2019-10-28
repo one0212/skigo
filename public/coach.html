@@ -1,310 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <script src="bootstrap/lib/jquery-3.4.1.js"></script>
-    <script src="bootstrap/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <script src="lib/bootstrap/lib/jquery-3.4.1.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
     <style>
-        /* part1 */
-        .ski_class{
-        margin-left:30px;
-        }
-        h1{
-            margin-top:80px;
-            font-size: 2rem;
-        }
-        .price{
-            font-size:1.75rem;
-        }
-        .class_introduce{
-        margin-top:60px;
-        font-size:1.25rem;
-    }
-        .class_img{
-            max-width:50%;
-            max-height: 730px;
-            overflow: hidden;
-            
-        }
-        /* .class_img_pic{
+      /* part1 */
+      .ski_class {
+        margin-left: 30px;
+      }
+      h1 {
+        margin-top: 80px;
+        font-size: 2rem;
+      }
+      .price {
+        font-size: 1.75rem;
+      }
+      .class_introduce {
+        margin-top: 60px;
+        font-size: 1.25rem;
+      }
+      .class_img {
+        max-width: 50%;
+        max-height: 730px;
+        overflow: hidden;
+      }
+      /* .class_img_pic{
             width: 100%;
             height:100%;
             background-images: url("https://www.visitzealandia.com/portals/0/imagess/Birds/Hihi-Janice-McKenna.jpg");
         } */
-        .class_pic{
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-        .font-orange{
-        color:#FD702D;
-    }
-    /* part2 */
-    .part2{
-        margin-top:60px;
-    }
-    h3{
+      .class_pic {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      .font-orange {
+        color: #fd702d;
+      }
+      /* part2 */
+      .part2 {
+        margin-top: 60px;
+      }
+      h3 {
         font-size: 1.5rem;
-    }
-        .coach{
-            width: 250px;
-        }
+      }
+      .coach {
+        width: 250px;
+      }
 
-        .coach_img{
-            width: 230px;
-            height: 230px;
-            overflow: hidden;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-        .coach_img_pic{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .btn{
-            width: 100%;
-            background: #FD702D;
-            color:white;
-            padding: 10px 20px;
-            
-        }
-        /* part3 */
-        .part3{
-            margin-top:60px;
-            margin-bottom: 60px;
-            padding-bottom: 20px;
-        }
-        h2{
-            font-size: 1.75rem;
-        }
-        .hot{
-            margin-top: 20px;
-        }
+      .coach_img {
+        width: 230px;
+        height: 230px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+      .coach_img_pic {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .btn {
+        width: 100%;
+        background: #fd702d;
+        color: white;
+        padding: 10px 20px;
+      }
+      /* part3 */
+      .part3 {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+      }
+      h2 {
+        font-size: 1.75rem;
+      }
+      .hot {
+        margin-top: 20px;
+      }
 
-        .recommend{
-            border-bottom: 2px solid #797979;
-        }
+      .recommend {
+        border-bottom: 2px solid #797979;
+      }
 
-        .hot_card{
-            width: 250px;
-            box-shadow:0px 0px 9px gray;
-            }
-        .hot_card_word{
-            padding: 15px;
-        }
-        .hot_img{
-            width: 100%;
-            height: 150px;
-            overflow: hidden;
-        }
+      .hot_card {
+        width: 250px;
+        box-shadow: 0px 0px 9px gray;
+      }
+      .hot_card_word {
+        padding: 15px;
+      }
+      .hot_img {
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+      }
 
-        .font-blue{
-            color:#4c95eb
-        }
+      .font-blue {
+        color: #4c95eb;
+      }
 
-       
-
-        .icon-style{
-            color:#707070;
-            font-size:40px;
-        }
-    
+      .icon-style {
+        color: #707070;
+        font-size: 40px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- part1 課程圖+介紹文字 -->
     <div class="d-flex">
-        <div class="class_img">
-            <!-- <div class="class_img_pic"></div> -->
-            <img class="class_pic" src="images/ski.jpg" alt="">
-        </div>  
-            <div class="ski_class d-flex flex-column justify-content-around">
-                <div>
-                    <h1>初級雙板滑雪 | 2小時課程</h1>
-                    <div class="price">東京雪場 - NT16,000</div>
-                </div>
-                <div class="class_introduce">
-                    <p class="font-orange">課程時間：10：00 ~ 12：00</p>
-                    <p class="">專業講師開班，2小時的雙板滑雪體驗課程，教您最基礎的滑雪知識!</p>
-                </div>
-                <div class="notice">注意事項：您所預約的課程成功與否將在48小時內收到回覆</div>
-            </div>
+      <div class="class_img">
+        <!-- <div class="class_img_pic"></div> -->
+        <img class="class_pic" src="images/ski.jpg" alt="" />
+      </div>
+      <div class="ski_class d-flex flex-column justify-content-around">
+        <div>
+          <h1>初級雙板滑雪 | 2小時課程</h1>
+          <div class="price">東京雪場 - NT16,000</div>
         </div>
-<!-- 2+3 -->
-    <div class="container">      
-        <!-- part2 課程教練*3 -->
-        <div class="d-flex justify-content-between part2">
-                <!-- 教練1 -->
-                <div class="coach">
-                        <div class="coach_img">
-                            <img class="coach_img_pic" src="images/coach.jpg" alt="">
-                        </div>
-                        <div>
-                            <h3>叉叉圈教練</h3>
-                            <p class="coach_introduce">專業講師開班，2小時的雙板滑雪體驗課程，教您最基礎的滑雪知識!</p>
-                        </div>
-                        <button class="btn">預約教練</button>
-                </div>
-                <!-- 教練1 -->
-                <div class="coach">
-                        <div class="coach_img">
-                            <img class="coach_img_pic" src="images/coach.jpg" alt="">
-                        </div>
-                        <div>
-                            <h3>叉叉圈教練</h3>
-                            <p class="coach_introduce">專業講師開班，2小時的雙板滑雪體驗課程，教您最基礎的滑雪知識!</p>
-                            <button class="btn">預約教練</button>
-                        </div>
-                </div>
-                <!-- 教練1 -->
-                <div class="coach">
-                        <div class="coach_img">
-                            <img class="coach_img_pic" src="images/coach.jpg" alt="">
-                        </div>
-                        <div>
-                            <h3>叉叉圈教練</h3>
-                            <p class="coach_introduce">專業講師開班，2小時的雙板滑雪體驗課程，教您最基礎的滑雪知識!</p>
-                            <button class="btn">預約教練</button>
-                        </div>
-                </div>
+        <div class="class_introduce">
+          <p class="font-orange">課程時間：10：00 ~ 12：00</p>
+          <p class="">
+            專業講師開班，2小時的雙板滑雪體驗課程，教您最基礎的滑雪知識!
+          </p>
         </div>
-        <!-- part3 推薦課程*3 -->
-         <div class="d-flex justify-content-between align-items-end recommend part3">
-            <h2>推薦課程</h2>
-            <p class="more"> <a href="#">查看全部</a> </p>
-        </div>  
-    
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                <div class="carousel-item active">
-                        <div class="hot d-flex justify-content-around">
-                                <!-- hot1 -->
-                                <div class="hot_card">
-                                    <div class="hot_img">
-                                        <img class="coach_img_pic" src="images/coach.jpg" alt="">
-                                    </div>
-                                    <div class="hot_card_word">
-                                        <p>初級雙板滑雪 | 2小時課程</p>
-                                        <p>東京雪場</p>
-                                        <div class="d-flex justify-content-end">
-                                            <p class="price">NT16,000</p>
-                                        </div>
-                                        <div class="font-blue d-flex justify-content-center">
-                                        <p>販售時間 : 即日起~2020.2.3</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- hot2 -->
-                                <div class="hot_card">
-                                        <div class="hot_img">
-                                            <img class="coach_img_pic" src="images/coach.jpg" alt="">
-                                        </div>
-                                        <div class="hot_card_word">
-                                            <p>初級雙板滑雪 | 2小時課程</p>
-                                            <p>東京雪場</p>
-                                            <div class="d-flex justify-content-end">
-                                                <p class="price">NT16,000</p>
-                                            </div>
-                                            <div class="font-blue d-flex justify-content-center">
-                                            <p>販售時間 : 即日起~2020.2.3</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- hot3 -->
-                                    <div class="hot_card">
-                                            <div class="hot_img">
-                                                <img class="coach_img_pic" src="images/coach.jpg" alt="">
-                                            </div>
-                                            <div class="hot_card_word">
-                                                <p>初級雙板滑雪 | 2小時課程</p>
-                                                <p>東京雪場</p>
-                                                <div class="d-flex justify-content-end">
-                                                    <p class="price">NT16,000</p>
-                                                </div>
-                                                <div class="font-blue d-flex justify-content-center">
-                                                <p>販售時間 : 即日起~2020.2.3</p>
-                                                </div>
-                                            </div>
-                                    </div>
-                            </div>
-                </div>
-                <div class="carousel-item">
-                        <div class="hot d-flex justify-content-around">
-                                <!-- hot1 -->
-                                <div class="hot_card">
-                                    <div class="hot_img">
-                                        <img class="coach_img_pic" src="images/coach.jpg" alt="">
-                                    </div>
-                                    <div class="hot_card_word">
-                                        <p>初級雙板滑雪 | 2小時課程</p>
-                                        <p>東京雪場</p>
-                                        <div class="d-flex justify-content-end">
-                                            <p class="price">NT16,000</p>
-                                        </div>
-                                        <div class="font-blue d-flex justify-content-center">
-                                        <p>販售時間 : 即日起~2020.2.3</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- hot2 -->
-                                <div class="hot_card">
-                                        <div class="hot_img">
-                                            <img class="coach_img_pic" src="images/coach.jpg" alt="">
-                                        </div>
-                                        <div class="hot_card_word">
-                                            <p>初級雙板滑雪 | 2小時課程</p>
-                                            <p>東京雪場</p>
-                                            <div class="d-flex justify-content-end">
-                                                <p class="price">NT16,000</p>
-                                            </div>
-                                            <div class="font-blue d-flex justify-content-center">
-                                            <p>販售時間 : 即日起~2020.2.3</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- hot3 -->
-                                    <div class="hot_card">
-                                            <div class="hot_img">
-                                                <img class="coach_img_pic" src="images/coach.jpg" alt="">
-                                            </div>
-                                            <div class="hot_card_word">
-                                                <p>初級雙板滑雪 | 2小時課程</p>
-                                                <p>東京雪場</p>
-                                                <div class="d-flex justify-content-end">
-                                                    <p class="price">NT16,000</p>
-                                                </div>
-                                                <div class="font-blue d-flex justify-content-center">
-                                                <p>販售時間 : 即日起~2020.2.3</p>
-                                                </div>
-                                            </div>
-                                    </div>
-                            </div>
-                </div>
-
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-                <i class="fas fa-chevron-left icon-style"></i>
-                <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <i class="fas fa-chevron-right icon-style"></i>
-                <span class="sr-only">Next</span>
-                </a>
+        <div class="notice">
+          注意事項：您所預約的課程成功與否將在48小時內收到回覆
         </div>
-    
-    <!-- container尾巴 -->
+      </div>
     </div>
+    <!-- 2+3 -->
+    <div class="container">
+      <!-- part2 課程教練*3 -->
+      <div class="d-flex justify-content-between part2">
+        <!-- 教練1 -->
+        <div class="coach">
+          <div class="coach_img">
+            <img class="coach_img_pic" src="images/coach.jpg" alt="" />
+          </div>
+          <div>
+            <h3>叉叉圈教練</h3>
+            <p class="coach_introduce">
+              專業講師開班，2小時的雙板滑雪體驗課程，教您最基礎的滑雪知識!
+            </p>
+          </div>
+          <button class="btn">預約教練</button>
+        </div>
+        <!-- 教練1 -->
+        <div class="coach">
+          <div class="coach_img">
+            <img class="coach_img_pic" src="images/coach.jpg" alt="" />
+          </div>
+          <div>
+            <h3>叉叉圈教練</h3>
+            <p class="coach_introduce">
+              專業講師開班，2小時的雙板滑雪體驗課程，教您最基礎的滑雪知識!
+            </p>
+            <button class="btn">預約教練</button>
+          </div>
+        </div>
+        <!-- 教練1 -->
+        <div class="coach">
+          <div class="coach_img">
+            <img class="coach_img_pic" src="images/coach.jpg" alt="" />
+          </div>
+          <div>
+            <h3>叉叉圈教練</h3>
+            <p class="coach_introduce">
+              專業講師開班，2小時的雙板滑雪體驗課程，教您最基礎的滑雪知識!
+            </p>
+            <button class="btn">預約教練</button>
+          </div>
+        </div>
+      </div>
+      <!-- part3 推薦課程*3 -->
+      <div
+        class="d-flex justify-content-between align-items-end recommend part3"
+      >
+        <h2>推薦課程</h2>
+        <p class="more"><a href="#">查看全部</a></p>
+      </div>
 
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="hot d-flex justify-content-around">
+              <!-- hot1 -->
+              <div class="hot_card">
+                <div class="hot_img">
+                  <img class="coach_img_pic" src="images/coach.jpg" alt="" />
+                </div>
+                <div class="hot_card_word">
+                  <p>初級雙板滑雪 | 2小時課程</p>
+                  <p>東京雪場</p>
+                  <div class="d-flex justify-content-end">
+                    <p class="price">NT16,000</p>
+                  </div>
+                  <div class="font-blue d-flex justify-content-center">
+                    <p>販售時間 : 即日起~2020.2.3</p>
+                  </div>
+                </div>
+              </div>
+              <!-- hot2 -->
+              <div class="hot_card">
+                <div class="hot_img">
+                  <img class="coach_img_pic" src="images/coach.jpg" alt="" />
+                </div>
+                <div class="hot_card_word">
+                  <p>初級雙板滑雪 | 2小時課程</p>
+                  <p>東京雪場</p>
+                  <div class="d-flex justify-content-end">
+                    <p class="price">NT16,000</p>
+                  </div>
+                  <div class="font-blue d-flex justify-content-center">
+                    <p>販售時間 : 即日起~2020.2.3</p>
+                  </div>
+                </div>
+              </div>
+              <!-- hot3 -->
+              <div class="hot_card">
+                <div class="hot_img">
+                  <img class="coach_img_pic" src="images/coach.jpg" alt="" />
+                </div>
+                <div class="hot_card_word">
+                  <p>初級雙板滑雪 | 2小時課程</p>
+                  <p>東京雪場</p>
+                  <div class="d-flex justify-content-end">
+                    <p class="price">NT16,000</p>
+                  </div>
+                  <div class="font-blue d-flex justify-content-center">
+                    <p>販售時間 : 即日起~2020.2.3</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="hot d-flex justify-content-around">
+              <!-- hot1 -->
+              <div class="hot_card">
+                <div class="hot_img">
+                  <img class="coach_img_pic" src="images/coach.jpg" alt="" />
+                </div>
+                <div class="hot_card_word">
+                  <p>初級雙板滑雪 | 2小時課程</p>
+                  <p>東京雪場</p>
+                  <div class="d-flex justify-content-end">
+                    <p class="price">NT16,000</p>
+                  </div>
+                  <div class="font-blue d-flex justify-content-center">
+                    <p>販售時間 : 即日起~2020.2.3</p>
+                  </div>
+                </div>
+              </div>
+              <!-- hot2 -->
+              <div class="hot_card">
+                <div class="hot_img">
+                  <img class="coach_img_pic" src="images/coach.jpg" alt="" />
+                </div>
+                <div class="hot_card_word">
+                  <p>初級雙板滑雪 | 2小時課程</p>
+                  <p>東京雪場</p>
+                  <div class="d-flex justify-content-end">
+                    <p class="price">NT16,000</p>
+                  </div>
+                  <div class="font-blue d-flex justify-content-center">
+                    <p>販售時間 : 即日起~2020.2.3</p>
+                  </div>
+                </div>
+              </div>
+              <!-- hot3 -->
+              <div class="hot_card">
+                <div class="hot_img">
+                  <img class="coach_img_pic" src="images/coach.jpg" alt="" />
+                </div>
+                <div class="hot_card_word">
+                  <p>初級雙板滑雪 | 2小時課程</p>
+                  <p>東京雪場</p>
+                  <div class="d-flex justify-content-end">
+                    <p class="price">NT16,000</p>
+                  </div>
+                  <div class="font-blue d-flex justify-content-center">
+                    <p>販售時間 : 即日起~2020.2.3</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+          <i class="fas fa-chevron-left icon-style"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <i class="fas fa-chevron-right icon-style"></i>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 
-
- 
-    
-</body>
+      <!-- container尾巴 -->
+    </div>
+  </body>
 </html>
