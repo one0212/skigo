@@ -35,16 +35,3 @@
 4. install
 5. 設定檔請看 .eslintrc.json
 ```
-
-### Prettier - Code formatter
-
-自動格式化工具
-
-```安裝方式：
-1. 打開 vs code
-2. 鍵盤按 Ctrl-Shift-X (Windows) / Command-Shift-X (Mac)
-3. 搜尋框輸入 Prettier - Code formatter
-4. install
-5. 設定檔請看 .prettierrc
-預設快捷鍵： Ctrl-Shift-S (Windows) / Command-Shift-S (Mac)
-```

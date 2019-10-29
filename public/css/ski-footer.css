@@ -1,23 +1,23 @@
-body{
+body {
     height: 100%;
 }
 
-.wrapper{
+.wrapper {
     min-height: 100%;
-    position: relative;
+    position: relative
 }
 
-.ski-footer{
+.ski-footer {
     width: 100%;
     min-width: 1440px;
     margin: 50px auto 0;
     padding: 64px;
     background: #8DAEC1;
-    color:#FFFFFF;
+    color: #FFFFFF;
+
 }
 
-
-.ski-footer-wrap{
+.ski-footer-wrap {
     max-width: 1440px;
     min-width: 1220px;
     width: 100%;
@@ -25,23 +25,25 @@ body{
     box-sizing: border-box;
     list-style: none;
 }
-.ski-footer-link{
+
+.ski-footer-link {
     padding-bottom: 24px;
     border-bottom: 1px solid #FFFFFF;
 }
-.title{
-    font-weight:400;
+
+.title {
+    font-weight: 400;
     margin-bottom: 6px;
 }
 
-.ski-footer-link.link{
-    width:21%;
+.ski-footer-link.link {
+    width: 21%;
     padding-right: 10px;
     vertical-align: top;
 
 }
 
-.link{
+.link {
     width: 18%;
     display: inline-block;
     vertical-align: top;
@@ -53,28 +55,29 @@ body{
 
 
 
-.ski-footer-link a,.icon a{
-    color:#FFFFFF;
-    font-weight:300;
+.ski-footer-link a,
+.icon a {
+    color: #FFFFFF;
+    font-weight: 300;
     text-decoration: none;
-    
+
 }
 
 
 
-.ski-footer-static{
-    padding-top:14px;
+.ski-footer-static {
+    padding-top: 14px;
     position: relative;
 }
 
-.ski-footer-static .logo{
+.ski-footer-static .logo {
     vertical-align: middle;
     display: inline-block;
     line-height: 1;
     font-size: 0;
 }
 
-.ski-footer-static .logo img{
+.ski-footer-static .logo img {
     height: 24px;
 }
 
@@ -82,20 +85,20 @@ body{
 
 
 
-.right{
+.right {
     position: absolute;
     bottom: 0;
     right: 0;
 
 }
 
-.right p{
+.right p {
     margin: 0;
     font-weight: 300;
     padding-right: 40px;
 }
 
-.right a{
+.right a {
     padding: 10px;
     font-size: 20px;
 }
