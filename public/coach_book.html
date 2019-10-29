@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <script src="bootstrap/lib/jquery-3.4.1.js"></script>
-    <script src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <script src="lib/bootstrap/lib/jquery-3.4.1.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <style>
         /* part1 */
@@ -18,13 +18,38 @@
             margin-top:80px;
             font-size: 2rem;
         }
-        .price{
-            font-size:1.75rem;
+        .book{
+            width: 50%;
+            margin-left:10px;
+            border-bottom: #fd702d 3px solid;
+            padding-bottom: 3px ;
         }
-        .class_introduce{
-        margin-top:60px;
-        font-size:1.25rem;
-    }
+        .book select{
+            /* border: solid 1px #000; */
+            outline: 0;
+            border: none; 
+            /* outline:none; */
+            background: transparent;
+            min-width: 300px;
+            padding: 5px;
+            font-size: 1rem;
+            height: 34px;
+        }
+        .book select option{
+            text-align: center;
+            text-indent: 10px;
+            border:none;
+            /* color:#fd702d; */
+        }
+        .book select option:hover {
+            background-color: #f80;
+            color: #fff;
+        }
+        /* option:hover{
+            background-color: #f80;
+            color: #fff;
+        } */
+        
         .class_img{
             max-width:50%;
             max-height: 730px;
@@ -44,16 +69,31 @@
         .font-orange{
         color:#FD702D;
     }
+    .btn {
+        width: cal(100% - 30px);
+        background: #fd702d;
+        color: white;
+        padding: 10px 20px;
+        margin:5px;
+        font-size: 1.25rem;
+      }
     /* part2 */
     .part2{
         margin-top:60px;
     }
     h3{
         font-size: 2rem;
+        margin-bottom: 20px;
     }
         .coach{
             width: 250px;
         }
+        .language span{
+          border: 1px #fd702d solid;
+          border-radius:5px;
+          font-size:1rem;
+          padding:2px 10px;
+      }
 
         .coach_img{
             width: 230px;
@@ -115,7 +155,8 @@
 
         .hot_card{
             width: 250px;
-            box-shadow:0px 0px 9px gray;
+            margin-bottom:5px;
+            box-shadow: 0px 4px 5px #888888;
             }
         .hot_card_word{
             padding: 15px;
@@ -129,8 +170,6 @@
         .font-blue{
             color:#4c95eb
         }
-
-       
 
         .icon-style{
             color:#707070;
@@ -151,9 +190,25 @@
                     <h1>初級雙板滑雪 | 2小時課程</h1>
                     <div class="price">東京雪場 - NT16,000</div>
                 </div>
-                <div class="class_introduce">
-                    <p class="font-orange">課程時間：10：00 ~ 12：00</p>
-                    <p class="">專業講師開班，2小時的雙板滑雪體驗課程，教您最基礎的滑雪知識!</p>
+                <div class="d-flex">
+                    <div class="book">
+                        人數 ： 
+                        <select name="" id="">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="book">
+                        天數 ： 
+                        <select name="" id="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="d-flex flex-column">
                     <button class="btn"><i class="fas fa-shopping-cart"></i> 放入購物車</button>
@@ -171,6 +226,7 @@
                         </div>
                         <div class="coach-style">
                             <h3>叉叉圈教練</h3>
+                            <p class="language font-orange"> <span>英語</span> <span>日語</span> </p>
                             <p class="coach_introduce">專業講師開班，2小時的雙板滑雪體驗課程，教您最基礎的滑雪知識!</p>
                         </div> 
         </div>
