@@ -1,6 +1,5 @@
 const usersDAL = require('./usersDAL');
 
-
 function responseError(req, res, code = 500, msg) {
   res.status(code).json({ message: msg });
   res.end();

@@ -6,19 +6,19 @@ function response400(res, msg = 'Bad request') {
 }
 
 function verifySignup(req, res) {
-  const { body } = req;
-  if (!body.email) {
+  const { email, password } = req.body;
+  if (!email) {
     response400(res, '信箱未填寫');
-  } else if (!body.password) {
+  } else if (!password) {
     response400(res, '密碼未填寫');
   }
 }
 
 function verifyLogin(req, res) {
-  const { body } = req.body;
-  if (!body.email || !body.password) {
+  const { email, password } = req.body;
+  if (!email || !password) {
     response400(res, '帳號未填寫');
-  } else if (!body.password) {
+  } else if (!password) {
     response400(res, '密碼未填寫');
   }
 }
