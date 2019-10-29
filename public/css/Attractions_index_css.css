@@ -1,0 +1,37 @@
+.Anav{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 140px;
+    opacity: 0.5;
+    background: #ddd;
+    z-index: 99;
+}
+.Aarticle{
+    width:50%;
+    height: 100vh;
+    position: relative;
+}
+
+.Aaside{
+    width: 50%;
+    height: 100%;
+    background: #000;
+}
+
+.carouselImg{
+    width: 100%;
+    height: 100vh;
+   
+}
+.AcarouselWorld{
+   
+    position: absolute;
+
+    left: 240px;
+    bottom: 120px;
+}
+.textleft{
+    text-align: left;
+}
