@@ -1,12 +1,47 @@
-.wrapper{
-    font-family: 'Roboto', sans-serif, Arial;
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    height: 100vh;
 }
 section{
     margin: 40px 0;
 }
 
+.slider{
+    position: relative;
+    padding: 0;
+}
+.slider .carousel-item img{
+    height: 100vh;
+    object-fit: cover;
+}
+.slider .introduction{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 950px;
+    height: 80vh;
+    background: #fff;
+}
+.slider .introduction .d-flex{
+    flex-direction: column;
+    padding: 45px 350px 0 45px;
+}
+.slider .introduction .d-flex h5{
+    /* font-size: 1.87rem; */
+    font-size: 1.3rem;
+}
+.slider .introduction .d-flex p{
+    font-size: 1.37rem;
+}
+.slider .introduction .d-flex h1{
+    /* font-size: 4.5rem; */
+    font-size: 4.1rem;
+    margin-bottom: 35px;
+}
 .slide_img{
-    max-height: 700px;
+    /* height: 100vh; */
     overflow: hidden;
 }
 
