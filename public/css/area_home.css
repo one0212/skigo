@@ -2,8 +2,14 @@
     font-family: 'Roboto', sans-serif, Arial;
 }
 section{
-    margin: 20px 0;
+    margin: 40px 0;
 }
+
+.slide_img{
+    max-height: 700px;
+    overflow: hidden;
+}
+
 .icon{
     text-align: center;
     margin: 1.4rem 0;
@@ -99,6 +105,50 @@ section{
     font-size: 0.56rem;
     color: #5A5A5A;
 }
+.ticket{
+    margin-top: 20px;
+}
+.recommend{
+    border-bottom: 2px solid #797979;
+}
+.ticket_card{
+    width: 250px;
+    box-shadow:0px 0px 9px gray;
+}
+.ticket_img{
+    position: relative;
+}
+.ticket_img_pic{
+    position: absolute;
+    top: 33px;
+    left: 75px;
+    width: 100px;
+}
+.ticket_card_word{
+    padding: 15px;
+}
+.ticket_img{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+.ticket .carousel-inner{
+    min-height: 370px;
+}
+.ticket .icon-style {
+    color: #707070;
+    font-size: 40px;
+}
+/* .ticket .carousel-control-prev{
+    left: -60px;
+}
+.ticket .carousel-control-next{
+    right: -60px;
+}
+.ticket .font-blue{
+    color:#4c95eb
+} */
+
 
 .lesson{
     margin-top: 50px;
@@ -116,6 +166,45 @@ section{
     font-size: 0.56rem;
     color: #5A5A5A;
 }
+.lesson{
+    margin-top: 20px;
+}
+.recommend{
+    border-bottom: 2px solid #797979;
+}
+.lesson_card{
+    width: 250px;
+    box-shadow:0px 0px 9px gray;
+    }
+.lesson .coach_img_pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.lesson_card_word{
+    padding: 15px;
+}
+.lesson_img{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+.lesson .carousel-inner{
+    min-height: 370px;
+}
+.lesson .icon-style {
+    color: #707070;
+    font-size: 40px;
+}
+/* .lesson .carousel-control-prev{
+    left: -60px;
+}
+.lesson .carousel-control-next{
+    right: -60px;
+}
+.lesson .font-blue{
+    color:#4c95eb
+} */
 
 .comment{
     margin-top: 50px;
@@ -155,6 +244,11 @@ section{
     font-size: 0.9rem;
     color: #FF4343;
     font-weight: bold;
+    margin-right: 5px;
+}
+.comment .star{
+    width: 15px;
+    margin:0 0 20px 4px;
 }
 .comment .message_text{
     font-size: 0.6rem;
