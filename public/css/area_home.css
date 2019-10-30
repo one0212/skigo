@@ -11,6 +11,7 @@ section{
 .slider{
     position: relative;
     padding: 0;
+    z-index: 1;
 }
 .slider .carousel-item img{
     height: 100vh;
@@ -19,7 +20,7 @@ section{
 .slider .weather{
     display: flex;
     flex-direction: column;
-    margin: 40px 0 0 40px;
+    margin: 40px 0 0 72px;
 }
 .slider .weather .weather_img{
     width: 65px;
@@ -34,7 +35,7 @@ section{
 }
 .slider .carousel-indicators{
     position: absolute;
-    left: 1010px;
+    left: 820px;
     bottom: 20px;
     z-index: 5;
     margin-left: 0;
@@ -47,26 +48,24 @@ section{
     width: 950px;
     height: 80vh;
     background: #fff;
+    z-index: 2;
 }
 .slider .introduction .d-flex{
     flex-direction: column;
     padding: 48px 300px 0 48px;
 }
 .slider .introduction .d-flex h5{
-    /* font-size: 1.87rem; */
-    font-size: 1.3rem;
+    font-size: 1.87rem;
+    color: #FD702D;
+    margin-bottom: 12px;
 }
 .slider .introduction .d-flex p{
     font-size: 1.37rem;
 }
 .slider .introduction .d-flex h1{
-    /* font-size: 4.5rem; */
-    font-size: 4.1rem;
+    font-size: 4.5rem;
     margin-bottom: 35px;
-}
-.slide_img{
-    /* height: 100vh; */
-    overflow: hidden;
+    font-weight: 700;
 }
 
 .icon{

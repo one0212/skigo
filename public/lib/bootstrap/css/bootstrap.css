@@ -6379,18 +6379,17 @@ a.close.disabled {
   box-sizing: content-box;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
-  width: 30px;
-  height: 3px;
-  margin-right: 3px;
-  margin-left: 3px;
+  width: 7px;
+  height: 7px;
+  margin-right: 8px;
+  margin-left: 8px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #797979;
   background-clip: padding-box;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  opacity: .5;
+  border: none;
   transition: opacity 0.6s ease;
+  border-radius: 50%;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -6400,6 +6399,12 @@ a.close.disabled {
 }
 
 .carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  margin:-5px 10px 0 10px;
+  background-color: #fff;
+  border: 2px solid;
+  border-color: #797979;
   opacity: 1;
 }
 
