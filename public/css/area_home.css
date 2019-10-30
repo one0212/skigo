@@ -16,6 +16,30 @@ section{
     height: 100vh;
     object-fit: cover;
 }
+.slider .weather{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 0 40px;
+}
+.slider .weather .weather_img{
+    width: 65px;
+}
+.slider .weather p{
+    font-size: 2.1rem;
+    margin: -7px 0 0 5px;
+}
+.slider .weather .circle{
+    width: 6px;
+    margin: -20px 0 0 2px;
+}
+.slider .carousel-indicators{
+    position: absolute;
+    left: 1010px;
+    bottom: 20px;
+    z-index: 5;
+    margin-left: 0;
+    margin-right: 0;
+}
 .slider .introduction{
     position: absolute;
     right: 0;
@@ -26,7 +50,7 @@ section{
 }
 .slider .introduction .d-flex{
     flex-direction: column;
-    padding: 45px 350px 0 45px;
+    padding: 48px 300px 0 48px;
 }
 .slider .introduction .d-flex h5{
     /* font-size: 1.87rem; */
@@ -149,6 +173,15 @@ section{
 .ticket_card{
     width: 250px;
     box-shadow:0px 0px 9px gray;
+    transition: .3s;
+}
+.ticket_card a{
+    text-decoration: none;
+    color: #000;
+}
+.ticket_card:hover{
+    text-decoration: none;
+    opacity: .6;
 }
 .ticket_img{
     position: relative;
@@ -210,7 +243,16 @@ section{
 .lesson_card{
     width: 250px;
     box-shadow:0px 0px 9px gray;
-    }
+    transition: .3s;
+}
+.lesson_card a{
+    text-decoration: none;
+    color: #000;
+}
+.lesson_card:hover{
+    text-decoration: none;
+    opacity: .6;
+}
 .lesson .coach_img_pic {
     width: 100%;
     height: 100%;
