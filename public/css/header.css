@@ -1,8 +1,12 @@
+/* body {
+    font-family: 'Roboto', sans-serif;
+} */
 .wrapper {
-    max-width: 1920px;
+    max-width: 1440px;
     /* min-width: 1440px; */
     padding: 0 10%;
     box-sizing: border-box;
+    background: #ccc;
     /* position: relative; */
     /* display: flex; */
     /* justify-content: space-around; */
@@ -25,7 +29,19 @@ li {
 .shopping-cart {
     width: 2rem;
 }
-
+.user-btn {
+    box-shadow: none;
+    color:#fff;
+}
+.user-orange-btn {
+    background: #FD702D;
+}
+.user-blue-btn {
+    background: #4C95E8;
+}
+.user-darkblue-text {
+    color: #272F43;
+}
 /* ＝＝＝＝＝光箱＝＝＝＝＝ */
 .bg-model {
     width: 100%;
@@ -47,10 +63,11 @@ li {
     padding: 20px;
     position: relative;
     box-sizing: border-box;
-    min-height: 500px;
+    min-height: 350px;
 }
 .signup-content {
     display:none;
+    min-height: 500px;
 }
 .small-logo {
     width: 45%;
@@ -83,14 +100,6 @@ li {
     color:#6A6A6A;
     display:block
 }
-.signup-btn {
-    background: #FD702D;
-}
-
-.submit {
-    box-shadow: none;
-    color:#fff;
-}
 .form-item > i {
     right: 2%;
     top: calc(50% - 0.45em);
@@ -107,9 +116,6 @@ li {
 .third-input > i {
     left:10%;
     top: calc(50% - 0.5em);
-}
-.third-input > span, a{
-    color: #272F43
 }
 .fa-facebook-f {
     color: #054A98;
@@ -128,19 +134,12 @@ li {
 .signup-success {
     display: none;
 }
-.resend-btn {
-    background: #FD702D;
-    box-shadow: none;
-    color:#fff;
-}
 /* 登入 */
 .login-content {
     min-height: 500px;
 }
-.login-btn {
-    background: #4C95E8;
-}
-.remember {
-    color: #272F43;
+/* 忘記密碼 */
+.forget-content {
+    display: none;
 }
 /* ＝＝＝＝＝光箱＝＝＝＝＝ */

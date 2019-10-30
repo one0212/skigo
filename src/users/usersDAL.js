@@ -1,8 +1,9 @@
 const users = [];
 
 export function createUser(email, password) {
-  users.push({ email, password });
-  return users.find((u) => u.email === email);
+  const user = { email, password };
+  users.push(user);
+  return user;
 }
 
 export function emailExist(email) {

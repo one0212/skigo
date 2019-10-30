@@ -9,17 +9,21 @@ const allTextInputs = [...document.querySelectorAll('.text-input')];
 const signup = document.querySelector('.signup-btn');
 const signupAccount = document.querySelector('#signup-account');
 const signupPassword = document.querySelector('#signup-password');
+// 驗證input是否為空字串
+function valueRequired(x) {
+  if (x.value === '') {
+    console.log(x);
+    x.setAttribute('style', 'border: 1px solid red');
+    x.parentNode.nextElementSibling.setAttribute('style', 'display: block');
+    return false;
+  }
+  return true;
+}
 signup.addEventListener('click', () => {
-  // e.preventDefault();
-  signupTextInput.forEach((x) => {
-    if (x.value === '') {
-      console.log(x.value);
-      x.setAttribute('style', 'border: 1px solid red');
-      // x.style.background = "seashell";
-      // console.log(x.nextElementSibling)
-      x.parentNode.nextElementSibling.setAttribute('style', 'display:block');
-    }
-  });
+  const hasError = signupTextInput.map((x) => valueRequired(x)).includes(false);
+  if (hasError) {
+    return;
+  }
   const obj = {
     email: signupAccount.value,
     password: signupPassword.value,
@@ -46,16 +50,10 @@ const loginAccount = document.querySelector('#login-account');
 const loginPassword = document.querySelector('#login-password');
 
 login.addEventListener('click', () => {
-  // e.preventDefault();
-  loginTextInput.forEach((x) => {
-    if (x.value === '') {
-      console.log(x);
-      x.setAttribute('style', 'border: 1px solid red');
-      // x.style.background = "seashell";
-      // console.log(x.nextElementSibling)
-      x.parentNode.nextElementSibling.setAttribute('style', 'display: block');
-    }
-  });
+  const hasError = loginTextInput.map((x) => valueRequired(x)).includes(false);
+  if (hasError) {
+    return;
+  }
   const obj = {
     email: loginAccount.value,
     password: loginPassword.value,
@@ -93,9 +91,21 @@ models.forEach((x) => {
     $('.bg-model').css('display', 'none');
   });
 });
-
+// 註冊登入切換
 $('.toggle-login').click((e) => {
   e.preventDefault();
   $('.login-content').toggle();
   $('.signup-content').toggle();
+});
+
+// 忘記密碼
+$('.forget-pwd').click((e) => {
+  e.preventDefault();
+  $('.login-content').hide();
+  $('.forget-content').show();
+});
+$('.resend-pwd').click(() => {
+  // 將jquery對象轉換成dom對象
+  const x = $('#forget-pwd-input').get(0);
+  valueRequired(x);
 });
