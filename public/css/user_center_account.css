@@ -19,18 +19,9 @@
     outline: none;
     box-shadow: none;
     border-radius: 5px;
-    border: 1px solid #6A6A6A;
-    width: 22rem;
-    height: 1.8rem;
-}
-.user-file-upload {
-    dis
-    right: 100%;
-    bottom: 100%;
-}
-.custom-file-upload {
     border: 1px solid #ccc;
-    display: inline-block;
-    padding: 6px 12px;
-    cursor: pointer;
+    width: 22rem;
+    height: 2rem;
+    padding: 0.5rem;
 }
+

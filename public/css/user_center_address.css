@@ -1,0 +1,21 @@
+/* 小提醒 */
+.user-address-remind {
+    background: #8DAEC1;
+    color: #fff;
+    border-radius: 5px;
+}
+.user-address-photo {
+    width: 25rem;
+    height: 25rem;
+}
+.user-address-photo img {
+    width: 100%;
+    height: 100%;
+}
+.user-address-data p {
+    margin: 0.5rem 0;
+}
+.user-address-data {
+    border-top: 2px solid #6A6A6A;
+    box-sizing: border-box;
+}
