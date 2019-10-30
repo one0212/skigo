@@ -1,47 +1,53 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
-.header{
-    height: 100vh;
+.wrapper{
+    max-width: 1920px;
 }
 section{
     margin: 40px 0;
 }
 
-.slider{
+.area_slider{
     position: relative;
     padding: 0;
     z-index: 1;
 }
-.slider .carousel-item img{
+.area_slider .col-slide{
+    width: 70%;
+}
+.area_slider .col-weather{
+    width: 30%;
+}
+.area_slider .carousel-item img{
     height: 100vh;
     object-fit: cover;
 }
-.slider .weather{
+.area_slider .weather{
     display: flex;
     flex-direction: column;
     margin: 40px 0 0 72px;
 }
-.slider .weather .weather_img{
+.area_slider .weather .weather_img{
     width: 65px;
 }
-.slider .weather p{
+.area_slider .weather p{
     font-size: 2.1rem;
     margin: -7px 0 0 5px;
 }
-.slider .weather .circle{
+.area_slider .weather .circle{
     width: 6px;
     margin: -20px 0 0 2px;
 }
-.slider .carousel-indicators{
+.area_slider .carousel-indicators{
     position: absolute;
-    left: 820px;
+    left: 1220px;
     bottom: 20px;
     z-index: 5;
     margin-left: 0;
     margin-right: 0;
 }
-.slider .introduction{
+.area_slider .introduction{
     position: absolute;
     right: 0;
     bottom: 0;
@@ -50,63 +56,63 @@ section{
     background: #fff;
     z-index: 2;
 }
-.slider .introduction .d-flex{
+.area_slider .introduction .d-flex{
     flex-direction: column;
     padding: 48px 300px 0 48px;
 }
-.slider .introduction .d-flex h5{
+.area_slider .introduction .d-flex h5{
     font-size: 1.87rem;
     color: #FD702D;
     margin-bottom: 12px;
 }
-.slider .introduction .d-flex p{
+.area_slider .introduction .d-flex p{
     font-size: 1.37rem;
 }
-.slider .introduction .d-flex h1{
+.area_slider .introduction .d-flex h1{
     font-size: 4.5rem;
     margin-bottom: 35px;
     font-weight: 700;
 }
 
-.icon{
+.area_icon{
     text-align: center;
     margin: 1.4rem 0;
 }
-.icon img{
+.area_icon img{
     width: 65px;
     height: 65px;
 }
-.icon .img_p{
+.area_icon .img_p{
     margin-top: 0.65rem;
     font-size: 0.65rem;
     color: #797979;
 }
-.icon .img_number{
+.area_icon .img_number{
     font-size: 1.18rem;
     font-weight: 700;
     color: #797979;
 }
 
-.info{
+.area_info{
     display: flex;
     flex-direction: column;
 }
-.info h4{
+.area_info h4{
     font-size: 1.1rem;
     color: #797979;
     padding-bottom: 10px;
 }
-.info .date{
+.area_info .date{
     font-size: 0.87rem;
     color: #797979;
 }
-.info .time{
+.area_info .time{
     display: flex;
 } 
-.info .address{
+.area_info .address{
     font-size: 0.87rem;
 }
-.info .ski_map{
+.area_info .ski_map{
     width: 145px;
     height: 32px;
     padding: 2px 0;
@@ -118,12 +124,12 @@ section{
     border-radius: 3px;
     text-decoration: none;
 }
-.info .icon_map{
+.area_info .icon_map{
     width: 28px;
     height: 28px;
 }
 
-.characteristic .box{
+.area_characteristic .box{
     display: flex;
     border: solid 1px rgb(210, 210, 210);
     border-radius: 3px;
@@ -132,219 +138,194 @@ section{
     align-items: center;
     margin: 9px 0;
 }
-.characteristic .box img{
+.area_characteristic .box img{
     margin: 7.5px;
 }
-.characteristic .box p{
+.area_characteristic .box p{
     margin: 0 3px;
 }
-.characteristic img{
+.area_characteristic img{
     width: 35px;
     height: 35px;
 }
-.characteristic p{
+.area_characteristic p{
     font-size: 0.8rem;
     font-weight: 600;
 }
 
-.ticket{
+.area_ticket{
     margin-top: 50px;
 }
-.ticket .ticket_title{
+.area_ticket .ticket_title{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
-.ticket h4{
+.area_ticket h4{
     margin-bottom: 0;
     font-size: 1.25rem;
 }
-.ticket .ticket_title a{
+.area_ticket .ticket_title a{
     font-size: 0.56rem;
     color: #5A5A5A;
 }
-.ticket{
+.area_ticket .ticket{
     margin-top: 20px;
 }
-.recommend{
-    border-bottom: 2px solid #797979;
-}
-.ticket_card{
+.area_ticket .ticket_card{
     width: 250px;
     box-shadow:0px 0px 9px gray;
     transition: .3s;
 }
-.ticket_card a{
+.area_ticket .ticket_card a{
     text-decoration: none;
     color: #000;
 }
-.ticket_card:hover{
+.area_ticket .ticket_card:hover{
     text-decoration: none;
     opacity: .6;
 }
-.ticket_img{
+.area_ticket .ticket_img{
     position: relative;
 }
-.ticket_img_pic{
+.area_ticket .ticket_img_pic{
     position: absolute;
     top: 33px;
     left: 75px;
     width: 100px;
 }
-.ticket_card_word{
+.area_ticket .ticket_card_word{
     padding: 15px;
 }
-.ticket_img{
+.area_ticket .ticket_img{
     width: 100%;
     height: 150px;
     overflow: hidden;
 }
-.ticket .carousel-inner{
+.area_ticket .carousel-inner{
     min-height: 370px;
 }
-.ticket .icon-style {
+.area_ticket .icon-style {
     color: #707070;
     font-size: 40px;
 }
-/* .ticket .carousel-control-prev{
-    left: -60px;
-}
-.ticket .carousel-control-next{
-    right: -60px;
-}
-.ticket .font-blue{
-    color:#4c95eb
-} */
 
-
-.lesson{
+.area_lesson{
     margin-top: 50px;
 }
-.lesson .lesson_title{
+.area_lesson .lesson_title{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
-.lesson h4{
+.area_lesson h4{
     margin-bottom: 0;
     font-size: 1.25rem;
 }
-.lesson .lesson_title a{
+.area_lesson .lesson_title a{
     font-size: 0.56rem;
     color: #5A5A5A;
 }
-.lesson{
+.area_lesson .lesson{
     margin-top: 20px;
 }
-.recommend{
-    border-bottom: 2px solid #797979;
-}
-.lesson_card{
+.area_lesson .lesson_card{
     width: 250px;
     box-shadow:0px 0px 9px gray;
     transition: .3s;
 }
-.lesson_card a{
+.area_lesson .lesson_card a{
     text-decoration: none;
     color: #000;
 }
-.lesson_card:hover{
+.area_lesson .lesson_card:hover{
     text-decoration: none;
     opacity: .6;
 }
-.lesson .coach_img_pic {
+.area_lesson .coach_img_pic {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.lesson_card_word{
+.area_lesson .lesson_card_word{
     padding: 15px;
 }
-.lesson_img{
+.area_lesson .lesson_img{
     width: 100%;
     height: 150px;
     overflow: hidden;
 }
-.lesson .carousel-inner{
+.area_lesson .carousel-inner{
     min-height: 370px;
 }
-.lesson .icon-style {
+.area_lesson .icon-style {
     color: #707070;
     font-size: 40px;
 }
-/* .lesson .carousel-control-prev{
-    left: -60px;
-}
-.lesson .carousel-control-next{
-    right: -60px;
-}
-.lesson .font-blue{
-    color:#4c95eb
-} */
 
-.comment{
+.area_comment{
     margin-top: 50px;
 }
-.comment .comment_title{
+.area_comment .comment_title{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
-.comment h4{
+.area_comment h4{
     margin-bottom: 0;
     font-size: 1.25rem;
 }
-.comment .comment_title a{
+.area_comment .comment_title a{
     font-size: 0.56rem;
     color: #5A5A5A;
 }
-.comment .message_content{
+.area_comment .message_content{
     margin-top: 30px;
 }
-.comment .message{
+.area_comment .message{
     display: flex;
 }
-.comment .message_all{
+.area_comment .message_all{
     padding-left: 10px;
 }
-.comment .message_all .d-flex{
+.area_comment .message_all .d-flex{
     align-items: flex-end;
 }
-.comment .message_info{
+.area_comment .message_info{
     margin-right: 10px;
     font-size: 0.56rem;
     color: #535353;
     font-weight: 700;
 }
-.comment .score{
+.area_comment .score{
     font-size: 0.9rem;
     color: #FF4343;
     font-weight: bold;
     margin-right: 5px;
 }
-.comment .star{
+.area_comment .star{
     width: 15px;
     margin:0 0 20px 4px;
 }
-.comment .message_text{
+.area_comment .message_text{
     font-size: 0.6rem;
     color: #797979;
     margin-top: -7px;
 }
 
 
-.access{
+.area_access{
     margin-top: 30px;
 }
-.access .access_title{
+.area_access .access_title{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
-.access h4{
+.area_access h4{
     margin-bottom: 0;
     font-size: 1.25rem;
 }
-.access iframe{
+.area_access iframe{
     margin: 20px 0;
 }
