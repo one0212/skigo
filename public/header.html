@@ -23,7 +23,7 @@
       </button>
       <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#">雪場票券</a>
           </li>
           <li class="nav-item">
@@ -36,44 +36,44 @@
             <a class="nav-link" href="#">景點排程</a>
           </li>
         </ul>
-        <div class="nav-item mr-sm-2 my-lg-0">
+        <li class="nav-item mr-sm-2 my-lg-0">
           <input class="navbar-btn btn btn-outline-secondary" type="button" value="登入｜註冊" />
-          <img class="shopping-cart my-2 my-sm-0" src="images/shopping-cart.svg" alt="shopping-cart" />
-        </div>
+          <img class="nav-shopping-cart my-2 my-sm-0" src="images/shopping-cart.svg" alt="shopping-cart" />
+        </li>
       </div>
     </nav>
     <!-------------------- 光箱start -------------------->
-    <div class="bg-model">
+    <div class="user-bg-model pt-5">
       <!-- 註冊start -->
-      <div class="model-content signup-content text-center p-4">
+      <div class="user-model-content signup-content text-center p-4">
         <div class="close-model">+</div>
-        <img class="small-logo mb-2" src="images/small-logo.svg" alt="" />
+        <img class="user-small-logo mb-2" src="images/small-logo.svg" alt="" />
         <form action="" method="POST">
-          <div class="form-item position-relative my-2 d-flex align-items-center">
+          <div class="user-form-item position-relative my-2 d-flex align-items-center">
             <i class="far fa-envelope position-absolute"></i>
-            <input id="signup-account" class="btn-block p-2 signup-input text-input" type="text" autocomplete="off"
+            <input id="signup-account" class="btn-block p-2 signup-input user-text-input" type="text" autocomplete="off"
               placeholder="電子郵件地址" />
           </div>
-          <small class="text-left small-text">請輸入有效電子郵件</small>
-          <div class="form-item position-relative my-2">
+          <small class="text-left user-small-text">請輸入有效電子郵件</small>
+          <div class="user-form-item position-relative my-2">
             <i class="fas fa-eye-slash position-absolute"></i>
-            <input id="signup-password" class="btn-block p-2 signup-input text-input" type="text" autocomplete="off"
+            <input id="signup-password" class="btn-block p-2 signup-input user-text-input" type="text" autocomplete="off"
               placeholder="密碼" />
           </div>
-          <small class="text-left small-text">請輸入密碼</small>
-          <small class="my-3 small-info">我們會透過電子郵件將行銷宣傳、優惠與政策更新資訊發送給您。</small>
+          <small class="text-left user-small-text">請輸入密碼</small>
+          <small class="my-3 user-small-info">我們會透過電子郵件將行銷宣傳、優惠與政策更新資訊發送給您。</small>
           <button class="user-orange-btn user-btn signup-btn my-1 btn btn-block d-inline-block my-2" type="button">
             註冊
           </button>
-          <small class="my-3 small-info text-center">———————————————— 或 ————————————————</small>
+          <small class="my-3 user-small-info text-center">———————————————— 或 ————————————————</small>
           <div class="d-flex justify-content-between align-items-center">
-            <div class="mx-2 third-input py-2 mt-2 d-flex justify-content-around align-items-center">
-              <i class="fab fa-facebook-f"></i>
+            <div class="mx-2 user-third-input py-2 mt-2 d-flex justify-content-around align-items-center">
+              <i class="fab fa-facebook-f user-fa-facebook"></i>
               <span class="text-center user-darkblue-text">Facebook</span>
               <span></span>
             </div>
-            <div class="mx-2 third-input py-2 mt-2 d-flex justify-content-around align-items-center flex-grow">
-              <i class="fab fa-google"></i>
+            <div class="mx-2 user-third-input py-2 mt-2 d-flex justify-content-around align-items-center flex-grow">
+              <i class="fab fa-google user-fa-google"></i>
               <span class="user-darkblue-text text-center">Google</span>
               <span></span>
             </div>
@@ -83,9 +83,9 @@
         </form>
       </div>
       <!-- 註冊成功start -->
-      <div class="model-content signup-success text-center p-4">
+      <div class="user-model-content signup-success text-center p-4">
         <div class="close-model">+</div>
-        <img class="small-logo mb-3" src="images/small-logo.svg" alt="" />
+        <img class="user-small-logo mb-3" src="images/small-logo.svg" alt="" />
         <h3 class="my-5">註冊成功！</h3>
         <h5 class="px-3">
           我們已經將一封認證信寄至您的信箱，請點擊信裡的確認連結已開通帳號。
@@ -97,22 +97,22 @@
       <!-- 註冊成功end -->
       <!-- 註冊end -->
       <!-- 登入start -->
-      <div class="model-content login-content text-center p-4">
+      <div class="user-model-content login-content text-center p-4">
         <div class="close-model">+</div>
-        <img class="small-logo mb-2" src="images/small-logo.svg" alt="" />
+        <img class="user-small-logo mb-2" src="images/small-logo.svg" alt="" />
         <form action="" method="POST">
-          <div class="form-item position-relative my-2 d-flex align-items-center">
+          <div class="user-form-item position-relative my-2 d-flex align-items-center">
             <i class="far fa-envelope position-absolute"></i>
-            <input id="login-account" class="btn-block p-2 login-input text-input" type="text" autocomplete="off"
+            <input id="login-account" class="btn-block p-2 login-input user-text-input" type="text" autocomplete="off"
               placeholder="電子郵件地址" />
           </div>
-          <small class="text-left small-text">請輸入有效電子郵件</small>
-          <div class="form-item position-relative my-2">
+          <small class="text-left user-small-text">請輸入有效電子郵件</small>
+          <div class="user-form-item position-relative my-2">
             <i class="fas fa-eye-slash position-absolute"></i>
-            <input id="login-password" class="btn-block p-2 login-input text-input" type="text" autocomplete="off"
+            <input id="login-password" class="btn-block p-2 login-input user-text-input" type="text" autocomplete="off"
               placeholder="密碼" />
           </div>
-          <small class="text-left small-text">請輸入密碼</small>
+          <small class="text-left user-small-text">請輸入密碼</small>
           <div class="d-flex p-0 justify-content-between align-items-center mt-3 mb-1">
             <div class="">
               <input type="checkbox" name="checkbox" />
@@ -124,15 +124,15 @@
             登入
           </button>
 
-          <small class="my-3 small-info text-center">———————————————— 或 ————————————————</small>
+          <small class="my-3 user-small-info text-center">———————————————— 或 ————————————————</small>
           <div class="d-flex justify-content-between align-items-center">
-            <div class="mx-2 third-input py-2 mt-2 d-flex justify-content-around align-items-center">
-              <i class="fab fa-facebook-f"></i>
+            <div class="mx-2 user-third-input py-2 mt-2 d-flex justify-content-around align-items-center">
+              <i class="fab fa-facebook-f user-fa-facebook"></i>
               <span class="text-center user-darkblue-text">Facebook</span>
               <span></span>
             </div>
-            <div class="mx-2 third-input py-2 mt-2 d-flex justify-content-around align-items-center flex-grow">
-              <i class="fab fa-google"></i>
+            <div class="mx-2 user-third-input py-2 mt-2 d-flex justify-content-around align-items-center flex-grow">
+              <i class="fab fa-google user-fa-google"></i>
               <span class="text-center user-darkblue-text">Google</span>
               <span></span>
             </div>
@@ -143,18 +143,19 @@
       </div>
       <!-- 登入end -->
       <!-- 忘記密碼start -->
-      <div class="model-content text-center p-4 forget-content">
+      <div class="user-model-content text-center p-4 forget-content">
         <div class="close-model">+</div>
-        <img class="small-logo mb-3" src="images/small-logo.svg" alt="" />
+        <img class="user-small-logo mb-3" src="images/small-logo.svg" alt="" />
         <h3 class="my-5">忘記密碼？</h3>
-        <div class="form-item">
-          <input id="forget-pwd-input" class="btn-block p-2 text-input" type="text" autocomplete="off"
+        <div class="user-form-item">
+          <input id="forget-pwd-input" class="btn-block p-2 user-text-input" type="text" autocomplete="off"
             placeholder="請填寫註冊時使用的email" />
         </div>
-        <small class="text-left small-text">請填填入email</small>
+        <small class="text-left user-small-text">請填入email</small>
         <button class="user-btn user-blue-btn resend-pwd my-4 btn btn-block d-inline-block my-2" type="button">
           重寄認證信給我
         </button>
+        <small><a href="" class="user-back-login">回上一頁</a></small>
       </div>
       <!-- 註冊成功end -->
     </div>

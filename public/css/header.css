@@ -2,31 +2,21 @@
     font-family: 'Roboto', sans-serif;
 } */
 .wrapper {
-    max-width: 1440px;
+    max-width: 1920px;
     /* min-width: 1440px; */
-    padding: 0 10%;
+    margin: 0 10%;
     box-sizing: border-box;
     background: #ccc;
-    /* position: relative; */
-    /* display: flex; */
-    /* justify-content: space-around; */
-    /* align-items: center; */
-}
-i {
-    vertical-align: middle;
-}
-small {
-    font-size: 0.8rem;
 }
 .logo {
     width: 12rem;
 }
-li {
+.nav-item {
     list-style: none;
     display: inline-block;
-    padding: 20px;
+    margin: 10px 20px;
 }
-.shopping-cart {
+.nav-shopping-cart {
     width: 2rem;
 }
 .user-btn {
@@ -43,7 +33,7 @@ li {
     color: #272F43;
 }
 /* ＝＝＝＝＝光箱＝＝＝＝＝ */
-.bg-model {
+.user-bg-model {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -52,11 +42,11 @@ li {
     left:0;
     /* display:flex; */
     justify-content: center;
-    align-items:center;
+    align-items:start;
     display: none;
 }
 /* 註冊 */
-.model-content {
+.user-model-content {
     width: 500px;
     background-color: #fff;
     border-radius:4px;
@@ -69,11 +59,11 @@ li {
     display:none;
     min-height: 500px;
 }
-.small-logo {
+.user-small-logo {
     width: 45%;
     height: 16%;
 }
-.text-input {
+.user-text-input {
     /* margin: 15px auto; */
     outline: none;
     box-shadow: none;
@@ -92,36 +82,39 @@ li {
 .close-model:hover {
     color: #000
 }
-.small-text {
+.user-small-text {
     display:none;
     color:red
 }
-.small-info {
+.user-small-info {
     color:#6A6A6A;
     display:block
 }
-.form-item > i {
+.user-form-item > i {
     right: 2%;
     top: calc(50% - 0.45em);
     color: #6A6A6A;
     font-size: 1.4rem;
 }
-.third-input {
+.user-third-input {
     border: 1px solid #6A6A6A;
     border-radius: 20px;
     width: 50%
     /* flex-grow: 1 */
     /* text-indent: 10px */
 }
-.third-input > i {
+.user-third-input {
+    cursor: pointer;
+}
+.user-third-input > i {
     left:10%;
     top: calc(50% - 0.5em);
 }
-.fa-facebook-f {
+.user-fa-facebook {
     color: #054A98;
     font-size: 1.2rem;
 }
-.fa-google {
+.user-fa-google {
     color: #FD702D;
     font-size: 1.2rem;
 }
