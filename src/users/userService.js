@@ -1,4 +1,15 @@
+const nodemailer = require('nodemailer');
 const usersDAL = require('./usersDAL');
+
+const mailSender = nodemailer.createTransport({
+  host: 'smtp.gmail.com',
+  secureConnection: true,
+  port: 587,
+  auth: {
+    user: 'skigo.bot@gmail.com',
+    pass: 'gcejtcggfvvkbirk', // 之後再改讀外部設定檔
+  },
+});
 
 function responseError(req, res, code = 500, msg) {
   res.status(code).json({ message: msg });
@@ -27,6 +38,21 @@ export async function createUser(req, res) {
   if (!user) {
     responseError(req, res, 500, '系統錯誤');
   }
+  mailSender.sendMail({
+    from: 'no-reply@skigo.com',
+    to: email,
+    subject: '驗證您的 Skigo 帳號',
+    html: `<h1>驗證您的 Skigo 帳號</h1>
+          <form>
+            <button>點此按鈕啟用帳號</button>
+          </form>`,
+  }, (err, info) => {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log(info);
+    }
+  });
   saveSession(req, res, user);
 }
 
