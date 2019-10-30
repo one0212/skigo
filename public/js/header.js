@@ -3,7 +3,7 @@ const signupTextInput = [...document.querySelectorAll('.signup-input')];
 const loginTextInput = [...document.querySelectorAll('.login-input')];
 // const submitBtn = document.querySelectorAll(".submit");
 // const signupTextInput = [...signupInputs]
-const allTextInputs = [...document.querySelectorAll('.text-input')];
+const allTextInputs = [...document.querySelectorAll('.user-text-input')];
 
 // 註冊ajax
 const signup = document.querySelector('.signup-btn');
@@ -82,13 +82,13 @@ allTextInputs.forEach((input) => {
 });
 // 光箱開關
 document.querySelector('.navbar-btn').addEventListener('click', () => {
-  document.querySelector('.bg-model').style.display = 'flex';
+  document.querySelector('.user-bg-model').style.display = 'flex';
 });
 const closeModels = document.querySelectorAll('.close-model');
 const models = [...closeModels];
 models.forEach((x) => {
   x.addEventListener('click', () => {
-    $('.bg-model').css('display', 'none');
+    $('.user-bg-model').css('display', 'none');
   });
 });
 // 註冊登入切換
@@ -101,11 +101,18 @@ $('.toggle-login').click((e) => {
 // 忘記密碼
 $('.forget-pwd').click((e) => {
   e.preventDefault();
-  $('.login-content').hide();
-  $('.forget-content').show();
+  $('.login-content').toggle();
+  $('.forget-content').toggle();
 });
+// 忘記密碼input驗證
 $('.resend-pwd').click(() => {
   // 將jquery對象轉換成dom對象
   const x = $('#forget-pwd-input').get(0);
   valueRequired(x);
+});
+// 回登入頁
+$('.user-back-login').click((e) => {
+  e.preventDefault();
+  $('.forget-content').toggle();
+  $('.login-content').toggle();
 });
