@@ -1,7 +1,7 @@
 const users = [];
 
 export function createUser(email, password) {
-  const user = { email, password };
+  const user = { email, password, activeEmail: false };
   users.push(user);
   return user;
 }
