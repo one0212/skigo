@@ -5,40 +5,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>navbar</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/all.css" />
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css" />
   <link rel="stylesheet" href="css/header.css" />
   <script src="lib/bootstrap/lib/jquery-3.4.1.js"></script>
+  <title>navbar</title>
 </head>
 
 <body>
   <div class="wrapper">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href=""><img class="logo" src="images/small-logo.svg" alt="logo" /></a>
+    <nav class="navbar navbar-expand-lg navbar-light my-4">
+      <a class="navbar-brand" href=""><img class="logo mr-3" src="images/small-logo.svg" alt="logo" /></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-4">
             <a class="nav-link" href="#">雪場票券</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mx-4">
             <a class="nav-link" href="#">找飯店</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mx-4">
             <a class="nav-link" href="#">雪具裝備</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mx-4">
             <a class="nav-link" href="#">景點排程</a>
           </li>
         </ul>
-        <li class="nav-item mr-sm-2 my-lg-0">
+        <li class="nav-item mr-sm-2 my-lg-0 ml-auto">
           <input class="navbar-btn btn btn-outline-secondary" type="button" value="登入｜註冊" />
-          <img class="nav-shopping-cart my-2 my-sm-0" src="images/shopping-cart.svg" alt="shopping-cart" />
+          <img class="my-2 my-sm-1 d-none" src="images/navbar/user.svg" alt="">
+          <img class="my-2 my-sm-1 d-none" src="images/navbar/message.svg" alt="">
+          <img class="my-2 my-sm-1 d-none" src="images/navbar/heart.svg" alt="">
+          <img class="my-2 my-sm-1" src="images/navbar/shopping-cart.svg" alt="shopping-cart" />
+
         </li>
       </div>
     </nav>

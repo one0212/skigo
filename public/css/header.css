@@ -1,12 +1,12 @@
-/* body {
+body {
     font-family: 'Roboto', sans-serif;
-} */
+}
 .wrapper {
     max-width: 1920px;
     /* min-width: 1440px; */
-    margin: 0 10%;
+    padding: 0 15rem;
     box-sizing: border-box;
-    background: #ccc;
+    /* background: #ccc; */
 }
 .logo {
     width: 12rem;
@@ -16,7 +16,7 @@
     display: inline-block;
     margin: 10px 20px;
 }
-.nav-shopping-cart {
+.nav-item img {
     width: 2rem;
 }
 .user-btn {
@@ -31,6 +31,9 @@
 }
 .user-darkblue-text {
     color: #272F43;
+}
+.user-orange-text {
+    color:#FD702D;
 }
 /* ＝＝＝＝＝光箱＝＝＝＝＝ */
 .user-bg-model {
