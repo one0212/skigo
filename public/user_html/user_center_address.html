@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/user_center_account.css">
+    <link rel="stylesheet" href="../css/user_center_address.css">
     <script src="../lib/bootstrap/lib/jquery-3.4.1.js"></script>
     <title>會員中心</title>
 </head>
@@ -173,7 +174,7 @@
             <div class="row">
                 <!-- 會員側邊欄start -->
                 <div class="col-2">
-                    <div class="user-photo "></div>
+                    <div class="user-photo"></div>
                     <ul class="user-list list-unstyled m-3 d-flex flex-column align-items-start">
                         <li class="m-2">我的帳號</li>
                         <li class="m-2">信用卡管理</li>
@@ -184,48 +185,54 @@
                     </ul>
                 </div>
                 <!-- 會員側邊欄end -->
-                <!-- 會員中心填寫start -->
-                <div class="col-5 pb-5 d-flex flex-column">
-                    <div class="mb-5">
-                        <h4>我的帳號</h4>
-                        <span>管理你的檔案以保護你的帳戶</span>
+                <!-- 寄送地址start -->
+                <div class="col-10 pb-5 pr-5 d-flex flex-column">
+                    <div class="mb-5 d-flex justify-content-between">
+                        <div class="">
+                            <h4>寄送地址</h4>
+                            <span>以下為你的常用地址，可以在這裡管理所有使用過的購買地址</span>
+                        </div>
+                        <div class="p-3">
+                            <button class="btn user-orange-btn user-btn"> ＋ 新增地址</button>
+                        </div>
                     </div>
-                    <div class="user-center-line my-3 px-2">
-                        <div class="user-nick-name mt-5 mb-4 d-flex pr-5">
-                            <span class="user-center-title">顯示暱稱</span>
-                            <input class="ml-5 user-center-input" type="text">
+                    <div class="user-address-remind p-3 mr-3">
+                        <h6>小提醒</h6>
+                        <span>請放心，個人常用的收件地址及相關購買資料都是屬於你的個人隱私，網站依照個人資料保護法保障你的個人隱私！</span>
+                    </div>
+                    <div class="user-address-photo align-self-center mt-5 d-none">
+                        <img class="" src="../images/user/address.png" alt="地址簿">
+                    </div>
+                    <div class="user-address-data mt-4 pt-2 px-2 mr-3 d-flex justify-content-between">
+                        <div class="mt-2">
+                            <h5>收件人</h5>
+                            <p>商品會寄到這裡</p>
+                            <div class="my-4">
+                                <div class="">
+                                    <p class="">姓名</p>
+                                    <input type="text" class="mb-2 user-center-input" value="江宛婷" />
+                                </div>
+                                <div class="">
+                                    <p class="">電話</p>
+                                    <input type="text" class="mb-2 user-center-input" value="0911003909">
+                                </div>
+                                <div class="mb-3">
+                                    <p class="">地址</p>
+                                    <input type="text" class="mb-2 user-center-input" value="台北市大安區復興南路一段390號">
+                                </div>
+                                <button class="btn user-orange-btn user-btn">更新</button>
+                            </div>
                         </div>
-                        <div class="user-center-email my-4 d-flex pr-5">
-                            <span class="user-center-title">電子郵件</span>
-                            <span class="ml-5">feliciajiang12@gmail.com</span>
-                        </div>
-                        <div class="my-4 d-flex pr-5">
-                            <span class="user-center-title">密碼</span>
-                            <div class="ml-5 d-inline-block">*********</div>
-                            <a href="" class="ml-4 mr-auto user-orange-text">變更</a>
-                        </div>
-                        <div class="my-4 d-flex pr-5">
-                            <span class="user-center-title">手機號碼</span>
-                            <input class="ml-5 user-center-input" type="text">
-                        </div>
-                        <button class="user-orange-btn user-btn btn">儲存</button>
+                        <a href="" class="mt-2 user-orange-text">刪除</a>
                     </div>
                 </div>
-                <!-- 會員中心填寫end -->
-                <!-- 會員中心照片上傳start -->
-                <div class="col-5 p-5 d-flex flex-column align-items-center justify-content-center">
-                    <div class="user-photo my-4"></div>
-                    <label class="btn btn-outline-secondary my-2">
-                        <input class="d-none" type="file">
-                        上傳圖片
-                    </label>
-                    <span>檔案大小：最大1MB</span>
-                    <span>檔案限制：.JPEG、.PNG</span>
-                </div>
+                <!-- 寄送地址end -->
+
             </div>
         </div>
     </div>
     <script src="../js/header.js"></script>
     <script src="../lib/bootstrap/js/bootstrap.js"></script>
 </body>
+
 </html>
