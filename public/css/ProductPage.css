@@ -1,19 +1,12 @@
-body {
-    font-family: 'Roboto', sans-serif;
-}
 
-.product-container {
-    width: 1440px;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
 
+/* --------------麵包屑 */
 .breadcrumb-list {
     display: flex;
-    list-style: none;
+    /* list-style: none; */
     padding: 10px 0;
     margin: auto 0;
-    margin-bottom: 14px
+    margin-bottom: 14px;
 }
 
 .breadcrumb-list li {
@@ -40,24 +33,38 @@ body {
 }
 
 
-/* ---------------------------- */
-.product-container {
-    width: 1200px;
+/* ------------- 圖片 */
+
+.photos-content{
     margin: 0 auto;
-    box-sizing: border-box;
-    position: relative;
+}
+
+.product-img img{
+     /* width: 650px; */
+    height: 650px; 
 }
 
 
+/* ------------ 訊息*/
 
-
-/* ---------photo----------- */
-.product-photos {
-    margin-bottom: 36px;
+.product-message{
+    margin: 0 20px;
 }
 
-.photo-holder {
-    height: 650px;
-    width: 650px;
-    background: #cccccc;
+
+.product-name{
+font-weight: 700;
+}
+
+.product-price{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #FD702D;
+}
+
+.star-ratings{
+    padding: 10px 0;
+}
+.star-ratings a{
+    text-decoration:none
 }
