@@ -3,10 +3,11 @@ body {
 }
 .wrapper {
     max-width: 1920px;
-    /* min-width: 1440px; */
-    padding: 0 15rem;
     box-sizing: border-box;
-    /* background: #ccc; */
+}
+.ski-container {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .logo {
     width: 12rem;
@@ -46,7 +47,7 @@ body {
     z-index: 8;
     /* display:flex; */
     justify-content: center;
-    align-items: start;
+    align-items: center;
     display: none;
 }
 /* 註冊 */
