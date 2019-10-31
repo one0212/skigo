@@ -3,10 +3,10 @@
 /* --------------麵包屑 */
 .breadcrumb-list {
     display: flex;
-    list-style: none;
+    /* list-style: none; */
     padding: 10px 0;
     margin: auto 0;
-    margin-bottom: 14px
+    margin-bottom: 14px;
 }
 
 .breadcrumb-list li {
@@ -32,10 +32,39 @@
     text-decoration: none;
 }
 
+
+/* ------------- 圖片 */
+
+.photos-content{
+    margin: 0 auto;
+}
+
+.product-img img{
+     /* width: 650px; */
+    height: 650px; 
+}
+
+
 /* ------------ 訊息*/
 
+.product-message{
+    margin: 0 20px;
+}
 
 
-body{
-    background: #f5f5f5;
+.product-name{
+font-weight: 700;
+}
+
+.product-price{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #FD702D;
+}
+
+.star-ratings{
+    padding: 10px 0;
+}
+.star-ratings a{
+    text-decoration:none
 }
