@@ -1,13 +1,6 @@
-body {
-    font-family: 'Roboto', sans-serif;
-}
 
-.product-container {
-    width: 1440px;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
 
+/* --------------麵包屑 */
 .breadcrumb-list {
     display: flex;
     list-style: none;
@@ -39,25 +32,10 @@ body {
     text-decoration: none;
 }
 
-
-/* ---------------------------- */
-.product-container {
-    width: 1200px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    position: relative;
-}
+/* ------------ 訊息*/
 
 
 
-
-/* ---------photo----------- */
-.product-photos {
-    margin-bottom: 36px;
-}
-
-.photo-holder {
-    height: 650px;
-    width: 650px;
-    background: #cccccc;
+body{
+    background: #f5f5f5;
 }
