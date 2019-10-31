@@ -49,7 +49,7 @@ section{
 }
 .area_slider .carousel-indicators{
     position: absolute;
-    left: 1260px;
+    left: 1280px;
     bottom: 27px;
     z-index: 5;
     margin-left: 0;
@@ -85,7 +85,7 @@ section{
 .area_slider .introduction .number_box{
     color: #797979;
     position: absolute;
-    left: 460px;
+    left: 430px;
     bottom: 10px;
     display: flex;
 }
