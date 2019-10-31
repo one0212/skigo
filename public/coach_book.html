@@ -18,43 +18,54 @@
             margin-top:80px;
             font-size: 2rem;
         }
-        .book{
+        .coach-book{
             width: 50%;
+            margin-left:10px; 
+            margin-bottom:40px;
+        }
+        .coach-price-discount{
+            
+            color:red;
+        }
+        .coach-snowfield{
+            font-size: 1.5rem;
+        }
+        .coach-book-style{
+            border-bottom: #fd702d 3px solid;
+            padding-bottom: 3px ;
+            
+        }
+        .coach-book-date{
+            width: calc(100% -30px);
             margin-left:10px;
+            margin-top:5px;
             border-bottom: #fd702d 3px solid;
             padding-bottom: 3px ;
         }
-        .book select{
-            /* border: solid 1px #000; */
-            outline: 0;
-            border: none; 
-            /* outline:none; */
-            background: transparent;
-            min-width: 300px;
-            padding: 5px;
-            font-size: 1rem;
-            height: 34px;
+        .coach-book-date i{
+            font-size:1.5rem
         }
-        .book select option{
-            text-align: center;
-            text-indent: 10px;
-            border:none;
-            /* color:#fd702d; */
+        .coach-book-date a{
+            text-decoration:none;
+            color:black;
         }
-        .book select option:hover {
-            background-color: #f80;
-            color: #fff;
+        .coach-book-date a:hover{
+          color:#fd702d;  
         }
-        /* option:hover{
-            background-color: #f80;
-            color: #fff;
-        } */
+        .coach-book-num-js{
+            display:none;
+            margin-bottom: calc(1rem - 40px);
+        }
+        .coach_book_num {
+        outline:none;
+        border:none;
+            }
+
         
         .class_img{
             max-width:50%;
             max-height: 730px;
             overflow: hidden;
-            
         }
         /* .class_img_pic{
             width: 100%;
@@ -188,26 +199,30 @@
             <div class="ski_class d-flex flex-column justify-content-around">
                 <div>
                     <h1>初級雙板滑雪 | 2小時課程</h1>
-                    <div class="price">東京雪場 - NT16,000</div>
+                    <p class="language font-orange"> <span>英語</span> <span>日語</span> </p>
+                    <div class="coach-snowfield">東京OO雪場 - 單人 NT<span class="coach-price"> 16,000</span> <span class="coach-price-discount"> </span> </div>
                 </div>
-                <div class="d-flex">
-                    <div class="book">
-                        人數 ： 
-                        <select name="" id="">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                        </select>
-                    </div>
-                    <div class="book">
-                        天數 ： 
-                        <select name="" id="">
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">4</option>
-                        </select>
+                <div>
+                    <div class="d-flex">
+                        <div class="coach-book">
+                            <div class="coach-book-style">
+                                人數 ： 
+                                <input id="coach-book-num" class="coach_book_num" type="number" value="4">
+                            </div>
+                            <p class="font-orange coach-book-num-js">人數已達上限</p>
+                            </div>
+                            <div class="coach-book">
+                                <div class="coach-book-style">
+                                天數 ： 
+                                    <input id="coach-book-days" class="coach_book_num" type="number">
+                                </div>
+                            <p class="font-orange coach-book-num-js"> </p>
+                            </div>
+                        </div>
+                    <div class="coach-book-date">
+                        <a href="#">
+                            <i class="far fa-calendar-alt"></i> 預約日期
+                        </a> 
                     </div>
                 </div>
                 <div class="d-flex flex-column">
@@ -226,13 +241,12 @@
                         </div>
                         <div class="coach-style">
                             <h3>叉叉圈教練</h3>
-                            <p class="language font-orange"> <span>英語</span> <span>日語</span> </p>
                             <p class="coach_introduce">專業講師開班，2小時的雙板滑雪體驗課程，教您最基礎的滑雪知識!</p>
                         </div> 
         </div>
         <!-- part3 評價 -->
         <div class="d-flex justify-content-between align-items-end recommend part3">
-            <h2>評價</h2>
+            <h2>評價(改為area_home.html的評價)</h2>
             <!-- <p class="more"> <a href="#">查看全部</a> </p> -->
         </div>
         <!-- 評價1 -->
@@ -271,7 +285,7 @@
         </div>
 
         <!-- part4 推薦課程*3 -->
-         <div class="d-flex justify-content-between align-items-end recommend part3">
+        <div class="d-flex justify-content-between align-items-end recommend part3">
             <h2>推薦課程</h2>
             <p class="more"> <a href="#">查看全部</a> </p>
         </div>  
@@ -397,6 +411,8 @@
     
     <!-- container尾巴 -->
     </div>
+
+        <script src="js/coach_book.js"></script>
 
 
 
