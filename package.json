@@ -23,6 +23,7 @@
     "morgan": "^1.9.1",
     "nodemailer": "^6.3.1",
     "nodemon": "^1.19.4",
+    "slick-carousel": "^1.8.1",
     "winston": "^3.2.1"
   },
   "devDependencies": {
