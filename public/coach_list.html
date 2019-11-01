@@ -7,7 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css" />
     <script src="lib/bootstrap/lib/jquery-3.4.1.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <!-- <script src="lib/bootstrap/js/bootstrap.js"></script> -->
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/all.css">
     <style>
 
@@ -56,6 +57,9 @@
             width: 75%;
             transition: 1s;
         }
+        .coach-all-content{
+            overflow: hidden;
+        }
         /* 手風琴CSS */
         .coach-select {
             font-size :1.5rem;
@@ -66,6 +70,7 @@
             margin:20px 0px;
             padding-bottom:20px ;
             padding-left:20px ;
+            padding-right:20px ;
         }
 
         .coach-select2{
@@ -73,12 +78,18 @@
             font-size :1.5rem;
         }
 
+
+
         .coach-select-item{
             font-size:1.25rem;
             margin-left:20px;
         }
 
     /* 右邊內容CARD - 參考 coach.html的熱門商品 */
+    .content-rwd{
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
     .coach-card{
         width: 30%;
         
@@ -101,6 +112,79 @@
             height: 100%;
             object-fit: cover;
         }
+    .coach-btn-rwd{
+        display:none
+    }
+    /* rwd */
+    /* RWD消失 */
+    .btn-rwd{
+        display:none; 
+            }
+    /* RWD出現 */
+    @media (max-width: 1100px) {
+        /* .coach-bread{color:pink} */
+
+        .coach-rwd-active , .coach-bread , .left_menu {
+            display:none;
+        }
+
+        .coach-btn-rwd{
+            display:block; 
+            width: 50%;  
+            margin:0 auto;  
+            padding: 10px; 
+            position: relative;
+        }
+
+        .coach-btn-rwd .btn{
+            width: 100%;
+            background: #ccc;
+            border:none;
+            /* margin:10px */
+        }
+        .coach-rwd-sort{
+            position: absolute;
+            background: rgb(255, 255, 255);
+            width: 95%;
+            /* border: 1px solid pink; */
+            margin-right:-10px;
+        }
+
+        .coach-rwd-sort a{
+            font-size :1.25rem;
+            padding: 20px;
+            line-height: 50px;
+        }
+
+        .coach-rwd-sort .accordion-inner{
+            padding-left: 20px; 
+        }
+
+
+
+        .right_content{
+            width: 100%;
+        }
+        .hot_img{
+            height: 300px;
+        }
+        .coach-card{
+        width: 45%;
+        margin:10px; 
+        /* margin: 0 auto; */
+        }
+        .content-rwd{
+            /* flex-direction: column; */
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+
+        
+
+        
+
+    }
 
   
     </style>
@@ -121,19 +205,128 @@
         </div>
 
         <!-- part2 篩選btn + 排列選擇 + 總項目欄位 -->
-        <div class="row">
+        <div class="row coach-rwd-active">
             <div class="col-3">
-                <button id="btn" class="btn"><i  class="fas fa-list"></i> 顯示篩選列</button>
+                <button id="menu_active" class="btn"><i  class="fas fa-list"></i> 顯示篩選列</button>
             </div>
-            <div class="col-9 coach-arrange d-flex justify-content-between">
+            <div class="coach-arrange col-9 d-flex justify-content-between">
                 <a href="#">熱門商品</a>
                 <a href="#">價格 ： 從高到低</a>
                 <a href="#">價格 ： 從低到高</a>
                 <span >10項目</span>
             </div>
         </div>
+        <!-- rwd 最上方搜尋 bar -->
+        <div class="coach-rwd-search d-flex">
+            <!-- <div class="btn btn-rwd"><i  class="fas fa-list"></i>篩選</div> -->
+            <!-- <div class="btn btn-rwd"><i class="fas fa-sort-amount-down-alt"></i>排序</div> -->
+            <div class="coach-btn-rwd">
+                    <div id="coach-btn-rwd1" class=" btn"><i  class="fas fa-list"></i>篩選</div>
+                    <div id="coach-btn-rwd1-1" class="accordion coach-rwd-sort" id="accordion2">
+                            <!-- 1.地區 -->
+                                <div class="accordion-group">
+                                  <div class="accordion-heading">
+                                    <a class="accordion-toggle" data-toggle="collapse" href="#collapse1">
+                                      1.地區
+                                    </a>
+                              
+                                  </div>
+                                  <div id="collapse1" class="accordion-body collapse in">
+                                    <div class="accordion-inner">
+                                        <!-- test -->
+                                        <div class="accordion" id="accordion2">
+                                                <div class="accordion-group">
+                                                  <div class="accordion-heading">
+                                                    <a class="accordion-toggle" data-toggle="collapse" href="#collapse1-1">
+                                                      1-1北海道
+                                                    </a>
+                                                  </div>
+                
+                                                  <div id="collapse1-1" class="accordion-body collapse in">
+                                                    <div class="accordion-inner">1-1-1 北海道雪場</div>
+                                                  </div>
+                                                </div>
+                                                <div class="accordion-group">
+                                                  <div class="accordion-heading"> 
+                                                    <a class="accordion-toggle" data-toggle="collapse" href="#collapse1-2">
+                                                      1-2本洲
+                                                    </a>
+                                                  </div>
+                                                  <div id="collapse1-2" class="accordion-body collapse">
+                                                    <div class="accordion-inner">1-2-1本洲雪場</div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                        <!-- test -->
+                                    </div>
+                                  </div>
+                                </div>
+                            <!-- 2.等級 -->
+                                <div class="accordion-group">
+                                  <div class="accordion-heading"> 
+                                    <a class="accordion-toggle" data-toggle="collapse" href="#collapse2">
+                                      2.等級
+                                    </a>
+                                  </div>
+                                  <div id="collapse2" class="accordion-body collapse">
+                                    <div class="accordion-inner">
+                                        <form action="/action_page.php">
+                                                <input type="checkbox" name="vehicle1" value="Bike"> 初級<br>
+                                                <input type="checkbox" name="vehicle2" value="Car" checked> 中級<br>
+                                                <input type="checkbox" name="vehicle3" value="Boat" checked> 中高級<br>
+                                                <input type="checkbox" name="vehicle3" value="Boat" checked> 高級<br>
+                                        </form>
+                                    </div>
+                                  </div>
+                                </div>
+                            <!-- 3.單雙板 -->
+                                <div class="accordion-group">
+                                    <div class="accordion-heading"> 
+                                        <a class="accordion-toggle" data-toggle="collapse" href="#collapse3">
+                                        3.單雙板
+                                        </a>
+                                    </div>
+                                    <div id="collapse3" class="accordion-body collapse">
+                                        <div class="accordion-inner">
+                                            <form action="/action_page.php">
+                                                <input type="checkbox" name="vehicle1" value="Bike"> 單板<br>
+                                                <input type="checkbox" name="vehicle2" value="Car" checked> 雙板<br>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- 4.語言 -->
+                                <div class="accordion-group">
+                                    <div class="accordion-heading"> 
+                                        <a class="accordion-toggle" data-toggle="collapse" href="#collapse4">
+                                            4.語言
+                                        </a>
+                                    </div>
+                                    <div id="collapse4" class="accordion-body collapse">
+                                        <div class="accordion-inner">
+                                            <form action="/action_page.php">
+                                                <input type="checkbox" name="vehicle1" value="Bike"> 中文<br>
+                                                <input type="checkbox" name="vehicle2" value="Car" checked> 英文<br>
+                                                <input type="checkbox" name="vehicle3" value="Boat" checked> 日文<br>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+            </div>
+        
+            <!-- btn2 -->
+            <div class="coach-btn-rwd">
+                <div id="coach-btn-rwd2" class=" btn"><i class="fas fa-sort-amount-down-alt"></i>排序</div>
+                <div id="coach-btn-rwd2-1" class="coach-rwd-sort" id="accordion2">
+                    <div href=""><a href="#">熱門商品</a></div>
+                    <div href=""><a href="#">價格：從高到低</a></div>
+                    <div href=""><a href="#">價格：從低到高</a></div>    
+                </div>
+            </div>
+        </div>
         <!-- 左邊篩選列 + 右邊內容頁 -->
-        <div class="d-flex justify-content-end">
+        <div class="coach-all-content d-flex justify-content-end ">
 
             <!-- 左側欄位 -->
             <div id="left" class=" left_menu ">   
@@ -142,10 +335,11 @@
                         <!-- 1.地區 -->
                             <div class="accordion-group">
                             <div class="accordion-heading">
-                                <a class="coach-select accordion-toggle" data-toggle="collapse" href="#collapse1">
-                                 1.地區
+                                <a class=" d-flex justify-content-between align-items-center coach-select accordion-toggle" data-toggle="collapse" href="#collapse1">
+                                1.地區
                                 <i class="fas fa-angle-up"></i>
                                 <i class="fas fa-angle-down"></i>
+                                
                                 </a>
                                 
                         
@@ -156,7 +350,7 @@
                                     <div class="accordion" id="accordion2">
                                             <div class="accordion-group">
                                             <div class="accordion-heading">
-                                                <a class="coach-select2 accordion-toggle" data-toggle="collapse" href="#collapse1-1">
+                                                <a class=" coach-select2 accordion-toggle" data-toggle="collapse" href="#collapse1-1">
                                                 1-1北海道
                                                 </a>
                                             </div>
@@ -167,7 +361,7 @@
                                             </div>
                                             <div class="accordion-group">
                                             <div class="accordion-heading"> 
-                                                <a class="coach-select2 accordion-toggle" data-toggle="collapse" href="#collapse1-2">
+                                                <a class="coach-state coach-select2 accordion-toggle" data-toggle="collapse" href="#collapse1-2">
                                                 1-2本洲
                                                 </a>
                                             </div>
@@ -183,7 +377,7 @@
                         <!-- 2.等級 -->
                             <div class="accordion-group">
                             <div class="accordion-heading"> 
-                                <a class="coach-select accordion-toggle" data-toggle="collapse" href="#collapse2">
+                                <a class="d-flex justify-content-between align-items-center coach-select accordion-toggle" data-toggle="collapse" href="#collapse2">
                                 2.等級
                                 <i class="fas fa-angle-up"></i>
                                 <i class="fas fa-angle-down"></i>                                
@@ -203,7 +397,7 @@
                         <!-- 3.單雙板 -->
                             <div class="accordion-group">
                                 <div class="accordion-heading"> 
-                                    <a class=" coach-select accordion-toggle" data-toggle="collapse" href="#collapse3">
+                                    <a class="d-flex justify-content-between align-items-center coach-select accordion-toggle" data-toggle="collapse" href="#collapse3">
                                     3.單雙板
                                     <i class="fas fa-angle-up"></i>
                                     <i class="fas fa-angle-down"></i>                                    
@@ -221,7 +415,7 @@
                         <!-- 4.語言 -->
                             <div class="accordion-group">
                                 <div class="accordion-heading"> 
-                                    <a class="coach-select accordion-toggle" data-toggle="collapse" href="#collapse4">
+                                    <a class="d-flex justify-content-between align-items-center coach-select accordion-toggle" data-toggle="collapse" href="#collapse4">
                                         4.語言
                                         <i class="fas fa-angle-up"></i>
                                         <i class="fas fa-angle-down"></i>                                        
@@ -241,9 +435,9 @@
                 <!-- 手風琴 END -->
             </div>
             <!-- 右側商品 -->
-            <div id="right" class="right_content bg_white">
+            <div id="right" class="content-rwd d-flex right_content bg_white">
 
-                <div class="d-flex justify-content-around">
+                <!-- <div class="content-rwd d-flex "> -->
                     <!-- card1 -->
                     <div class="coach-card">
                         <div class="hot_img">
@@ -260,8 +454,8 @@
                             </div>
                         </div>
                     </div>
-                <!-- card2 -->
-                <div class="coach-card">
+                    <!-- card2 -->
+                    <div class="coach-card">
                         <div class="hot_img">
                             <img class="coach_img_pic" src="images/areas/scenery-3.jpg" alt="">
                         </div>
@@ -276,8 +470,72 @@
                             </div>
                         </div>
                     </div>
-                <!-- card3 -->
-                <div class="coach-card">
+                    <!-- card3 -->
+                    <div class="coach-card">
+                        <div class="hot_img">
+                            <img class="coach_img_pic" src="images/ski.jpg" alt="">
+                        </div>
+                        <div class="hot_card_word">
+                            <p>初級雙板滑雪 | 2小時課程</p>
+                            <p>東京雪場</p>
+                                <div class="d-flex justify-content-end">
+                                    <p class="price">NT16,000</p>
+                                </div>
+                            <div class="font-blue d-flex justify-content-center">
+                                <p>販售時間 : 即日起~2020.2.3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card4 -->
+                    <div class="coach-card">
+                        <div class="hot_img">
+                            <img class="coach_img_pic" src="images/coach.jpg" alt="">
+                        </div>
+                        <div class="hot_card_word">
+                            <p>初級雙板滑雪 | 2小時課程</p>
+                            <p>東京雪場</p>
+                                <div class="d-flex justify-content-end">
+                                    <p class="price">NT16,000</p>
+                                </div>
+                            <div class="font-blue d-flex justify-content-center">
+                                <p>販售時間 : 即日起~2020.2.3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card5 -->
+                    <div class="coach-card">
+                        <div class="hot_img">
+                            <img class="coach_img_pic" src="images/areas/scenery-3.jpg" alt="">
+                        </div>
+                        <div class="hot_card_word">
+                            <p>初級雙板滑雪 | 2小時課程</p>
+                            <p>東京雪場</p>
+                                <div class="d-flex justify-content-end">
+                                    <p class="price">NT16,000</p>
+                                </div>
+                            <div class="font-blue d-flex justify-content-center">
+                                <p>販售時間 : 即日起~2020.2.3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card6 -->
+                    <div class="coach-card">
+                        <div class="hot_img">
+                            <img class="coach_img_pic" src="images/ski.jpg" alt="">
+                        </div>
+                        <div class="hot_card_word">
+                            <p>初級雙板滑雪 | 2小時課程</p>
+                            <p>東京雪場</p>
+                                <div class="d-flex justify-content-end">
+                                    <p class="price">NT16,000</p>
+                                </div>
+                            <div class="font-blue d-flex justify-content-center">
+                                <p>販售時間 : 即日起~2020.2.3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card7 -->
+                    <div class="coach-card">
                         <div class="hot_img">
                             <img class="coach_img_pic" src="images/ski.jpg" alt="">
                         </div>
@@ -293,9 +551,10 @@
                         </div>
                     </div>
                     <!-- card-end -->
-                </div>
-
             </div>
+
+
+            <!-- </div> -->
         </div>
         
         <!-- END -->
@@ -304,23 +563,17 @@
 
         let move = true;
 
-        $('#btn').click(function(){
+        $('#menu_active').click(function(){
             
         if( move == true ){
-            // $('#left').css({'width':'0%',
-            // 'transform':'translateX(-240px)'})
-            $('#left').css('width','0%')
-            
+            $('#left').css({'width':'0%',
+            'transform':'translateX(-240px)'})            
             $('.right_content').css('width','100%')
-            $('.hot_img').css('height','200px')
-            
-            
+            $('.hot_img').css('height','200px')           
             move = false
         }else{        
-            // $('#left').css({'width':'25%',
-            // 'transform':'translateX(200px)'
-            // })
-            $('#left').css('width','25%')
+            $('#left').css({'width':'25%',
+            'transform':'translateX(0px)'})
             $('.right_content').css('width','75%')
             $('.hot_img').css('height','150px')
             move = true;
@@ -337,20 +590,45 @@
         $('.fa-angle-down').hide();
 
         $('.coach-select').click(function(){
-            // 取不到正確的值
-            console.log($(this).index());
-
             if(up_down_icon == true ){
-                $('.fa-angle-up').hide();
-                $('.fa-angle-down').show();
+                $(this).find(".fa-angle-up").hide();
+                $(this).find(".fa-angle-down").show();
                 up_down_icon = false
             }else{
-                $('.fa-angle-up').show();
-                $('.fa-angle-down').hide();
+                $(this).find(".fa-angle-up").show();
+                $(this).find(".fa-angle-down").hide();
                 up_down_icon = true
             }
             
         });
+
+        // rwd 上方選單*2
+        let coach_rwd_btn_state = true;
+        $('.coach-rwd-sort').hide();
+        
+
+        $('#coach-btn-rwd1').click(function(){
+            if( coach_rwd_btn_state == false ){
+                $("#coach-btn-rwd1-1").hide();
+                coach_rwd_btn_state = true 
+            }else{
+                $("#coach-btn-rwd1-1").show();
+                coach_rwd_btn_state = false;
+            }     
+            console.log(coach_rwd_btn_state)
+        });
+
+        $('#coach-btn-rwd2').click(function(){
+            if( coach_rwd_btn_state == false ){
+                $("#coach-btn-rwd2-1").hide();
+                coach_rwd_btn_state = true 
+            }else{
+                $("#coach-btn-rwd2-1").show();
+                coach_rwd_btn_state = false;
+            }     
+        });
+
+
 
 
 
