@@ -1,3 +1,4 @@
+const log = require('../config/winston');
 const usersService = require('./userService');
 
 function response400(res, msg = 'Bad request') {
@@ -24,13 +25,13 @@ function verifyLogin(req, res) {
 }
 
 export function signup(req, res) {
-  console.log(`Sign-up api - email=${req.body.email} password=${req.body.password}`);
+  log.info(`Sign-up api - email=${req.body.email} password=${req.body.password}`);
   verifySignup(req, res);
   return usersService.createUser(req, res);
 }
 
 export function login(req, res) {
-  console.log(`Login api - email=${req.body.email} password=${req.body.password}`);
+  log.info(`Login api - email=${req.body.email} password=${req.body.password}`);
   verifyLogin(req, res);
   usersService.doLogin(req, res);
 }

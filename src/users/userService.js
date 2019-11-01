@@ -1,4 +1,5 @@
 const nodemailer = require('nodemailer');
+const log = require('../config/winston');
 const usersDAL = require('./usersDAL');
 
 const mailSender = nodemailer.createTransport({
@@ -19,7 +20,7 @@ function responseError(req, res, code = 500, msg) {
 function saveSession(req, res, user) {
   req.session.regenerate((err) => {
     if (err) {
-      console.log(err);
+      log.error(err);
       responseError(req, res, 500, '登入失敗');
     }
 
@@ -48,9 +49,9 @@ export async function createUser(req, res) {
           </form>`,
   }, (err, info) => {
     if (err) {
-      console.log(err);
+      log.error(err);
     } else {
-      console.log(info);
+      log.info(info);
     }
   });
   saveSession(req, res, user);
