@@ -1,7 +1,7 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
-.wrap{
+.wrapper{
     max-width: 1920px;
 }
 section{
@@ -17,12 +17,12 @@ section{
     margin-left: 0;
     margin-right: 0;
 }
-.area_slider .col-8{
+.area_slider .col-9{
     /* width: 70%; */
     padding-left: 0;
     padding-right: 0;
 }
-.area_slider .col-4{
+.area_slider .col-3{
     /* width: 30%; */
     padding-left: 0;
     padding-right: 0;
@@ -30,6 +30,7 @@ section{
 .area_slider .carousel-item img{
     height: 100vh;
     object-fit: cover;
+    object-position: right top;
 }
 .area_slider .weather{
     display: flex;
