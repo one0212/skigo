@@ -12,7 +12,6 @@ body {
 
 .ski-footer {
   width: 100%;
-  min-width: 1440px;
   margin: 50px auto 0;
   padding: 64px;
   background: #8daec1;
@@ -20,8 +19,6 @@ body {
 }
 
 .ski-footer-wrap {
-  max-width: 1440px;
-  min-width: 1220px;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
@@ -40,14 +37,11 @@ body {
 
 .ski-footer-link.link {
   width: 15%;
-  /* padding-right: 10px; */
-  /* vertical-align: top;  */
+
 }
 
 .link {
   width: 18%;
-  /* display: inline-block; */
-  /* vertical-align: top; */
   box-sizing: border-box;
   padding-right: 10px;
   margin-bottom: 50px;
@@ -60,10 +54,6 @@ body {
   text-decoration: none;
 }
 
-.ski-footer-static {
-  padding-top: 14px;
-  position: relative;
-}
 
 .ski-footer-static .logo {
   vertical-align: middle;
@@ -76,23 +66,18 @@ body {
   height: 24px;
 }
 
-.right {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
+
 
 .right p {
-  margin: 0;
+  font-size: 14px;
+  margin-right: 40px;
   font-weight: 300;
-  padding-right: 40px;
   display: inline-block;
 }
-
 .right a {
   padding: 10px;
   font-size: 20px;
 }
 .icon{
-    display: inline-block;
+  display: inline;
 }
