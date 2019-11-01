@@ -14,11 +14,6 @@
     position: relative;
 }
 
-.Aaside{
-    width: 50%;
-    height: 100%;
-    background: #000;
-}
 
 .carouselImg{
     width: 100%;
@@ -35,3 +30,44 @@
 .textleft{
     text-align: left;
 }
+
+.Aaside{
+    width: 50%;
+    height: 100vh;
+    background: #000;
+    position: relative;
+}
+
+.AasideCarouselComponent{
+    position: absolute;
+    bottom: 5px;
+    left:30px;
+}
+
+.AasideCarouselTitle{
+    color: #fff;
+}
+
+.AasideCarouselBox{
+    width: 650px;
+    height: 30%;
+    background: #fff;
+}
+
+.box{
+    width: 195px;
+    height: 100%;
+    background: yellow;
+    padding: 0px 5px;
+}
+
+.AasideCarouselImg{
+    background: red;
+    width: 200px;
+    height: 200px;
+}
+
+.AasideCarouselText{
+    text-align: center;
+}
+
