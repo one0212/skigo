@@ -41,7 +41,7 @@ function discountokJudge() {
 
 // 課程人數超過上限 & 人數<0處理
 $('#coach-book-num').change(
-  () => {
+  (e) => {
     let bookNum = $(this).val();
     if (bookNum < 0) {
       bookNum = 0;
@@ -59,20 +59,20 @@ $('#coach-book-num').change(
       $('.coach-book-num-js').css('display', 'none');
     }
     // 將數字打入input
-    $(this).val(bookNum);
+    e.currentTarget.value = bookNum;
     console.log(discountok);
   },
 );
 
 // 課程天數<0處理
 $('#coach-book-days').change(
-  () => {
+  (e) => {
     let bookNum = $(this).val();
     if (bookNum < 0) {
       bookNum = 0;
     }
     // 將數字打入input
-    $(this).val(bookNum);
+    e.currentTarget.value = bookNum;
   },
 );
 
