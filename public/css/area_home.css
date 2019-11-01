@@ -7,6 +7,9 @@
 section{
     margin: 40px 0;
 }
+.area_header .introduction2{
+    display: none;
+}
 
 .area_slider{
     position: relative;
@@ -17,12 +20,12 @@ section{
     margin-left: 0;
     margin-right: 0;
 }
-.area_slider .col-9{
+.area_slider .col-xl-9{
     /* width: 70%; */
     padding-left: 0;
     padding-right: 0;
 }
-.area_slider .col-3{
+.area_slider .col-xl-3{
     /* width: 30%; */
     padding-left: 0;
     padding-right: 0;
@@ -50,7 +53,7 @@ section{
 }
 .area_slider .carousel-indicators{
     position: absolute;
-    left: 1280px;
+    left: 93%;
     bottom: 27px;
     z-index: 5;
     margin-left: 0;
@@ -66,8 +69,9 @@ section{
     z-index: 2;
 }
 .area_slider .introduction .d-flex{
+    width: 650px;
     flex-direction: column;
-    padding: 65px 280px 0 65px;
+    padding: 65px 0 0 7%;
 }
 .area_slider .introduction .d-flex h5{
     font-size: 1.87rem;
@@ -86,7 +90,7 @@ section{
 .area_slider .introduction .number_box{
     color: #797979;
     position: absolute;
-    left: 430px;
+    left: 50%;
     bottom: 10px;
     display: flex;
 }
@@ -103,18 +107,17 @@ section{
     margin: 1.4rem 0;
 }
 .area_icon img{
-    width: 65px;
-    height: 65px;
+    width: 80px;
 }
 .area_icon .img_p{
     margin-top: 0.65rem;
-    font-size: 0.65rem;
+    font-size: 1.3rem;
     color: #797979;
 }
 .area_icon .img_number{
-    font-size: 1.18rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    color: #797979;
+    color: #FD702D;
 }
 
 .area_info{
@@ -122,35 +125,36 @@ section{
     flex-direction: column;
 }
 .area_info h4{
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     color: #797979;
     padding-bottom: 10px;
 }
 .area_info .date{
-    font-size: 0.87rem;
+    font-size: 1.2rem;
     color: #797979;
 }
 .area_info .time{
     display: flex;
 } 
 .area_info .address{
-    font-size: 0.87rem;
+    font-size: 1.2rem;
 }
 .area_info .ski_map{
-    width: 145px;
-    height: 32px;
-    padding: 2px 0;
+    width: 200px;
+    height: 45px;
     color: #fff;
     background: #4C95E8;
     text-align: center;
-    font-size: 0.87rem;
+    font-size: 1.2rem;
     border: solid 1px#4C95E8;
     border-radius: 3px;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .area_info .icon_map{
-    width: 28px;
-    height: 28px;
+    width: 35px;
 }
 
 .area_characteristic .box{
@@ -162,18 +166,15 @@ section{
     align-items: center;
     margin: 9px 0;
 }
-.area_characteristic .box img{
+.area_characteristic img{
     margin: 7.5px;
+    width: 50px;
 }
 .area_characteristic .box p{
     margin: 0 3px;
 }
-.area_characteristic img{
-    width: 35px;
-    height: 35px;
-}
 .area_characteristic p{
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -187,14 +188,11 @@ section{
 }
 .area_ticket h4{
     margin-bottom: 0;
-    font-size: 1.25rem;
-}
-.area_ticket .ticket_title a{
-    font-size: 0.56rem;
-    color: #5A5A5A;
+    font-size: 2rem;
 }
 .area_ticket .ticket{
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .area_ticket .ticket_card{
     width: 250px;
@@ -221,6 +219,19 @@ section{
 .area_ticket .ticket_card_word{
     padding: 15px;
 }
+.area_ticket .ticket_card_word .ticket_name{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.area_ticket .ticket_card_word .adult{
+    color: #797979;
+}
+.area_ticket .ticket_card_word .price{
+    font-size: 1.8rem;
+}
+.area_ticket .ticket_card_word .font-blue{
+    color: #4C95E8;
+}
 .area_ticket .ticket_img{
     width: 100%;
     height: 150px;
@@ -244,14 +255,11 @@ section{
 }
 .area_lesson h4{
     margin-bottom: 0;
-    font-size: 1.25rem;
-}
-.area_lesson .lesson_title a{
-    font-size: 0.56rem;
-    color: #5A5A5A;
+    font-size: 2rem;
 }
 .area_lesson .lesson{
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .area_lesson .lesson_card{
     width: 250px;
@@ -274,6 +282,20 @@ section{
 .area_lesson .lesson_card_word{
     padding: 15px;
 }
+.area_lesson .lesson_card_word .lesson_name{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.area_lesson .lesson_card_word .people{
+    color: #797979;
+}
+.area_lesson .lesson_card_word .price{
+    font-size: 1.8rem;
+}
+.area_lesson .lesson_card_word .font-blue{
+    color: #4C95E8;
+}
+.area_lesson .lesson_card_word 
 .area_lesson .lesson_img{
     width: 100%;
     height: 150px;
@@ -297,7 +319,7 @@ section{
 }
 .area_comment h4{
     margin-bottom: 0;
-    font-size: 1.25rem;
+    font-size: 2rem;
 }
 .area_comment .comment_title a{
     font-size: 0.56rem;
@@ -317,22 +339,22 @@ section{
 }
 .area_comment .message_info{
     margin-right: 10px;
-    font-size: 0.56rem;
+    font-size: 1rem;
     color: #535353;
     font-weight: 700;
 }
 .area_comment .score{
-    font-size: 0.9rem;
+    font-size: 1.6rem;
     color: #FF4343;
     font-weight: bold;
     margin-right: 5px;
 }
 .area_comment .star{
     width: 15px;
-    margin:0 0 20px 4px;
+    margin:0 0 25px 4px;
 }
 .area_comment .message_text{
-    font-size: 0.6rem;
+    font-size: 1.2rem;
     color: #797979;
     margin-top: -7px;
 }
@@ -348,8 +370,118 @@ section{
 }
 .area_access h4{
     margin-bottom: 0;
-    font-size: 1.25rem;
+    font-size: 2rem;
 }
 .area_access iframe{
+    width: 100%;
+    height: 450px;
     margin: 20px 0;
+}
+
+@media screen and (max-width: 1835px) {
+    .area_slider .weather{
+        margin: 45px 0 0 45px;
+    }
+    .area_slider .weather .weather_img{
+        width: 55px;
+    }
+    .area_slider .weather p{
+        font-size: 1.7rem;
+        margin: -5px 0 0 5px;
+    }
+    .area_slider .weather .circle{
+        width: 5px;
+        margin: -20px 0 0 2px;
+    }
+    .area_slider .introduction .d-flex{
+        width: 600px;
+        flex-direction: column;
+        padding: 65px 0 0 7%;
+    }
+    .area_slider .introduction .d-flex h5{
+        font-size: 1.7rem;
+    }
+    .area_slider .introduction .d-flex h1{
+        font-size: 3.8rem;
+    }
+    .area_slider .introduction .article{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .area_slider .slider_number,.symbol{
+        font-size: 3.8rem;
+    }
+    .area_slider .number_box .total_number{
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 1530px) {
+    .area_slider .carousel-indicators{
+        left: 90%;
+    }
+    .area_slider .introduction .d-flex{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .area_slider .carousel-item img{
+        height: 60vh;
+    }
+    .area_slider .introduction{
+        display: none;
+    }
+    .area_slider .col-xl-3{
+        display: none;
+    }
+    .area_header .introduction2{
+        display: block;
+        height: 40vh;
+        margin-top: 40px;
+    }
+    .area_header .introduction2 .col-8{
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .area_header .introduction2 h5{
+        font-size: 1.7rem;
+        color: #FD702D;
+    }
+    /* .area_header .weather{
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0 0 55px;
+    }
+    .area_header .weather .weather_img{
+        width: 65px;
+    }
+    .area_header .weather p{
+        font-size: 2.1rem;
+        margin: -7px 0 0 5px;
+    }
+    .area_header .weather .circle{
+        width: 6px;
+        margin: -20px 0 0 2px;
+    } */
+    .area_header .introduction2 .article{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        margin-top: 30px;
+    }
+    .area_header .introduction2 h1{
+        font-size: 3.5rem;
+        font-weight: 700;
+    }
+    .area_ticket{
+        display: none;
+    }
+    .area_lesson{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .area_characteristic{
+        display: none;
+    }
 }
