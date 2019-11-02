@@ -6,10 +6,6 @@ body {
     max-width: 1920px;
     box-sizing: border-box;
 }
-.ski-container {
-    max-width: 1440px;
-    margin: 0 auto;
-}
 .logo {
     width: 12rem;
 }
