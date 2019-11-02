@@ -1,5 +1,6 @@
 const express = require('express');
 const session = require('express-session');
+const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
 const figlet = require('figlet');
 const log = require('./config/winston');
@@ -9,6 +10,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(morgan('combined', { stream: log.stream }));
+app.use(cookieParser());
 app.use(express.json());
 app.use(express.static('public'));
 
@@ -18,7 +20,7 @@ app.use(session({
   saveUninitialized: false,
   resave: false,
   cookie: {
-    maxAge: 60 * 60 * 24 * 365, // 學 netflix 存一年
+    maxAge: 1000 * 60 * 60 * 24 * 364, // 學 netflix 存一年
     httpOnly: true,
     // secure: true 需要搭配 https才能啟用
   },

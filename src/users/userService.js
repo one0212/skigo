@@ -12,9 +12,8 @@ const mailSender = nodemailer.createTransport({
   },
 });
 
-function responseError(req, res, code = 500, msg) {
-  res.status(code).json({ message: msg });
-  res.end();
+function responseError(req, res, code, msg) {
+  res.status(code).json({ message: msg }).send();
 }
 
 function saveSession(req, res, user) {
@@ -25,7 +24,7 @@ function saveSession(req, res, user) {
     }
 
     req.session.loginUser = user.email;
-    res.status(200).send();
+    res.sendStatus(200);
   });
 }
 
@@ -64,4 +63,14 @@ export function doLogin(req, res) {
     responseError(req, res, 400, '帳號密碼錯誤');
   }
   saveSession(req, res, user);
+}
+
+export function isLogin(req, res) {
+  if (req.session && req.session.loginUser) {
+    log.info('已登入')
+    res.sendStatus(200);
+  } else {
+    log.info('未登入')
+    res.sendStatus(403);
+  }
 }
