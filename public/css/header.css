@@ -5,7 +5,6 @@ body {
 .wrapper {
     max-width: 1920px;
 }
-
 .logo {
     width: 12rem;
 }
@@ -32,6 +31,9 @@ body {
 }
 .user-orange-text {
     color:#FD702D;
+}
+.cursor-point {
+    cursor: pointer;
 }
 /* ＝＝＝＝＝光箱＝＝＝＝＝ */
 .user-bg-model {
