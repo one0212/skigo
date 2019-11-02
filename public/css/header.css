@@ -5,11 +5,7 @@ body {
 .wrapper {
     max-width: 1920px;
 }
-.ski-container {
-    max-width: 1440px;
-    margin: 0 auto;
-    /* padding: 0 15px; */
-}
+
 .logo {
     width: 12rem;
 }
