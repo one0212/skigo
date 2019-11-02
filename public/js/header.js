@@ -1,3 +1,16 @@
+document.addEventListener('DOMContentLoaded', () => {
+  // console.log('已載入完成2');
+  fetch('/api/user/isLogin')
+    .then((response) => {
+      if (response.status === 200) {
+        $('.user-bg-model').hide();
+        $('.navbar-btn').hide();
+        $('.login-show').show();
+      } else {
+        $('.navbar-btn').show();
+      }
+    });
+});
 // 登入驗證
 const signupTextInput = [...document.querySelectorAll('.signup-input')];
 const loginTextInput = [...document.querySelectorAll('.login-input')];
@@ -40,8 +53,12 @@ signup.addEventListener('click', () => {
       console.log('註冊成功！');
       $('.signup-content').hide();
       $('.signup-success').show();
+      $('.navbar-btn').hide();
+      $('.login-show').show();
     }
-    return response.json();
+    // return response.json();
+  }).catch((err) => {
+    console.log(err);
   });
 });
 // 登入ajax
@@ -66,6 +83,10 @@ login.addEventListener('click', () => {
     // console.log(response)
     if (response.status === 200) {
       console.log('登入成功！');
+      $('.user-bg-model').hide();
+
+      $('.navbar-btn').hide();
+      $('.login-show').show();
     }
     // console.log(response.json())
     return response.json();
@@ -84,6 +105,11 @@ allTextInputs.forEach((input) => {
 document.querySelector('.navbar-btn').addEventListener('click', () => {
   document.querySelector('.user-bg-model').style.display = 'flex';
 });
+// 購物車點擊觸發登入
+// document.querySelector('.navbar-shopping').addEventListener('click', () => {
+//   if
+//   document.querySelector('.user-bg-model').style.display = 'flex';
+// });
 const closeModels = document.querySelectorAll('.close-model');
 const models = [...closeModels];
 models.forEach((x) => {

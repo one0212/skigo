@@ -35,6 +35,12 @@ body {
 .cursor-point {
     cursor: pointer;
 }
+.navbar-btn {
+    display: none;
+}
+.navbar-user, .navbar-message, .navbar-heart {
+    display:none;
+}
 /* ＝＝＝＝＝光箱＝＝＝＝＝ */
 .user-bg-model {
     width: 100%;

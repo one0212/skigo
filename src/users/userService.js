@@ -61,8 +61,19 @@ export function doLogin(req, res) {
   const user = usersDAL.findBy(email, password);
   if (!user) {
     responseError(req, res, 400, '帳號密碼錯誤');
+  } else {
+    saveSession(req, res, user);
   }
-  saveSession(req, res, user);
+}
+
+export function isLogin(req, res) {
+  if (req.session && req.session.loginUser) {
+    log.info('已登入');
+    res.sendStatus(200);
+  } else {
+    log.info('未登入');
+    res.sendStatus(403);
+  }
 }
 
 export function isLogin(req, res) {
