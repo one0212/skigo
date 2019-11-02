@@ -35,3 +35,7 @@ export function login(req, res) {
   verifyLogin(req, res);
   usersService.doLogin(req, res);
 }
+
+export function isLogin(req, res) {
+  usersService.isLogin(req, res);
+}
