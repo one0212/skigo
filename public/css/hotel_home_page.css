@@ -1,0 +1,153 @@
+/* @media only screen and (min-width : 1300px) {
+    .container { max-width: 1440px; } 
+} */
+.container_width{
+    max-width: 1440px;
+    box-sizing: border-box;
+}
+.carousel_area{
+    position: relative;
+    color: #fff;
+}
+.slide_img{
+    max-height: 900px;
+    overflow: hidden;
+    width: 100%;
+}
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.title_area{
+    position:absolute;
+    left: 5%;
+    right: 5%;
+    top: 0;
+}
+.title{
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 4rem;
+    text-shadow: 1px 1px 3px #00000058;
+    padding: 25% 0 15% 0;
+}
+.year{
+    position: absolute;
+    top: 30%;
+    left: 6%;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+.year::after{
+    content: " ";
+    display: block;
+    width: 1px;
+    height: 300px;
+    border-left:1px solid #fff;
+    text-align: center;
+    margin-left:20px;
+    margin-top: 20px;
+}
+.temperature{
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding-right: 40px;
+    vertical-align: text-bottom;
+}
+.temperature p span{
+    font-size: 0.5rem;
+    vertical-align: super;
+}
+.temperature_page{
+    font-size: 1.5rem;
+}
+.carousel_number{
+    letter-spacing: 0.25rem;
+}
+.carousel_number ul li{
+    font-size:40px;
+}
+.carousel_number ul li:last-child{
+    font-size: 25px;
+    font-weight: lighter;
+    vertical-align: top;
+    padding-top: 0.5rem;
+}
+.scroll_down ul li{
+    font-size:20px;
+    font-weight: lighter;
+    padding-top: 20px;
+    width: 500px;
+}
+
+/* ---------------------------------------- */
+.slogan_font{
+    margin: 100px 0 0 0;
+    color: #aaa;
+}
+
+.slogan_font p{
+    padding: 50px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+.slogan_font span{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
+    font-weight: bolder;
+}
+.span_button{
+    width: 90%;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+.span_button a{
+    width: 150px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #aaa;
+    margin: 10px 10px;
+}
+/* /////////////////////////////////////////  */
+.slider {
+    width: 100%;
+    margin: 30px auto;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+/* 左右按鈕 */
+.slick-prev:before,
+.slick-next:before {
+    color: #ccc;
+    width: 30px;
+    font-size: 40px;
+    /* background: black; */
+}
+
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: 1;
+}
+
+.slick-active {
+    opacity: 1;
+}
+
+.slick-current {
+    opacity: 1;
+}
+.card_text{
+    line-height: initial;
+    letter-spacing: 0.5px;
+    font-weight: lighter;
+    color: #aaa;
+}

@@ -4,8 +4,8 @@ body {
 }
 .wrapper {
     max-width: 1920px;
-    box-sizing: border-box;
 }
+
 .logo {
     width: 12rem;
 }
