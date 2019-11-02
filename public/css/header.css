@@ -32,6 +32,9 @@ body {
 .user-orange-text {
     color:#FD702D;
 }
+.cursor-point {
+    cursor: pointer;
+}
 /* ＝＝＝＝＝光箱＝＝＝＝＝ */
 .user-bg-model {
     width: 100%;
