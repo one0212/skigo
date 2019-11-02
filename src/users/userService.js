@@ -67,10 +67,10 @@ export function doLogin(req, res) {
 
 export function isLogin(req, res) {
   if (req.session && req.session.loginUser) {
-    log.info('已登入')
+    log.info('已登入');
     res.sendStatus(200);
   } else {
-    log.info('未登入')
+    log.info('未登入');
     res.sendStatus(403);
   }
 }
