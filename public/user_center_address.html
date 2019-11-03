@@ -9,18 +9,16 @@
     <link rel="stylesheet" href="../css/all.css" />
     <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/user_center_account.css">
-    <link rel="stylesheet" href="../css/user_center_order.css">
+    <link rel="stylesheet" href="../css/user_center_address.css">
     <script src="../lib/bootstrap/lib/jquery-3.4.1.js"></script>
-
-    <title>會員訂單</title>
+    <title>會員地址簿</title>
 </head>
 
 <body>
     <div class="wrapper">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light my-4">
-                <a class="navbar-brand" href=""><img class="logo mr-3" src="../images/small-logo.svg" alt="logo" /></a>
+            <nav class="navbar navbar-expand-lg navbar-light mt-4 mb-2">
+                <a class="navbar-brand" href=""><img class="logo mr-3" src="images/small-logo.svg" alt="logo" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -44,14 +42,21 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mr-sm-2 my-lg-0">
                             <input class="navbar-btn btn btn-outline-secondary" type="button" value="登入｜註冊" />
-                            <img class="m-3 m-sm-1 navbar-user cursor-point login-show" src="../images/navbar/user.svg"
+                            <img class="m-3 navbar-user cursor-point login-show" src="images/navbar/user.svg" alt="">
+                            <img class="m-3 navbar-message cursor-point login-show" src="../images/navbar/message.svg"
                                 alt="">
-                            <img class="m-3 m-sm-1 navbar-message cursor-point login-show"
-                                src="../images/navbar/message.svg" alt="">
-                            <img class="m-3 m-sm-1 navbar-heart cursor-point login-show"
-                                src="../images/navbar/heart.svg" alt="">
-                            <img class="m-3 m-sm-1 navbar-shopping cursor-point"
-                                src="../images/navbar/shopping-cart.svg" alt="shopping-cart" />
+                            <img class="m-3 navbar-heart cursor-point login-show" src="images/navbar/heart.svg" alt="">
+                            <img class="m-3 navbar-shopping cursor-point" src="images/navbar/shopping-cart.svg"
+                                alt="shopping-cart" />
+                            <!-- user下拉選單 -->
+                            <div class="user-drop-list text-center position-absolute mt-3">
+                                <ul class="list-unstyled drop-menu">
+                                    <li class="my-3"><a href="" class="nav-link p-0 text-decoration-none">我的帳戶</a></li>
+                                    <li class="my-3"><a href="" class="nav-link p-0 text-decoration-none">我的訂單</a></li>
+                                    <li class="my-3"><a href="" class="nav-link p-0 text-decoration-none">紅利點數</a></li>
+                                    <li class="my-3"><a href="" class="nav-link p-0 text-decoration-none">登出</a></li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -61,7 +66,7 @@
                 <!-- 註冊start -->
                 <div class="user-model-content signup-content text-center p-4">
                     <div class="close-model">+</div>
-                    <img class="user-small-logo mb-2" src="../images/small-logo.svg" alt="" />
+                    <img class="user-small-logo mb-2" src="images/small-logo.svg" alt="" />
                     <form action="" method="POST">
                         <div class="user-form-item position-relative my-2 d-flex align-items-center">
                             <i class="far fa-envelope position-absolute"></i>
@@ -102,7 +107,7 @@
                 <!-- 註冊成功start -->
                 <div class="user-model-content signup-success text-center p-4">
                     <div class="close-model">+</div>
-                    <img class="user-small-logo mb-3" src="../images/small-logo.svg" alt="" />
+                    <img class="user-small-logo mb-3" src="images/small-logo.svg" alt="" />
                     <h3 class="my-5">註冊成功！</h3>
                     <h5 class="px-3">
                         我們已經將一封認證信寄至您的信箱，請點擊信裡的確認連結已開通帳號。
@@ -116,7 +121,7 @@
                 <!-- 登入start -->
                 <div class="user-model-content login-content text-center p-4">
                     <div class="close-model">+</div>
-                    <img class="user-small-logo mb-2" src="../images/small-logo.svg" alt="" />
+                    <img class="user-small-logo mb-2" src="images/small-logo.svg" alt="" />
                     <form action="" method="POST">
                         <div class="user-form-item position-relative my-2 d-flex align-items-center">
                             <i class="far fa-envelope position-absolute"></i>
@@ -165,7 +170,7 @@
                 <!-- 忘記密碼start -->
                 <div class="user-model-content text-center p-4 forget-content">
                     <div class="close-model">+</div>
-                    <img class="user-small-logo mb-3" src="../images/small-logo.svg" alt="" />
+                    <img class="user-small-logo mb-3" src="images/small-logo.svg" alt="" />
                     <h3 class="my-5">忘記密碼？</h3>
                     <div class="user-form-item">
                         <input id="forget-pwd-input" class="btn-block p-2 user-text-input" type="text"
@@ -192,7 +197,8 @@
                         <div class="user-photo"></div>
                         <ul class="user-list list-unstyled m-3 d-flex flex-column align-items-start">
                             <li class="m-2"><a href="./user_center_account.html"
-                                    class="text-dark text-decoration-none">我的帳號</a></li>
+                                    class="text-dark text-decoration-none">我的帳號</aside>
+                            </li>
                             <li class="m-2"><a href="" class="text-dark text-decoration-none">信用卡管理</a></li>
                             <li class="m-2"><a href="./user_center_address.html"
                                     class="text-dark text-decoration-none">寄送地址</a></li>
@@ -205,67 +211,56 @@
                     <!-- 會員側邊欄end -->
                     <div class="col-1"></div>
                     <!-- 寄送地址start -->
-                    <div class="col-8 pb-5">
-                        <div class="mb-4 d-flex justify-content-between">
-                            <h4>購買訂單</h4>
-                            <span></span>
-                        </div>
-                        <div class="user-order-title my-1 pb-1">
-                            <ul class="col-7 list-unstyled d-flex justify-content-between">
-                                <li class="text-center"><a href=""
-                                        class="user-lightblue-text text-decoration-none">尚未付款<small
-                                            class="ml-2"></small></a></li>
-                                <li class="text-center"><a href=""
-                                        class="user-lightblue-text text-decoration-none">處理中<small
-                                            class="ml-2"></small></a></li>
-                                <li class="text-center"><a href=""
-                                        class="user-lightblue-text text-decoration-none">待收貨<small
-                                            class="ml-2"></small></a></li>
-                                <li class="text-center"><a href=""
-                                        class="user-lightblue-text text-decoration-none">已完成<small
-                                            class="ml-2">1</small></a></li>
-                                <li class="text-center"><a href=""
-                                        class="user-lightblue-text text-decoration-none">已取消<small
-                                            class="ml-2"></small></a></li>
-                            </ul>
-                        </div>
-                        <!-- 訂單內容 -->
-                        <div class="user-order-line">
-                            <div class="user-order-date">
-                                <ul class="list-unstyled p-3">
-                                    <li class="px-2">訂購的日期</li>
-                                </ul>
+                    <div class="col-8 pb-5 d-flex flex-column">
+                        <div class="mb-5 d-flex justify-content-between">
+                            <div class="">
+                                <h4>寄送地址</h4>
+                                <span>以下為你的常用地址，可以在這裡管理所有使用過的購買地址</span>
                             </div>
-                            <div class="user-order-list py-2 px-2">
-                                <div class="order-list-status my-3 d-flex align-items-center">
-                                    <span class="col-2 text-right mr-4">狀態</span>
-                                    <span>這邊放訂單狀態</span>
-                                </div>
-                                <div class="order-list-number my-3 d-flex align-items-center">
-                                    <span class="col-2 text-right mr-4">訂單編號</span>
-                                    <span>這邊放訂單編號</span>
-                                </div>
-                                <div class="order-list-status my-3 d-flex align-items-center">
-                                    <span class="col-2 text-right mr-4">總計</span>
-                                    <span>這邊放訂單金額</span>
-                                </div>
-
-                            </div>
-                            <!-- 沒有訂單 -->
-                            <div class="user-order-content flex-column align-items-center">
-                                <img class="user-order-photo" src="../images/user/order.png" alt="訂單貓咪">
-                                <span class="user-order-none">你沒有尚未付款的訂單</span>
+                            <div class="p-3">
+                                <button class="user-address-add btn user-orange-btn user-btn"> ＋ 新增地址</button>
                             </div>
                         </div>
-
+                        <div class="user-address-remind p-3 mr-3">
+                            <h6>小提醒</h6>
+                            <span>請放心，個人常用的收件地址及相關購買資料都是屬於你的個人隱私，網站依照個人資料保護法保障你的個人隱私！</span>
+                        </div>
+                        <div class="user-address-photo align-self-center mt-5 ">
+                            <img class="" src="../images/user/address.png" alt="地址簿">
+                            <span class="">你的地址簿是空的</span>
+                        </div>
+                        <!-- 先隱藏新增地址欄位 -->
+                        <div class="user-address-data mt-5 pt-2 px-2 mr-2 d-flex justify-content-between">
+                            <div class="mt-2">
+                                <h5>收件人</h5>
+                                <p>商品會寄到這裡</p>
+                                <div class="my-4">
+                                    <div class="">
+                                        <p class="">姓名</p>
+                                        <input type="text" class="mb-2 user-center-input" value="江宛婷" />
+                                    </div>
+                                    <div class="">
+                                        <p class="">電話</p>
+                                        <input type="text" class="mb-2 user-center-input" value="0911003909">
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="">地址</p>
+                                        <input type="text" class="mb-2 user-center-input" value="台北市大安區復興南路一段390號">
+                                    </div>
+                                    <button class="btn user-orange-btn user-btn">更新</button>
+                                </div>
+                            </div>
+                            <a href="" class="mt-2 user-orange-text text-decoration-none">刪除</a>
+                        </div>
                     </div>
+                    <!-- 寄送地址end -->
                     <div class="col-1"></div>
                 </div>
             </div>
         </div>
     </div>
     <script src="../js/header.js"></script>
-    <script src="../js/user_center_order.js"></script>
+    <script src="../js/user_center_address.js"></script>
     <script src="../lib/bootstrap/js/bootstrap.js"></script>
 </body>
 
