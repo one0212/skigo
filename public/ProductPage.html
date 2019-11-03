@@ -12,30 +12,36 @@
   <link rel="stylesheet" href="css/all.css" />
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css" />
   <link rel="stylesheet" href="css/header.css" />
-  <!-- <link rel="stylesheet" href="css/ski-footer.css"> -->
-  <script src="lib/bootstrap/lib/jquery-3.4.1.js"></script>
   <link rel="stylesheet" href="css/song.css">
+
   <link rel="stylesheet" href="css/ProductPage.css">
   <link rel="stylesheet" href="css/footer2.css">
+  <!-- slick -->
+
+
+  <link rel="stylesheet" type="text/css" href="../node_modules/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="../node_modules/slick-carousel/slick/slick-theme.css">
 
 
 
   <style>
-    .box {
-      width: 500px;
-      height: 500px;
-      background: #ccc;
-      margin: 0 auto;
-    }
-
-    .box2 {
-      height: 200px;
-      width: 200px;
-      background: #ccc;
-    }
-
     input[type=radio] {
       display: none;
+    }
+
+
+    .product-main-img {
+      width: 650px;
+    }
+
+    .aa {
+      margin:  0 auto;
+      height: 450px;
+    }
+
+    .hh {
+      width: 650px;
+      height: 650px;
     }
   </style>
 
@@ -85,81 +91,128 @@
     </ul>
   </div>
   <div class="container">
-    <section class="row">
-      <div class="col-lg-6 col-md-12 d-flex" style="border: 1px #ccc solid;">
-        <div class="AAAA">
-          <img src="/public/images/coach.jpg" alt="" style="width: 100%;">
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-12">
-        <div class=" product-message">
-          <div class="product-summary-details">
-            <p class="" style="font-weight:300;">ALL MOUNTAIN SNOWBOARD</p>
-            <h1 class="product-name">Men's Burton Custom Camber Snowboard</h1>
-            <div class="">
-              <span class="product-price">NT<span>5,000</span></span>
-            </div>
-            <div class="star-ratings">
-              <a href="">
-                <i class="fas fa-star red-orange"></i>
-                <i class="fas fa-star red-orange"></i>
-                <i class="fas fa-star red-orange"></i>
-                <i class="fas fa-star red-orange"></i>
-                <i class="fas fa-star red-orange"></i>
-                <span>65 Reviews</span>
-              </a>
-            </div>
-          </div>
-          <form action="">
-            <div class="select-wrap pt-4">
-              <div class="size">
-                <input type="radio" name="size" id="A">
-                <label class="size-btn btn btn-outline-dark" for="A">150</label>
-                <input type="radio" name="size" id="B">
-                <label class="size-btn btn btn-outline-dark" for="B">154</label>
-                <input type="radio" name="size" id="C">
-                <label class="size-btn btn btn-outline-dark" for="C">156</label>
-                <input type="radio" name="size" id="D">
-                <label class="size-btn btn btn-outline-dark" for="D">158</label>
-                <input type="radio" name="size" id="E">
-                <label class="size-btn btn btn-outline-dark" for="E">162</label>
-                <input type="radio" name="size" id="F">
-              </div>
-              <div class="color"></div>
-              <button class="btn btn-red-orange btn-lg btn-block"><i class="fas fa-shopping-cart"></i>放入購物車</button>
-              <button class="btn btn-border btn-lg btn-block"><i class="far fa-heart"></i>收藏商品</button>
-          </form>
-        </div>
-      </div>
-  </div>
-  <div class="product-container">
     <div class="row">
-      <div class="col-lg-6 col-md-12">
-        <h1 class="product-name">Men's Burton Custom Camber Snowboard</h1>
-        <h2 class="detail-feature-heading">Skill Level: Intermediate, Expert</h2>
-      </div>
-      <div class="col-lg-6 col-md-12">
-        <h3 class="product-short-description">The most trusted board ever, backed by a cult following as
-          snowboarding's one-answer to all terrain.</h3>
-        <div class="product-long-description">
-          <p>Since its humble beginnings, innovation has defined the Burton Custom series and set it apart as the most
-            popular, versatile, and mimicked board in snowboarding. Since 1996, this icon has reigned supreme and
-            constantly evolved with a proven formula that combines time-honored design with envelope-pushing
-            ingredients
-            to create a lightweight, poppy, and highly versatile board. Offered in two versions, the precision and
-            stability of the Custom camber is the top choice for many pro riders, while the Custom Flying V™ combines
-            camber’s power with the relaxed float of rocker for the best of both worlds.</p>
-        </div>
-        <div class="product-warranty-wrap">
-          <div class="warranty-callout">
-            <h5 class="warranty-headline">3-Year Warranty - Snowboards</h5>
+      <div class="col-lg-6 col-md-12 d-flex" style="border: 1px #ccc solid;">
+        <div class="product-main">
+          <div class="product-main-img">
+            <div class="portfolio-item-slider">
+              <div class="slick-slider-item ">
+                <img class="aa" src="./images/Product/10707106000150_1.png" alt="" />
+              </div>
+              <div class="slick-slider-item">
+                <img class="aa" src="./images/Product/10707106000150_2.png" alt="" />
+              </div>
+              <div class="slick-slider-item">
+                <img class="aa" src="./images/Product/10707106000150_3.png" alt="" />
+              </div>
+              <div class="slick-slider-item">
+                <img class="aa" src="./images/Product/10707106000150_4.png" alt="" />
+              </div>
+              <div class="slick-slider-item">
+                <img class="aa" src="./images/Product/10707106000150_5.png" alt="" />
+              </div>
+              <div class="slick-slider-item">
+                <img class="aa" src="./images/Product/10707106000150_6.png" alt="" />
+              </div>
+            </div>
+            <!-- .portfolio-item-slider -->
+            <div class="portfolio-thumb-slider">
+              <div class="slick-slider-item">
+                <img src="./images/Product/10707106000150_1.png" style="width:50px" alt="" />
+              </div>
+              <div class="slick-slider-item">
+                <img src="./images/Product/10707106000150_2.png" style="width:50px" alt="" />
+              </div>
+              <div class="slick-slider-item">
+                <img src="./images/Product/10707106000150_3.png" style="width:50px" alt="" />
+              </div>
+              <div class="slick-slider-item">
+                <img src="./images/Product/10707106000150_4.png" style="width:50px" alt="" />
+              </div>
+              <div class="slick-slider-item">
+                <img src="./images/Product/10707106000150_5.png" style="width:50px" alt="" />
+              </div>
+              <div class="slick-slider-item">
+                <img src="./images/Product/10707106000150_6.png" style="width:50px" alt="" />
+              </div>
+            </div>
           </div>
-          <p class="product-warranty-details">All 2014 and newer Burton snowboards with The Channel mounting system
-            (such as the one you are looking at here) are backed by a three-year warranty from date of purchase.</p>
         </div>
+
+        </div>
+         <div class="col-lg-6 col-md-12">
+          <div class=" product-message">
+            <div class="product-summary-details">
+              <p class="" style="font-weight:300;">ALL MOUNTAIN SNOWBOARD</p>
+              <h1 class="product-name">Men's Burton Custom Camber Snowboard</h1>
+              <div class="">
+                <span class="product-price">NT<span>5,000</span></span>
+              </div>
+              <div class="star-ratings">
+                <a href="">
+                  <i class="fas fa-star red-orange"></i>
+                  <i class="fas fa-star red-orange"></i>
+                  <i class="fas fa-star red-orange"></i>
+                  <i class="fas fa-star red-orange"></i>
+                  <i class="fas fa-star red-orange"></i>
+                  <span>65 Reviews</span>
+                </a>
+              </div>
+            </div>
+            <form action="">
+              <div class="select-wrap pt-4">
+                <div class="size">
+                  <input type="radio" name="size" id="A">
+                  <label class="size-btn btn btn-outline-dark" for="A">150</label>
+                  <input type="radio" name="size" id="B">
+                  <label class="size-btn btn btn-outline-dark" for="B">154</label>
+                  <input type="radio" name="size" id="C">
+                  <label class="size-btn btn btn-outline-dark" for="C">156</label>
+                  <input type="radio" name="size" id="D">
+                  <label class="size-btn btn btn-outline-dark" for="D">158</label>
+                  <input type="radio" name="size" id="E">
+                  <label class="size-btn btn btn-outline-dark" for="E">162</label>
+                  <input type="radio" name="size" id="F">
+                </div>
+                <div class="color"></div>
+                <button class="btn btn-red-orange btn-lg btn-block"><i class="fas fa-shopping-cart"></i>放入購物車</button>
+                <button class="btn btn-border btn-lg btn-block"><i class="far fa-heart"></i>收藏商品</button>
+            </form>
+          </div>
+        </div> 
       </div>
-    </div>
-  </div>
+
+
+      <!-- <div class="product-container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <h1 class="product-name">Men's Burton Custom Camber Snowboard</h1>
+            <h2 class="detail-feature-heading">Skill Level: Intermediate, Expert</h2>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <h3 class="product-short-description">The most trusted board ever, backed by a cult following as
+              snowboarding's one-answer to all terrain.</h3>
+            <div class="product-long-description">
+              <p>Since its humble beginnings, innovation has defined the Burton Custom series and set it apart as the
+                most
+                popular, versatile, and mimicked board in snowboarding. Since 1996, this icon has reigned supreme and
+                constantly evolved with a proven formula that combines time-honored design with envelope-pushing
+                ingredients
+                to create a lightweight, poppy, and highly versatile board. Offered in two versions, the precision and
+                stability of the Custom camber is the top choice for many pro riders, while the Custom Flying V™
+                combines
+                camber’s power with the relaxed float of rocker for the best of both worlds.</p>
+            </div>
+            <div class="product-warranty-wrap">
+              <div class="warranty-callout">
+                <h5 class="warranty-headline">3-Year Warranty - Snowboards</h5>
+              </div>
+              <p class="product-warranty-details">All 2014 and newer Burton snowboards with The Channel mounting system
+                (such as the one you are looking at here) are backed by a three-year warranty from date of purchase.</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
 
 
 
@@ -167,7 +220,7 @@
 
 
 
-  <footer class="ski-footer">
+  <!-- <footer class="ski-footer">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-lg-1 "></div>
@@ -228,26 +281,49 @@
         </div>
         <div class="col-md-6 col-lg-1"></div>
       </div>
-        <div class="row footer-bottom">
-            <div class="col-md-12 col-lg-4">
-                <div class="d-flex pt-4 d-flex justify-content-between ">
-                    <a class="logo" href=""><img src="./images/SKIGO_logo.svg" alt=""></a>
-                    <p >© 2019 SkiGO. All Rights Reserved.</p>
-                  </div>
-            </div>
+      <div class="row footer-bottom">
+        <div class="col-md-12 col-lg-4">
+          <div class="d-flex pt-4 d-flex justify-content-between ">
+            <a class="logo" href=""><img src="./images/SKIGO_logo.svg" alt=""></a>
+            <p>© 2019 SkiGO. All Rights Reserved.</p>
+          </div>
+        </div>
 
         <div class="col-md-12 col-lg-8 pt-4 right d-flex justify-content-end">
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com/?lang=zh-tw"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/?hl=zh-tw"><i class="fab fa-instagram "></i></a>
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/?lang=zh-tw"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/?hl=zh-tw"><i class="fab fa-instagram "></i></a>
         </div>
-    </div>
-  </footer>
+      </div>
+  </footer> -->
 
 
 
-
+  <script src="lib/bootstrap/lib/jquery-3.4.1.js"></script>
   <script src="lib/bootstrap/js/bootstrap.js"></script>
+  <!-- slick -->
+  <script src="../node_modules/slick-carousel/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+
+  <script>
+    $('.portfolio-thumb-slider').slick({
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      asNavFor: '.portfolio-item-slider',
+      dots: false,
+      arrows: false,
+      focusOnSelect: true,
+      infinite: false
+    });
+
+    $('.portfolio-item-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      asNavFor: '.portfolio-thumb-slider',
+      infinite: false
+    });
+  </script>
 
 </body>
 
