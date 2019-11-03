@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>areas</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/header.css" /> -->
     <link rel="stylesheet" href="css/area_home.css">
     <!-- <link rel="stylesheet" href="./css/ski-footer.css"> -->
     
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrap">
         <div class="area_header">
             
             <div class="container-fluid area_slider">
@@ -59,19 +60,19 @@
                 </div>
             </div>
             <div class="container introduction2">
-                <div class="row">
-                    <div class="col-8 d-flex">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex area_title">
                         <h5>北海道</h5>
                         <h1>富良野滑雪場</h1>   
                     </div>
-                    <div class="col-4 weather">
-                        <!-- <img src="images/areas/weather.svg" class="weather_img" alt="">
+                    <div class="weather">
+                        <img src="images/areas/weather.svg" class="weather_img" alt="">
                         <div class="d-flex">
                             <p>-10</p><img src="images/areas/circle-outline.svg" class="circle" alt=""><p class="tem">C</p>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
-                <div class="row">
+                <div>
                     <p class="article">富良野滑雪度假中心是王子滑雪度假中心中最北邊的一個。富良野滑雪場分為富良野和北之峰2大區域，總共有23條滑雪道，您可乘坐能同時容納101位旅客的富良野箱型纜車，直接抵達山頂，眺望大雪山的絕美景致。2間可滑雪進出的王子大飯店分別位於各區域的山腳下，方便您滑雪後休息享樂。滑雪場的附近就有溫泉，也可以逛逛富良野的市區，這將給您留下美好的回憶。</p>
                 </div>
             </div>
@@ -80,15 +81,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-12">
-                        <div class="row area_icon">
-                            <div class="col-3"><img class="number" src="images/areas/05.svg" alt=""><p class="img_p">滑雪道</p><p class="img_number">23</p></div>
-                            <div class="col-3"><img class="longest" src="images/areas/01.svg" alt=""><p class="img_p">雪道最長距離</p><p class="img_number">4,000m</p></div>
-                            <div class="col-3"><img class="gradient" src="images/areas/04.svg" alt=""><p class="img_p">最大斜度</p><p class="img_number">35</p></div>
-                            <div class="col-3"><img class="lifts" src="images/areas/06.svg" alt=""><p class="img_p">纜車</p><p class="img_number">8</p></div>
+                        <div class="area_icon d-flex justify-content-center">
+                            <div><img class="number" src="images/areas/05.svg" alt=""><p class="img_p">滑雪道</p><p class="img_number">23</p></div>
+                            <div><img class="longest" src="images/areas/01.svg" alt=""><p class="img_p">雪道最長距離</p><p class="img_number">4,000m</p></div>
+                            <div><img class="gradient" src="images/areas/04.svg" alt=""><p class="img_p">最大斜度</p><p class="img_number">35</p></div>
+                            <div><img class="lifts" src="images/areas/06.svg" alt=""><p class="img_p">纜車</p><p class="img_number">8</p></div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 area_info">
-                        <h4>滑雪場資訊</h4>
+                        <div class="d-flex"><div class="title_sign"></div><h4>滑雪場資訊</h4></div>
                         <div class="row date">
                             <div class="col-5">
                                 <p>營業期間</p>
@@ -121,14 +122,16 @@
         </section>
         <section>
             <div class="container">
-                <div class="row area_characteristic">
-                    <div class="col-xl-3 col-lg-4 col-md-6"><div class="box"><img src="images/areas/mountains.svg" alt=""><p>美麗風景</p></div></div>
-                    <div class="col-xl-3 col-lg-4 col-md-6"><div class="box"><img src="images/areas/snowflake.svg" alt=""><p>天然雪</p></div></div>
-                    <div class="col-xl-3 col-lg-4 col-md-6"><div class="box"><img src="images/areas/ice-skating.svg" alt=""><p>適合初學者</p></div></div>
-                    <div class="col-xl-3 col-lg-4 col-md-6"><div class="box"><img src="images/areas/signals-set.svg" alt=""><p>餐廳</p></div></div>
-                    <div class="col-xl-3 col-lg-4 col-md-6"><div class="box"><img src="images/areas/snowmobile.svg" alt=""><p>戶外活動充實</p></div></div>
-                    <div class="col-xl-3 col-lg-4 col-md-6"><div class="box"><img src="images/areas/bus.svg" alt=""><p>交通便利</p></div></div>
-                
+                <div class="area_characteristic">
+                    <div class="d-flex">
+                        <div class="box"><img src="images/areas/mountains.svg" alt=""><p>美麗風景</p></div>
+                        <div class="box"><img src="images/areas/snowflake.svg" alt=""><p>天然雪</p></div>
+                        <div class="box"><img src="images/areas/ice-skating.svg" alt=""><p>適合初學者</p></div>
+                        <div class="box"><img src="images/areas/signals-set.svg" alt=""><p>餐廳</p></div>
+                        <div class="box"><img src="images/areas/snowmobile.svg" alt=""><p>戶外活動充實</p></div>
+                        <div class="box"><img src="images/areas/bus.svg" alt=""><p>交通便利</p></div>
+                    </div>
+                </div>
             </div>
         </section>
         
@@ -413,7 +416,7 @@
         <section class="area_comment">
             <div class="container">
                 <div class="comment_title">
-                    <h4>評價</h4>
+                    <div class="d-flex"><div class="title_sign"></div><h4>評價</h4></div>
                     <a href="">查看全部</a>
                 </div>
                 <hr>
@@ -482,66 +485,13 @@
         <section class="area_access">
             <div class="container">
                 <div class="access_title">
-                    <h4>交通路線</h4>
+                    <div class="d-flex"><div class="title_sign"></div><h4>交通路線</h4></div>
                 </div>
                 <hr>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11607.988663140555!2d142.33874033325841!3d43.335248371799736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f73525ef98cb63d%3A0x9020eebf4f63234b!2z5a-M6Imv6YeO5ruR6Zuq5aC0!5e0!3m2!1szh-TW!2stw!4v1572185752833!5m2!1szh-TW!2stw" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
         </section>
-        <!-- <footer class="ski-footer ">
-            <div class="ski-footer-wrap">
-                <div class="ski-footer-link d-flex justify-content-center">
-                    <ul class="link">
-                        <li class="title">認識SKIGO</li>
-                        <li><a href="">關於SKIGO</a></li>
-                        <li><a href="">新聞報導</a></li>
-                        <li><a href="">加入我們</a></li>
-                        <li><a href="">合作夥伴</a></li>
-                    </ul>
-                    <ul class="link">
-                        <li class="title">會員服務</li>
-                        <li><a href="">新手上路</a></li>
-                        <li><a href="">會員分級</a></li>
-                        <li><a href="">訂閱電子報</a></li>
-                    </ul>
-                    <ul class="link">
-                        <li class="title">合作夥伴</li>
-                        <li><a href="">廠商登入</a></li>
-                        <li><a href="">聯合行銷</a></li>
-                        <li><a href="">名人合作</a></li>
-                        <li><a href="">同業交易</a></li>
-                    </ul>
-                    <ul class="link">
-                        <li class="title">客服中心</li>
-                        <li><a href="">問與答</a></li>
-                        <li><a href="">訊息公告</a></li>
-                        <li><a href="">退貨政策</a></li>
-                        <li><a href="">付款方式</a></li>
-                        <li><a href="">聯絡我們</a></li>
-                        <li><a href="">線上客服</a></li>
-                    </ul>
-                    <ul class="link">
-                        <li class="title">網站條款</li>
-                        <li><a href="">服務條款</a></li>
-                        <li><a href="">隱私政策</a></li>
-                        <li><a href="">Cookie政策</a></li>
-                    </ul>
-                </div>
-                <div class="ski-footer-static d-flex justify-content-between">
-                    <div>
-                        <a class="logo" href=""><img src="./images/SKIGO_logo.svg" alt=""></a>
-                    </div>
-                    <div class=" right">
-                        <p>© 2019 SkiGO. All Rights Reserved.</p>
-                        <div class="icon">
-                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://twitter.com/?lang=zh-tw"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/?hl=zh-tw"><i class="fab fa-instagram "></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>     -->
+        
     </div>
 
 <script src="lib/bootstrap/lib/jquery-3.4.1.js"></script>

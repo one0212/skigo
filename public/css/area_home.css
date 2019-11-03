@@ -1,12 +1,11 @@
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
 }
-.wrapper{
-    max-width: 1920px;
-}
+
 section{
     margin: 40px 0;
 }
+
 .area_header .introduction2{
     display: none;
 }
@@ -21,12 +20,10 @@ section{
     margin-right: 0;
 }
 .area_slider .col-xl-9{
-    /* width: 70%; */
     padding-left: 0;
     padding-right: 0;
 }
 .area_slider .col-xl-3{
-    /* width: 30%; */
     padding-left: 0;
     padding-right: 0;
 }
@@ -106,6 +103,9 @@ section{
     text-align: center;
     margin: 1.4rem 0;
 }
+.area_icon div{
+    margin: 0 50px;
+}
 .area_icon img{
     width: 80px;
 }
@@ -157,14 +157,20 @@ section{
     width: 35px;
 }
 
+.area_characteristic{
+   padding: 0 45px;
+    
+}
+.area_characteristic .d-flex{
+    flex-wrap: wrap;
+}
 .area_characteristic .box{
-    display: flex;
     border: solid 1px rgb(210, 210, 210);
     border-radius: 3px;
-    height: 60px;
-    width: 270px;
+    width: 250px;
+    display: flex;
     align-items: center;
-    margin: 9px 0;
+    margin: 5px;
 }
 .area_characteristic img{
     margin: 7.5px;
@@ -180,6 +186,7 @@ section{
 
 .area_ticket{
     margin-top: 50px;
+    /* display: none; */
 }
 .area_ticket .ticket_title{
     display: flex;
@@ -247,6 +254,7 @@ section{
 
 .area_lesson{
     margin-top: 50px;
+    /* display: none; */
 }
 .area_lesson .lesson_title{
     display: flex;
@@ -346,19 +354,18 @@ section{
 .area_comment .score{
     font-size: 1.6rem;
     color: #FF4343;
-    font-weight: bold;
-    margin-right: 5px;
+    font-weight: 700;
+    margin: 0 2px 12px 8px;
 }
 .area_comment .star{
     width: 15px;
-    margin:0 0 25px 4px;
+    margin:0 0 23px 4px;
 }
 .area_comment .message_text{
     font-size: 1.2rem;
     color: #797979;
     margin-top: -7px;
 }
-
 
 .area_access{
     margin-top: 30px;
@@ -377,6 +384,32 @@ section{
     height: 450px;
     margin: 20px 0;
 }
+
+/* bootstrap.css */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+.carousel-indicators li{
+    width: 7px;
+    height: 7px;
+    margin-right: 8px;
+    margin-left: 8px;
+    background-color: #797979;
+    border: none;
+    border-radius: 50%;
+    opacity: 1;
+}
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin:-5px 10px 0 10px;
+    background-color: #fff;
+    border: 2px solid;
+    border-color: #797979;
+    opacity: 1;
+  }
+
 
 @media screen and (max-width: 1835px) {
     .area_slider .weather{
@@ -414,6 +447,14 @@ section{
     .area_slider .number_box .total_number{
         font-size: 1.8rem;
     }
+
+    .area_ticket{
+        display: none;
+    }
+    
+    .area_lesson{
+        display: none;
+    }
 }
 @media screen and (max-width: 1530px) {
     .area_slider .carousel-indicators{
@@ -424,8 +465,12 @@ section{
     }
 }
 @media screen and (max-width: 1200px) {
+    .area_slider .carousel-indicators{
+        left: 0;
+        bottom: 7px;
+    }
     .area_slider .carousel-item img{
-        height: 60vh;
+        height: 500px;
     }
     .area_slider .introduction{
         display: none;
@@ -433,12 +478,12 @@ section{
     .area_slider .col-xl-3{
         display: none;
     }
+
     .area_header .introduction2{
         display: block;
-        height: 40vh;
         margin-top: 40px;
     }
-    .area_header .introduction2 .col-8{
+    .area_header .introduction2 .area_title{
         flex-direction: column;
         padding-left: 0;
         padding-right: 0;
@@ -447,10 +492,10 @@ section{
         font-size: 1.7rem;
         color: #FD702D;
     }
-    /* .area_header .weather{
+    .area_header .weather{
         display: flex;
         flex-direction: column;
-        margin: 40px 0 0 55px;
+        margin-top: 10px;
     }
     .area_header .weather .weather_img{
         width: 65px;
@@ -462,7 +507,7 @@ section{
     .area_header .weather .circle{
         width: 6px;
         margin: -20px 0 0 2px;
-    } */
+    }
     .area_header .introduction2 .article{
         font-size: 1.2rem;
         line-height: 2.5rem;
@@ -472,16 +517,217 @@ section{
         font-size: 3.5rem;
         font-weight: 700;
     }
+
+    .area_icon div{
+        margin: 0 20px;
+    }
+    
     .area_ticket{
         display: none;
     }
+
     .area_lesson{
         display: none;
     }
     
 }
+@media screen and (max-width: 990px) {
+    .area_icon div{
+        margin: 0 30px;
+    }
+
+    .area_info{
+        margin-top: 30px;
+    }
+    .area_info .ski_map{
+        display: none;
+    }
+}
 @media screen and (max-width: 768px) {
+    .area_slider .carousel-item img{
+        height: 400px;
+    }
+
+    .area_header .introduction2 h5{
+        font-size: 1.5rem;
+    }
+    .area_header .weather .weather_img{
+        width: 55px;
+    }
+    .area_header .weather p{
+        font-size: 1.6rem;
+    }
+    .area_header .introduction2 .article{
+        /* font-size: 1rem; */
+        line-height: 2.2rem;
+        margin-top: 24px;
+    }
+    .area_header .introduction2 h1{
+        font-size: 3rem;
+    }
+
+    .area_icon{
+        text-align: center;
+        margin: 0.2rem 0;
+    }
+    .area_icon div{
+        margin: 0 18px;
+    }
+    .area_icon img{
+        width: 70px;
+    }
+    .area_icon .img_p{
+        margin-top: 0.65rem;
+        font-size: 1.1rem;
+    }
+    .area_icon .img_number{
+        font-size: 1.5rem;
+    }
+
     .area_characteristic{
         display: none;
+    }
+
+    .area_info .title_sign{
+        width: 10px;
+        height: 33px;
+        background: #FD702D;
+        border-radius: 10px;
+        margin-right: 15px;
+    }
+    .area_info h4{
+        color: #000;
+        padding-bottom: 25px;
+        font-weight: 600;
+    }
+    .area_info .date{
+        color: #000;
+    }
+
+    .area_comment .title_sign{
+        width: 10px;
+        height: 33px;
+        background: #FD702D;
+        border-radius: 10px;
+        margin-right: 15px;
+    }
+    .area_comment h4{
+        font-weight: 600;
+        font-size: 1.7rem;
+    }
+
+    .area_access .title_sign{
+        width: 10px;
+        height: 33px;
+        background: #FD702D;
+        border-radius: 10px;
+        margin-right: 15px;
+    }
+    .area_access h4{
+        font-weight: 600;
+        font-size: 1.7rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    .area_slider .carousel-indicators{
+        display: none;
+    }
+    .area_slider .carousel-item img{
+        height: 250px;
+    }
+
+    .area_header .introduction2 h5{
+        font-size: 1rem;
+    }
+    .area_header .weather .weather_img{
+        width: 40px;
+        margin-bottom: 5px;
+    }
+    .area_header .weather p{
+        font-size: 1rem;
+    }
+    .area_header .introduction2 .article{
+        font-size: 1rem;
+        line-height: 1.8rem;
+        margin-top: 15px;
+    }
+    .area_header .introduction2 h1{
+        font-size: 1.8rem;
+    }
+
+    .area_icon{
+        margin: 0.4rem 0;
+    }
+    .area_icon div{
+        margin: 0 12px;
+    }
+    .area_icon img{
+        width: 50px;
+    }
+    .area_icon .img_p{
+        margin-top: 0.65rem;
+        font-size: 0.8rem;
+    }
+    .area_icon .img_number{
+        font-size: 1.2rem;
+    }
+    
+    .area_info .title_sign{
+        height: 28px;
+        margin-right: 11px;
+    }
+    .area_info h4{
+        font-size: 1.5rem;
+    }
+    .area_info .date{
+        font-size: 1rem;
+    }
+    .area_info .address{
+        font-size: 1rem;
+    }
+
+    .area_comment .title_sign{
+        height: 28px;
+        margin-right: 11px;
+    }
+    .area_comment h4{
+        font-size: 1.5rem;
+    }
+    .area_comment .message_content{
+        margin-top: 20px;
+    }
+    .area_comment .message{
+        display: block;
+    }
+    .area_comment .message_all{
+        padding-left: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .area_comment .message_info{
+        margin-right: 6px;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+    .area_comment .score{
+        font-size: 1.2rem;
+        margin: 0 2px 12px 8px;
+    }
+    .area_comment .star{
+        width: 12px;
+        margin:0 0 20px 4px;
+    }
+    .area_comment .message_text{
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .area_access .title_sign{
+        height: 28px;
+        margin-right: 11px;
+    }
+    .area_access h4{
+        font-size: 1.5rem;
     }
 }

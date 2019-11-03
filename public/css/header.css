@@ -35,6 +35,39 @@ body {
 .cursor-point {
     cursor: pointer;
 }
+.navbar-btn {
+    display: none;
+}
+.navbar-user, .navbar-message, .navbar-heart {
+    display:none;
+}
+/* user下拉選單 */
+.user-drop-list {
+    box-shadow: 0 0 15px #ccc;
+    width: 9rem;
+    margin-left: -4rem;
+    z-index:3;
+}
+.drop-menu{
+    opacity: 0;
+    overflow: hidden;
+    transition:.5s;
+    max-height: 0;
+    background-color: #ffffff;
+}
+.active .drop-menu {
+    opacity: 1;
+    max-height: 11rem;
+  }
+.user-drop-list::before {
+    content:'';
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom-color: rgb(255, 255, 255);
+    top: -20px;
+    left: 53%;
+    transform: translateX(50%);
+}
 /* ＝＝＝＝＝光箱＝＝＝＝＝ */
 .user-bg-model {
     width: 100%;
@@ -43,7 +76,7 @@ body {
     position: absolute;
     top:0;
     left:0;
-    z-index: 8;
+    z-index: 2;
     /* display:flex; */
     justify-content: center;
     align-items: center;
