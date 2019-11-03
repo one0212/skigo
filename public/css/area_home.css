@@ -1,13 +1,11 @@
 *{
     font-family: 'Noto Sans TC', sans-serif;
 }
-.container_width{
-    max-width: 1440px;
-    /* box-sizing: border-box; */
-}
+
 section{
     margin: 40px 0;
 }
+
 .area_header .introduction2{
     display: none;
 }
@@ -22,12 +20,10 @@ section{
     margin-right: 0;
 }
 .area_slider .col-xl-9{
-    /* width: 70%; */
     padding-left: 0;
     padding-right: 0;
 }
 .area_slider .col-xl-3{
-    /* width: 30%; */
     padding-left: 0;
     padding-right: 0;
 }
@@ -190,7 +186,7 @@ section{
 
 .area_ticket{
     margin-top: 50px;
-    display: none;
+    /* display: none; */
 }
 .area_ticket .ticket_title{
     display: flex;
@@ -258,7 +254,7 @@ section{
 
 .area_lesson{
     margin-top: 50px;
-    display: none;
+    /* display: none; */
 }
 .area_lesson .lesson_title{
     display: flex;
@@ -450,6 +446,14 @@ section{
     }
     .area_slider .number_box .total_number{
         font-size: 1.8rem;
+    }
+
+    .area_ticket{
+        display: none;
+    }
+    
+    .area_lesson{
+        display: none;
     }
 }
 @media screen and (max-width: 1530px) {
