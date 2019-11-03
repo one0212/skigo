@@ -77,7 +77,7 @@
     font-size:20px;
     font-weight: lighter;
     padding-top: 20px;
-    width: 500px;
+    /* width: 500px; */
 }
 
 /* ---------------------------------------- */
@@ -106,19 +106,30 @@
     padding: 10px 20px;
     font-size: 1.5rem;
     font-weight: normal;
-    color: #aaa;
+    color: #464743;
+    background: none;
+    border: solid 1px #464743;
     margin: 10px 10px;
 }
-/* /////////////////////////////////////////  */
+.span_button a:hover{
+    width: 150px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #fff;
+    background: #464743;
+    border: solid 1px #464743;
+    margin: 10px 10px;
+}
+/* slick ////////////////////////////////////  */
 .slider {
     width: 100%;
-    margin: 30px auto;
+    /* margin: 5% auto; */
+    padding: 5%;
 }
-
 .slick-slide {
     margin: 0px 20px;
 }
-
 .slick-slide img {
     width: 100%;
 }
@@ -127,27 +138,88 @@
 .slick-prev:before,
 .slick-next:before {
     color: #ccc;
-    width: 30px;
+    /* width: 30px; */
     font-size: 40px;
     /* background: black; */
 }
-
-
+.slick-prev, .slick-next{
+    width: 40px;
+    height: 40px;
+}
 .slick-slide {
     transition: all ease-in-out .3s;
     opacity: 1;
 }
-
 .slick-active {
     opacity: 1;
 }
-
 .slick-current {
     opacity: 1;
+}
+/* /////////////////////////////////////////  */
+.card{
+    position: relative;
+    border:none;
 }
 .card_text{
     line-height: initial;
     letter-spacing: 0.5px;
+    font-size: 0.8rem;
     font-weight: lighter;
     color: #aaa;
+}
+.card-body ul{
+    margin-top: 10%;
+    color: orange;
+}
+.card .slider_card_btn{
+    position: absolute;
+    bottom: 6%;
+    right: 5%;
+    padding: 1% 8%;
+    background: #ccc;
+    color: #fff;
+}
+.slider .card img{
+    width:100%;
+    height: 250px;
+    object-fit: cover;
+}
+/* /////////////////////////////////////////  */
+.hot_area_slide-up{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    /* object-fit: cover; */
+}
+.hot_area_card{
+    height: 100%;
+}
+.hot_area_card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hot_area_title{
+    display: inline-block;
+    padding: 35% 0;
+    font-size: 3rem;
+    color: #fff;
+}
+.hot_area_title:hover{
+    color: #fff;
+}
+
+.hot_area_slide-up .text_overlay{
+    background-color: #0000005f;
+    line-height: 100%;
+    vertical-align: middle;
+    color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+}
+.hot_area_slide-up .hot_area_card:hover .text_overlay{
+    transform: translateY(0);
 }
