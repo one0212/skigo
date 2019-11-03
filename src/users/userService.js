@@ -75,3 +75,13 @@ export function isLogin(req, res) {
     res.sendStatus(403);
   }
 }
+
+export function isLogin(req, res) {
+  if (req.session && req.session.loginUser) {
+    log.info('已登入')
+    res.sendStatus(200);
+  } else {
+    log.info('未登入')
+    res.sendStatus(403);
+  }
+}
