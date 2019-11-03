@@ -48,7 +48,8 @@
 /* ------------ 訊息*/
 
 .product-message{
-    margin: 0 20px;
+    margin: 1.5rem   0.5rem
+
 }
 
 
@@ -67,4 +68,13 @@ font-weight: 700;
 }
 .star-ratings a{
     text-decoration:none
+}
+
+
+.size-btn{
+    margin-right: 15px;
+}
+
+.product-container{
+    padding: 3rem 2.75rem;
 }
