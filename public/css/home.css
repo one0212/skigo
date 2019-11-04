@@ -37,7 +37,7 @@
 /* 標題+line+地區+描述+連結 */
 .home_slider .introduction{
     flex-direction: column;
-   padding-right: 3rem;
+    padding-right: 3rem;
 }
 .home_slider h1{
     color: #fff;
@@ -161,9 +161,6 @@
 }
 .home_popularity .popularity_title .line_s{
     margin-left: 20px;
-}
-.home_popularity .popularity{
-    margin-top: 20px;
 }
 .home_popularity .popularity_card{
     width: 240px;
@@ -463,4 +460,155 @@
 .home_recommend .explore p{
     color: #fff;
     font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1600px) {
+    .home_slider h1{
+        font-size: 6.2rem;
+        margin-right: 3.5rem;
+    }
+    .home_slider .line{
+        width: 220px;
+        height: 6px;
+        background: #fff;
+        margin-right: 6rem;
+    } 
+    .home_slider .introduction img{
+        width: 34px;
+    }
+    .home_slider .introduction .addr{
+        font-size: 1.6rem;
+    }
+    .home_slider .introduction .article{
+        font-size: 1.3rem;
+        width: 440px;
+        margin: 45px 0 60px 0;
+    }
+    .home_slider .introduction .more{
+        font-size: 1.2rem;
+    }
+
+    .home_popularity .popularity_title{
+        margin-bottom: 5rem;
+    }
+    .home_popularity h4{
+        font-size: 5.2rem;
+    }
+    .home_popularity .popularity_title p{
+        font-size: 1.6rem;
+    }
+
+    .home_featured .featured_title{
+        margin-bottom: 5rem;
+        margin-left: 25rem;
+    }
+    .home_featured h4{
+        font-size: 5.2rem;
+    }
+    .home_featured .featured_title p{
+        font-size: 1.6rem;
+    }
+
+    .home_recommend .recommend_title{
+        margin-bottom: 5rem;
+    }
+    .home_recommend h4{
+        font-size: 5.2rem;
+    }
+    .home_recommend .recommend_title p{
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .home_slider h1{
+        font-size: 5.8rem;
+        margin-right: 2.4rem;
+    }
+    .home_slider .line{
+        width: 220px;
+        height: 6px;
+        background: #fff;
+        margin-right: 7rem;
+    } 
+    .home_slider .introduction img{
+        width: 30px;
+    }
+    .home_slider .introduction .addr{
+        font-size: 1.4rem;
+    }
+    .home_slider .introduction .article{
+        font-size: 1.2rem;
+        width: 440px;
+        margin: 45px 0 60px 0;
+    }
+    .home_slider .introduction .more{
+        font-size: 1.1rem;
+    }
+
+    .home_third .home_skiing{
+        width: 50%;
+        height: 60vh;
+        padding: 3.8rem 0 0 3.8rem;
+    }
+    .home_third .home_skiing p{
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+    }
+
+    .home_recommend .recommend_title{
+        margin-bottom: 5.5rem;
+        margin-right: 30rem;
+    }
+
+    /* 輪播-bootstrap.css */
+    .carousel-control-prev {
+        top: 92%; 
+    }
+      .carousel-control-next {
+        top: 92%;
+    }
+    .carousel-control-prev i{
+        font-size: 3.2rem;
+    }
+    .carousel-control-next i{
+        font-size: 3.2rem;
+    }
+}
+@media screen and (max-width: 1325px) {
+    .home_slider h1{
+        font-size: 5.5rem;
+        margin-right: 0;
+    }
+    /* .home_slider .line{
+        width: 220px;
+        height: 7px;
+        background: #fff;
+        margin-right: 5rem;
+    }  */
+    .home_slider .introduction img{
+        margin: 0 7px 15px 0;
+    }
+    .home_slider .introduction .article{
+        width: 440px;
+        margin: 45px 0 60px 0;
+    }
+    .home_popularity{
+        position: absolute;
+        top: 2.5rem;
+        left: 9%;
+    }
+    .home_third .home_skiing p{
+        font-size: 4.1rem;
+    }
+    .home_featured .featured_title{
+        margin-bottom: 2.8rem;
+        margin-left: 15rem;
+    }
+    .home_recommend .recommend_title{
+        margin-bottom: 5rem;
+        margin-right: 20rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+
 }
