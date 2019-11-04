@@ -92,3 +92,4 @@ export function activeUser(req, res) {
     responseError(res, 400, '啟用帳號失敗 - 連結已失效');
   }
 }
+

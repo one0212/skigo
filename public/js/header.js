@@ -115,15 +115,17 @@ document.querySelector('.navbar-btn').addEventListener('click', () => {
 });
 
 
-// 購物車點擊觸發登入
+
+// 購物車點擊觸發登入  登入的話跳轉到購物車頁面
 $('.navbar-shopping').click(() => {
   fetch('/api/user/isLogin')
     .then((response) => {
       // 如果沒有登入就跳出登入畫面
       if (response.status !== 200) {
         $('.user-bg-model').css('display', 'flex');
-      }
-      // todo: 如果登入的話跳轉到購物車頁面
+      } else {
+        window.location.href = 'http://localhost:3000/shopping_cart.html';
+
     });
 });
 
