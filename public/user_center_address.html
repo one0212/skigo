@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-    href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
-    rel="stylesheet">    <link rel="stylesheet" href="css/all.css" />
+        href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/user_center_address.css">
@@ -71,22 +72,25 @@
                     <form action="" method="POST">
                         <div class="user-form-item position-relative my-2 d-flex align-items-center">
                             <i class="far fa-envelope position-absolute"></i>
-                            <input id="signup-account" class="btn-block p-2 signup-input user-text-input" type="text"
+                            <input id="signup-account" class="btn-block p-2 signup-input user-text-input" type="email"
                                 autocomplete="off" placeholder="電子郵件地址" />
                         </div>
-                        <small class="text-left user-small-text">請輸入有效電子郵件</small>
+                        <small class="text-left user-small-text"></small>
                         <div class="user-form-item position-relative my-2">
                             <i class="fas fa-eye-slash position-absolute"></i>
-                            <input id="signup-password" class="btn-block p-2 signup-input user-text-input" type="text"
-                                autocomplete="off" placeholder="密碼" />
+                            <input id="signup-password" class="btn-block p-2 signup-input user-text-input"
+                                type="password" autocomplete="off" placeholder="密碼" />
                         </div>
-                        <small class="text-left user-small-text">請輸入密碼</small>
+                        <small class="text-left user-small-text"></small>
                         <small class="my-3 user-small-info">我們會透過電子郵件將行銷宣傳、優惠與政策更新資訊發送給您。</small>
                         <button class="user-orange-btn user-btn signup-btn btn btn-block d-inline-block my-2"
                             type="button">
                             註冊
                         </button>
-                        <small class="my-3 user-small-info text-center">———————————————— 或 ————————————————</small>
+                        <small class="my-3 user-small-info text-center">
+                            <div class="user-or-line d-inline-block"></div>或<div class="user-or-line d-inline-block">
+                            </div>
+                        </small>
                         <div class="d-flex justify-content-between align-items-center">
                             <div
                                 class="mx-2 user-third-input py-2 mt-2 d-flex justify-content-around align-items-center">
@@ -126,16 +130,16 @@
                     <form action="" method="POST">
                         <div class="user-form-item position-relative my-2 d-flex align-items-center">
                             <i class="far fa-envelope position-absolute"></i>
-                            <input id="login-account" class="btn-block p-2 login-input user-text-input" type="text"
+                            <input id="login-account" class="btn-block p-2 login-input user-text-input" type="email"
                                 autocomplete="off" placeholder="電子郵件地址" />
                         </div>
-                        <small class="text-left user-small-text">請輸入有效電子郵件</small>
+                        <small class="text-left user-small-text"></small>
                         <div class="user-form-item position-relative my-2">
                             <i class="fas fa-eye-slash position-absolute"></i>
-                            <input id="login-password" class="btn-block p-2 login-input user-text-input" type="text"
+                            <input id="login-password" class="btn-block p-2 login-input user-text-input" type="password"
                                 autocomplete="off" placeholder="密碼" />
                         </div>
-                        <small class="text-left user-small-text">請輸入密碼</small>
+                        <small class="text-left user-small-text"></small>
                         <div class="d-flex p-0 justify-content-between align-items-center mt-3 mb-1">
                             <div class="">
                                 <input type="checkbox" name="checkbox" />
@@ -147,8 +151,10 @@
                             type="button">
                             登入
                         </button>
-
-                        <small class="my-3 user-small-info text-center">———————————————— 或 ————————————————</small>
+                        <small class="my-3 user-small-info text-center">
+                            <div class="user-or-line d-inline-block"></div>或<div class="user-or-line d-inline-block">
+                            </div>
+                        </small>
                         <div class="d-flex justify-content-between align-items-center">
                             <div
                                 class="mx-2 user-third-input py-2 mt-2 d-flex justify-content-around align-items-center">
@@ -177,7 +183,7 @@
                         <input id="forget-pwd-input" class="btn-block p-2 user-text-input" type="text"
                             autocomplete="off" placeholder="請填寫註冊時使用的email" />
                     </div>
-                    <small class="text-left user-small-text">請填入email</small>
+                    <small class="text-left user-small-text"></small>
                     <button class="user-btn user-blue-btn resend-pwd my-4 btn btn-block d-inline-block my-2"
                         type="button">
                         重寄認證信給我
