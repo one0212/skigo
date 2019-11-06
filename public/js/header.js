@@ -25,18 +25,35 @@ const allTextInputs = [...document.querySelectorAll('.user-text-input')];
 const signup = document.querySelector('.signup-btn');
 const signupAccount = document.querySelector('#signup-account');
 const signupPassword = document.querySelector('#signup-password');
-// 驗證input是否為空字串
-function valueRequired(x) {
+// 驗證註冊 input是否為空字串
+// 電子郵件RegExp
+const emailRegex = new RegExp('^[\\w-\\.]+@[a-zA-Z]+\\.?.*[^\\.]$');
+function signUpValueRequired(x) {
   if (x.value === '') {
-    console.log(x);
-    x.setAttribute('style', 'border: 1px solid red');
-    x.parentNode.nextElementSibling.setAttribute('style', 'display: block');
+    if (signupAccount.value === '') {
+      signupAccount.setAttribute('style', 'border: 1px solid red');
+      signupAccount.parentNode.nextElementSibling.setAttribute('style', 'display: block');
+      signupAccount.parentNode.nextElementSibling.textContent = ' 電子郵件為必填 ';
+    }
+    if (signupPassword.value === '') {
+      signupPassword.setAttribute('style', 'border: 1px solid red');
+      signupPassword.parentNode.nextElementSibling.setAttribute('style', 'display: block');
+      signupPassword.parentNode.nextElementSibling.textContent = ' 請輸入密碼 ';
+    }
+    return false;
+  }
+  if (!emailRegex.test(signupAccount.value)) {
+    // x.setAttribute('style', 'border: 1px solid red');
+    signupAccount.setAttribute('style', 'border: 1px solid red');
+    signupAccount.parentNode.nextElementSibling.setAttribute('style', 'display: block');
+    signupAccount.parentNode.nextElementSibling.textContent = ' 請輸入有效的電子郵件 ';
     return false;
   }
   return true;
 }
+
 signup.addEventListener('click', () => {
-  const hasError = signupTextInput.map((x) => valueRequired(x)).includes(false);
+  const hasError = signupTextInput.map((x) => signUpValueRequired(x)).includes(false);
   if (hasError) {
     return;
   }
@@ -71,8 +88,33 @@ const login = document.querySelector('.login-btn');
 const loginAccount = document.querySelector('#login-account');
 const loginPassword = document.querySelector('#login-password');
 
+// 驗證登入 input是否為空字串
+function loginValueRequired(x) {
+  if (x.value === '') {
+    if (loginAccount.value === '') {
+      loginAccount.setAttribute('style', 'border: 1px solid red');
+      loginAccount.parentNode.nextElementSibling.setAttribute('style', 'display: block');
+      loginAccount.parentNode.nextElementSibling.textContent = ' 電子郵件為必填 ';
+    }
+    if (loginPassword.value === '') {
+      loginPassword.setAttribute('style', 'border: 1px solid red');
+      loginPassword.parentNode.nextElementSibling.setAttribute('style', 'display: block');
+      loginPassword.parentNode.nextElementSibling.textContent = ' 請輸入密碼 ';
+    }
+    return false;
+  }
+  if (!emailRegex.test(loginAccount.value)) {
+    // x.setAttribute('style', 'border: 1px solid red');
+    signupAccount.setAttribute('style', 'border: 1px solid red');
+    signupAccount.parentNode.nextElementSibling.setAttribute('style', 'display: block');
+    signupAccount.parentNode.nextElementSibling.textContent = ' 請輸入註冊所使用的電子郵件 ';
+    return false;
+  }
+  return true;
+}
+
 login.addEventListener('click', () => {
-  const hasError = loginTextInput.map((x) => valueRequired(x)).includes(false);
+  const hasError = loginTextInput.map((x) => loginValueRequired(x)).includes(false);
   if (hasError) {
     return;
   }
@@ -97,7 +139,7 @@ login.addEventListener('click', () => {
   });
 });
 function initBorder() {
-  this.setAttribute('style', 'border: 1px solid #ccc');
+  this.setAttribute('style', 'border: 1px solid #6A6A6A');
   this.parentNode.nextElementSibling.setAttribute('style', 'display:none');
 }
 
@@ -158,8 +200,18 @@ $('.forget-pwd').click((e) => {
 // 忘記密碼input驗證
 $('.resend-pwd').click(() => {
   // 將jquery對象轉換成dom對象
-  const x = $('#forget-pwd-input').get(0);
-  valueRequired(x);
+  const forget = $('#forget-pwd-input').get(0);
+  // loginValueRequired(forget);
+  if (forget.value === '') {
+    forget.setAttribute('style', 'border: 1px solid red');
+    forget.parentNode.nextElementSibling.setAttribute('style', 'display: block');
+    forget.parentNode.nextElementSibling.textContent = ' 電子郵件為必填 ';
+  }
+  if (!emailRegex.test(forget.value)) {
+    forget.setAttribute('style', 'border: 1px solid red');
+    forget.parentNode.nextElementSibling.setAttribute('style', 'display: block');
+    forget.parentNode.nextElementSibling.textContent = ' 請輸入註冊所使用的電子郵件 ';
+  }
 });
 
 
