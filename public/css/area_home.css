@@ -1,13 +1,11 @@
 *{
     font-family: 'Noto Sans TC', sans-serif;
 }
-.container_width{
-    max-width: 1440px;
-    /* box-sizing: border-box; */
-}
+
 section{
     margin: 40px 0;
 }
+
 .area_header .introduction2{
     display: none;
 }
@@ -22,12 +20,10 @@ section{
     margin-right: 0;
 }
 .area_slider .col-xl-9{
-    /* width: 70%; */
     padding-left: 0;
     padding-right: 0;
 }
 .area_slider .col-xl-3{
-    /* width: 30%; */
     padding-left: 0;
     padding-right: 0;
 }
@@ -171,7 +167,7 @@ section{
 .area_characteristic .box{
     border: solid 1px rgb(210, 210, 210);
     border-radius: 3px;
-    width: 250px;
+    width: 240px;
     display: flex;
     align-items: center;
     margin: 5px;
@@ -190,7 +186,6 @@ section{
 
 .area_ticket{
     margin-top: 50px;
-    display: none;
 }
 .area_ticket .ticket_title{
     display: flex;
@@ -209,6 +204,7 @@ section{
     width: 250px;
     box-shadow:0px 0px 9px gray;
     transition: .3s;
+    margin: 0 2.8rem;
 }
 .area_ticket .ticket_card a{
     text-decoration: none;
@@ -222,10 +218,9 @@ section{
     position: relative;
 }
 .area_ticket .ticket_img_pic{
-    position: absolute;
-    top: 33px;
-    left: 75px;
-    width: 100px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .area_ticket .ticket_card_word{
     padding: 15px;
@@ -250,6 +245,7 @@ section{
 }
 .area_ticket .carousel-inner{
     min-height: 370px;
+    width: 100%;
 }
 .area_ticket .icon-style {
     color: #707070;
@@ -258,7 +254,6 @@ section{
 
 .area_lesson{
     margin-top: 50px;
-    display: none;
 }
 .area_lesson .lesson_title{
     display: flex;
@@ -277,6 +272,7 @@ section{
     width: 250px;
     box-shadow:0px 0px 9px gray;
     transition: .3s;
+    margin: 0 2.8rem;
 }
 .area_lesson .lesson_card a{
     text-decoration: none;
@@ -315,6 +311,7 @@ section{
 }
 .area_lesson .carousel-inner{
     min-height: 370px;
+    width: 100%;
 }
 .area_lesson .icon-style {
     color: #707070;
@@ -332,10 +329,6 @@ section{
 .area_comment h4{
     margin-bottom: 0;
     font-size: 2rem;
-}
-.area_comment .comment_title a{
-    font-size: 0.56rem;
-    color: #5A5A5A;
 }
 .area_comment .message_content{
     margin-top: 30px;
@@ -388,11 +381,10 @@ section{
     height: 450px;
     margin: 20px 0;
 }
-
 /* bootstrap.css */
 .carousel-control-prev,
 .carousel-control-next {
-    width: 10%;
+    width: 6%;
 }
 .carousel-indicators li{
     width: 7px;
@@ -412,8 +404,14 @@ section{
     border: 2px solid;
     border-color: #797979;
     opacity: 1;
-  }
-
+}
+/* bootstrap-card輪播 */
+.carousel-control-prev {
+    left: -5%;
+}
+.carousel-control-next {
+    right: -5%;
+}
 
 @media screen and (max-width: 1835px) {
     .area_slider .weather{
@@ -458,6 +456,36 @@ section{
     }
     .area_slider .introduction .d-flex{
         width: 500px;
+    }
+
+    .area_ticket .ticket_card{
+        /* width: 250px; */
+        /* box-shadow:0px 0px 9px gray; */
+        /* transition: .3s; */
+        margin: 0 1.8rem;
+    }
+    .area_lesson .lesson_card{
+        /* width: 250px; */
+        /* box-shadow:0px 0px 9px gray; */
+        /* transition: .3s; */
+        margin: 0 1.8rem;
+    }
+}
+@media screen and (max-width: 1300px) {
+    /* bootstrap-card輪播 */
+    .area_ticket .carousel-inner{
+        min-height: 370px;
+        width: 900px;
+    }
+    .area_lesson .carousel-inner{
+        min-height: 370px;
+        width: 900px;
+    }
+    .carousel-control-prev {
+        left: 2%;
+    }
+    .carousel-control-next {
+        right: 2%;
     }
 }
 @media screen and (max-width: 1200px) {
@@ -517,15 +545,28 @@ section{
     .area_icon div{
         margin: 0 20px;
     }
-    
-    .area_ticket{
-        display: none;
-    }
 
-    .area_lesson{
-        display: none;
+    /* bootstrap-card輪播 */
+    .area_ticket .ticket_card{
+        margin: 0 1rem;
     }
-    
+    .area_lesson .lesson_card{
+        margin: 0 1rem;
+    }
+    .area_ticket .carousel-inner{
+        min-height: 370px;
+        width: 890px;
+    }
+    .area_lesson .carousel-inner{
+        min-height: 370px;
+        width: 890px;
+    }
+    .carousel-control-prev {
+        left: -20px;
+    }
+    .carousel-control-next {
+        right: -20px;
+    }
 }
 @media screen and (max-width: 990px) {
     .area_icon div{
@@ -537,6 +578,30 @@ section{
     }
     .area_info .ski_map{
         display: none;
+    }
+    .area_characteristic{
+        display: none;
+    }
+    /* bootstrap-card輪播 */
+    .area_ticket .ticket2,.ticket3{
+        display: none;
+    }
+    .area_lesson .lesson2,.lesson3{
+        display: none;
+    }
+    .area_ticket .carousel-inner{
+        min-height: 370px;
+        width: 450px;
+    }
+    .area_lesson .carousel-inner{
+        min-height: 370px;
+        width: 450px;
+    }
+    .carousel-control-prev {
+        left: 80px;
+    } 
+    .carousel-control-next {
+        right: 80px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -554,7 +619,6 @@ section{
         font-size: 1.6rem;
     }
     .area_header .introduction2 .article{
-        /* font-size: 1rem; */
         line-height: 2.2rem;
         margin-top: 24px;
     }
@@ -580,17 +644,6 @@ section{
         font-size: 1.5rem;
     }
 
-    .area_characteristic{
-        display: none;
-    }
-
-    .area_info .title_sign{
-        width: 10px;
-        height: 33px;
-        background: #FD702D;
-        border-radius: 10px;
-        margin-right: 15px;
-    }
     .area_info h4{
         color: #000;
         padding-bottom: 25px;
@@ -600,28 +653,49 @@ section{
         color: #000;
     }
 
-    .area_comment .title_sign{
-        width: 10px;
-        height: 33px;
-        background: #FD702D;
-        border-radius: 10px;
-        margin-right: 15px;
+    .area_ticket h4{
+        color: #000;
+        font-weight: 600;
+        font-size: 1.7rem;
     }
+
+    .area_lesson h4{
+        color: #000;
+        font-weight: 600;
+        font-size: 1.7rem;
+    }
+
     .area_comment h4{
         font-weight: 600;
         font-size: 1.7rem;
     }
 
-    .area_access .title_sign{
+    .area_access h4{
+        font-weight: 600;
+        font-size: 1.7rem;
+    }
+    /* 標題線 */
+    .title_sign{
         width: 10px;
         height: 33px;
         background: #FD702D;
         border-radius: 10px;
         margin-right: 15px;
     }
-    .area_access h4{
-        font-weight: 600;
-        font-size: 1.7rem;
+    /* bootstrap-card輪播 */
+    .area_ticket .carousel-inner{
+        min-height: 370px;
+        width: 370px;
+    }
+    .area_lesson .carousel-inner{
+        min-height: 370px;
+        width: 370px;
+    }
+    .carousel-control-prev {
+        left: 40px;
+    }
+    .carousel-control-next {
+        right: 40px;
     }
 }
 @media screen and (max-width: 576px) {
@@ -668,10 +742,6 @@ section{
         font-size: 1.2rem;
     }
     
-    .area_info .title_sign{
-        height: 28px;
-        margin-right: 11px;
-    }
     .area_info h4{
         font-size: 1.5rem;
     }
@@ -682,10 +752,14 @@ section{
         font-size: 1rem;
     }
 
-    .area_comment .title_sign{
-        height: 28px;
-        margin-right: 11px;
+    .area_ticket h4{
+        font-size: 1.5rem;
     }
+
+    .area_lesson h4{
+        font-size: 1.5rem;
+    }
+
     .area_comment h4{
         font-size: 1.5rem;
     }
@@ -719,11 +793,25 @@ section{
         margin: 0;
     }
 
-    .area_access .title_sign{
+    .area_access h4{
+        font-size: 1.5rem;
+    }
+    /* 標題線 */
+    .title_sign{
         height: 28px;
         margin-right: 11px;
     }
-    .area_access h4{
-        font-size: 1.5rem;
+    /* bootstrap-card輪播 */
+    .area_ticket .carousel-inner{
+        width: 300px;
+    }
+    .area_lesson .carousel-inner{
+        width: 300px;
+    }
+    .carousel-control-prev {
+        left: -5px;
+    }
+    .carousel-control-next {
+        right: -5px;
     }
 }

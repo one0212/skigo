@@ -1,84 +1,154 @@
 *{
-    font-family: 'Roboto', sans-serif;
-}
-.wrap{
-    max-width: 1920px;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
-.home-header{
-    height: 100vh;
-}
-
-.home-main{
+.home_slider{
     position: relative;
+    padding: 0;
+    z-index: 1;
 }
-.home-main .col-8{
+.home_slider .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.home_slider .col-xl-9{
+    padding-left: 0;
+    padding-right: 0;
+}
+.home_slider .col-xl-3{
+    padding-left: 0;
+    padding-right: 0;
+}
+.home_slider .carousel-item img{
     height: 100vh;
-    background-image: url(../images/areas/scenery-2.jpg);
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: cover;
-    background-attachment: fixed;
+    object-fit: cover;
+    object-position: right top;
 }
-.home-main .title{
+/* 橘色區域 */
+.home_slider .introduction{
     position: absolute;
-    top: 15vh;
     right: 0;
     bottom: 0;
+    width: 50%;
+    height: 86vh;
     background: #FD702D;
-    width: 40%;
-    padding: 100px 0 0 55px;
+    z-index: 2;
+}
+/* 標題+line+地區+描述+連結 */
+.home_slider .introduction{
     flex-direction: column;
+    padding-right: 3rem;
 }
-.home-main .title .d-flex{
-    margin-left: 60%;
+.home_slider h1{
+    color: #fff;
+    font-size: 6.7rem;
+    margin-right: 3.9rem;
 }
-.home-main .title .d-flex img{
+.home_slider .info{
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.home_slider .line{
+    width: 220px;
+    height: 7px;
+    background: #fff;
+    margin-right: 5rem;
+} 
+.home_slider .introduction img{
     width: 37px;
     margin: 0 7px 15px 0;
 }
-.home-main .title .d-flex p{
+.home_slider .introduction .addr{
     font-size: 1.8rem;
-    font-weight: 700;
-    color: #fff;
-}
-.home-main .title h1{
-    font-size: 6.7rem;
     font-weight: 600;
     color: #fff;
-    margin-bottom: 20px;
 }
-.home-main .title .line{
-    width: 265px;
-    height: 7px;
-    background: #fff;
-    margin-left: 46%;
-}
-.home-main .title .text{
+.home_slider .introduction .article{
     color: #fff;
     font-size: 1.5rem;
-    width: 550px;
-    margin: 75px 0 50px 1%;
+    width: 440px;
+    margin: 45px 0 60px 0;
 }
-.home-main .title a{
-    text-decoration: none;
+.home_slider .introduction .more{
     color: #fff;
-    border: #fff solid 1px;
-    padding: 4px 5px 4px 6px;
     font-weight: 600;
-    font-size: 1.7rem;
-    margin-left: 57%;
+    font-size: 1.3rem;
 }
 
+/* 輪播-bootstrap.css */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 6;
+  display: none;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 5%;
+  height: 5%;
+  color: #fff;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.15s ease;
+}
+.carousel-control-prev:hover, .carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.7;
+}
+.carousel-control-prev {
+    top: 91%;
+    left: 44%;
+  }
+  
+  .carousel-control-next {
+    top: 91%;
+    right: 44%;
+  }
+.carousel-control-prev i{
+    font-size: 4rem;
+}
+.carousel-control-next i{
+    font-size: 4rem;
+}
+/* Popularity-人氣雪場 */
+
+.home_second{
+    position: relative;
+}
+
+.home_second .col-xl-6{
+    padding-left: 0;
+    padding-right: 0;
+}
+.home_second .col-xl-6{
+    padding-left: 0;
+    padding-right: 0;
+}
+.home_second .col-xl-6 img{
+    height: 100vh;
+    object-fit: cover;
+    object-position: right top;
+}
 .home_popularity{
-    margin-top: 50px;
+    position: absolute;
+    top: 5.5rem;
+    left: 9%;
 }
 .home_popularity .popularity_title{
     display: flex;
+    margin-bottom: 5.5rem;
 }
 .home_popularity h4{
     color: #FF5200;
-    font-size: 6.7rem;
+    font-size: 5.5rem;
     font-weight: 900;
 }
 .home_popularity .popularity_title p{
@@ -90,15 +160,14 @@
     margin-left: 10px;
 }
 .home_popularity .popularity_title .line_s{
-    margin-left: 70px;
-}
-.home_popularity .popularity{
-    margin-top: 20px;
+    margin-left: 20px;
 }
 .home_popularity .popularity_card{
     width: 240px;
-    height: 400px;
+    height: 500px;
     transition: .3s;
+    margin: 0 2rem;
+    background: #fff;
 }
 .home_popularity .popularity_card a{
     text-decoration: none;
@@ -110,7 +179,7 @@
 }
 .home_popularity .popularity_img{
     width: 100%;
-    height: 280px;
+    height: 375px;
     overflow: hidden;
 }
 .home_popularity .home_img_pic {
@@ -133,11 +202,413 @@
     color: #FD702D;
     margin-top: 15px;
 }
-.home_popularity .carousel-inner{
-    min-height: 370px;
+
+/* 視差捲動-scrolling */
+
+.home_third{
+    position: relative;
+    z-index: 1;
 }
-.home_popularity .icon-style {
-    color: #707070;
-    font-size: 40px;
+.home_third .container-fluid{
+    height: 100vh;
+    padding: 6.8rem 12rem;
+}
+.home_third .col-12{
+    padding-left: 0;
+    padding-right: 0;
+    height: 75vh;
+    background-image: url(../images/home/scrolling.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.home_third .home_skiing{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 65vh;
+    background: #FD702D;
+    z-index: 2;
+    flex-direction: column;
+    padding: 4.5rem 0 0 4.5rem;
+}
+.home_third .home_skiing p{
+    color: #fff;
+    font-weight: 800;
+    font-size: 5.4rem;
+    line-height: 5rem;
 }
 
+/* Featured Course-精選課程 */
+
+.home_fourth{
+    position: relative;
+}
+
+.home_fourth .col-xl-6{
+    padding-left: 0;
+    padding-right: 0;
+}
+.home_fourth .col-xl-6{
+    padding-left: 0;
+    padding-right: 0;
+}
+.home_fourth .col-xl-6 img{
+    height: 100vh;
+    object-fit: cover;
+    object-position: right top;
+    opacity: 0.95;
+}
+.home_featured{
+    position: absolute;
+    top: 5rem;
+    left: 5%;
+}
+.home_featured .justify-content-start{
+    flex-direction: column;
+}
+.home_featured .featured_title{
+    display: flex;
+    margin-bottom: 5.5rem;
+    margin-left: 30rem;
+}
+.home_featured h4{
+    color: #FF5200;
+    font-size: 5.5rem;
+    font-weight: 900;
+}
+.home_featured .featured_title p{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #272F43;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 10px;
+}
+.home_featured .featured_title .line_s{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.home_featured .featured{
+    margin-top: 20px;
+}
+.home_featured .featured_card{
+    width: 300px;
+    height: 420px;
+    transition: .3s;
+    margin: 0 2rem;
+    background: #fff;
+}
+.home_featured .featured_card a{
+    text-decoration: none;
+    color: #000;
+}
+.home_featured .featured_card:hover{
+    box-shadow:0px 0px 9px gray;
+    text-decoration: none;
+}
+.home_featured .featured_img{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.home_featured .home_img_pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.home_featured .featured_card_word{
+    padding: 15px 0 0 15px;
+}
+.home_featured .featured_card_word .areas{
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+.home_featured .featured_card_word img{
+    width: 30px;
+    margin-bottom: 5px;
+}
+.home_featured .featured_card_word .d-flex p{
+    color: #FD702D;
+    margin-top: 15px;
+}
+.home_featured .explore{
+    width: 664px;
+    height: 60px;
+    color: #fff;
+    background: #FD702D;
+    text-align: center;
+    font-size: 1.2rem;
+    border: solid 1px#FD702D;
+    text-decoration: none;
+    display: flex;
+    margin: 20px 0 0 32px;
+}
+.home_featured .explore p{
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+/* recommend-推薦飯店 */
+
+.home_fifth{
+    position: relative;
+}
+
+.home_fifth .col-xl-6{
+    padding-left: 0;
+    padding-right: 0;
+}
+.home_fifth .col-xl-6{
+    padding-left: 0;
+    padding-right: 0;
+}
+.home_fifth .col-xl-6 img{
+    height: 100vh;
+    object-fit: cover;
+    object-position: right top;
+}
+.home_recommend{
+    position: absolute;
+    top: 5.5rem;
+    right: 5%;
+    flex-direction: column;
+}
+.home_recommend .justify-content-start{
+    flex-direction: column;
+}
+.home_recommend .recommend_title{
+    display: flex;
+    margin-bottom: 5.5rem;
+    margin-right: 40rem;
+}
+.home_recommend h4{
+    color: #FF5200;
+    font-size: 5.5rem;
+    font-weight: 900;
+}
+.home_recommend .recommend_title p{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #272F43;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 10px;
+}
+.home_recommend .recommend_title .line_s{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.home_recommend .recommend{
+    margin-top: 20px;
+}
+.home_recommend .recommend_card{
+    width: 300px;
+    height: 420px;
+    transition: .3s;
+    margin: 0 2rem;
+    background: #fff;
+}
+.home_recommend .recommend_card a{
+    text-decoration: none;
+    color: #000;
+}
+.home_recommend .recommend_card:hover{
+    box-shadow:0px 0px 9px gray;
+    text-decoration: none;
+}
+.home_recommend .recommend_img{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.home_recommend .home_img_pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.home_recommend .recommend_card_word{
+    padding: 15px 0 0 15px;
+}
+.home_recommend .recommend_card_word .areas{
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+.home_recommend .recommend_card_word img{
+    width: 30px;
+    margin-bottom: 5px;
+}
+.home_recommend .recommend_card_word .d-flex p{
+    color: #FD702D;
+    margin-top: 15px;
+}
+.home_recommend .explore{
+    width: 664px;
+    height: 60px;
+    color: #fff;
+    background: #FD702D;
+    text-align: center;
+    font-size: 1.2rem;
+    border: solid 1px#FD702D;
+    text-decoration: none;
+    display: flex;
+    margin: 20px 0 0 32px;
+}
+.home_recommend .explore p{
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1600px) {
+    .home_slider h1{
+        font-size: 6.2rem;
+        margin-right: 3.5rem;
+    }
+    .home_slider .line{
+        width: 220px;
+        height: 6px;
+        background: #fff;
+        margin-right: 6rem;
+    } 
+    .home_slider .introduction img{
+        width: 34px;
+    }
+    .home_slider .introduction .addr{
+        font-size: 1.6rem;
+    }
+    .home_slider .introduction .article{
+        font-size: 1.3rem;
+        width: 440px;
+        margin: 45px 0 60px 0;
+    }
+    .home_slider .introduction .more{
+        font-size: 1.2rem;
+    }
+
+    .home_popularity .popularity_title{
+        margin-bottom: 5rem;
+    }
+    .home_popularity h4{
+        font-size: 5.2rem;
+    }
+    .home_popularity .popularity_title p{
+        font-size: 1.6rem;
+    }
+
+    .home_featured .featured_title{
+        margin-bottom: 5rem;
+        margin-left: 25rem;
+    }
+    .home_featured h4{
+        font-size: 5.2rem;
+    }
+    .home_featured .featured_title p{
+        font-size: 1.6rem;
+    }
+
+    .home_recommend .recommend_title{
+        margin-bottom: 5rem;
+    }
+    .home_recommend h4{
+        font-size: 5.2rem;
+    }
+    .home_recommend .recommend_title p{
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .home_slider h1{
+        font-size: 5.8rem;
+        margin-right: 2.4rem;
+    }
+    .home_slider .line{
+        width: 220px;
+        height: 6px;
+        background: #fff;
+        margin-right: 7rem;
+    } 
+    .home_slider .introduction img{
+        width: 30px;
+    }
+    .home_slider .introduction .addr{
+        font-size: 1.4rem;
+    }
+    .home_slider .introduction .article{
+        font-size: 1.2rem;
+        width: 440px;
+        margin: 45px 0 60px 0;
+    }
+    .home_slider .introduction .more{
+        font-size: 1.1rem;
+    }
+
+    .home_third .home_skiing{
+        width: 50%;
+        height: 60vh;
+        padding: 3.8rem 0 0 3.8rem;
+    }
+    .home_third .home_skiing p{
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+    }
+
+    .home_recommend .recommend_title{
+        margin-bottom: 5.5rem;
+        margin-right: 30rem;
+    }
+
+    /* 輪播-bootstrap.css */
+    .carousel-control-prev {
+        top: 92%; 
+    }
+      .carousel-control-next {
+        top: 92%;
+    }
+    .carousel-control-prev i{
+        font-size: 3.2rem;
+    }
+    .carousel-control-next i{
+        font-size: 3.2rem;
+    }
+}
+@media screen and (max-width: 1325px) {
+    .home_slider h1{
+        font-size: 5.5rem;
+        margin-right: 0;
+    }
+    /* .home_slider .line{
+        width: 220px;
+        height: 7px;
+        background: #fff;
+        margin-right: 5rem;
+    }  */
+    .home_slider .introduction img{
+        margin: 0 7px 15px 0;
+    }
+    .home_slider .introduction .article{
+        width: 440px;
+        margin: 45px 0 60px 0;
+    }
+    .home_popularity{
+        position: absolute;
+        top: 2.5rem;
+        left: 9%;
+    }
+    .home_third .home_skiing p{
+        font-size: 4.1rem;
+    }
+    .home_featured .featured_title{
+        margin-bottom: 2.8rem;
+        margin-left: 15rem;
+    }
+    .home_recommend .recommend_title{
+        margin-bottom: 5rem;
+        margin-right: 20rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+
+}
