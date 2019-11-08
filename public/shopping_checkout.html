@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/user_center_account.css">
+    <link rel="stylesheet" href="css/shopping_checkout.css">
+    <script src="lib/bootstrap/lib/jquery-3.4.1.js"></script>
+    <title>會員結帳頁</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light my-4">
+                <a class="navbar-brand" href=""><img class="logo mr-3" src="images/small-logo.svg" alt="logo" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <h5 class="shopping-cart-h4 m-0 px-4">購物車</h5>
+                    <span class="shop-step shop-lightblue-bg text-light text-center">1</span>
+                    <span class="shop-step-text user-darkblue-text">選擇要結帳的XXX</span>
+                    <span class="shop-step-line shop-lightblue-bg"></span>
+                    <span class="shop-step shop-lightblue-bg text-light text-center">2</span>
+                    <span class="shop-step-text user-darkblue-text">填寫地址與付款</span>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-9">
+                    <span class="mx-4 my-2 d-inline-block"><a href="http://localhost:3000/shopping_cart.html"
+                            class="shop-lightblue-text text-decoration-none"><i
+                                class="fas fa-angle-left mr-3"></i>返回購物車</a></span>
+                    <div class="shop-box mb-3">
+                        <div class="shop-vendor-name">
+                            品牌廠商名稱
+                        </div>
+                        <div class="col-12 d-flex">
+                            <div class="shop-item col-7 m-0 p-0 pr-4">
+                                <div class="d-flex mt-2 justify-content-between">
+                                    <div class="d-flex">
+                                        <div class="shop-product-photo">
+                                            <a href="" class=""><img class=""
+                                                    src="images/Product/10707106000150_1.png" alt="商品照片"></a>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="d-flex flex-column justify-content-between ml-2">
+                                                <div class="d-flex flex-column">
+                                                    <a href="" class="text-decoration-none text-dark">這裡放商品名稱</a>
+                                                    <span>品項內容</span>
+                                                </div>
+                                                <div>X 1</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="align-self-end flex-grow text-right">NT $價格</div>
+                                </div>
+                                <div class="shop-subtotal text-right pt-3">商品小計<span class="ml-2 user-darkblue-text">NT$
+                                        多少錢</span></div>
+                            </div>
+                            <div class="col-5 ml-2 align-self-center">
+                                <h5>收件資訊</h5>
+                                <button class="btn btn-block user-orange-btn user-btn mt-3 mb-2" data-toggle="modal"
+                                    data-target="#exampleModalScrollable">請填寫收件人與購買人資料</button>
+                                <p>運送方式：宅配</p>
+                                <small class="shop-gray-text">預計到貨時間12月8日 - 12月13日</small>
+                                <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalScrollableTitle">請填寫收件人與購買人資料
+                                                </h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="" method="POST">
+                                                    <div class="checkout-receiver">
+                                                        <div>
+                                                            <span>收件人姓名</span>
+                                                            <input class="btn-block my-1 p-2 user-text-input"
+                                                                type="text" autocomplete="off" placeholder="真實姓名" />
+                                                        </div>
+                                                        <small class="text-left user-small-text">本欄位為必填</small>
+                                                        <div class="">
+                                                            <span>收件人手機</span>
+                                                            <input class="btn-block my-1 p-2 user-text-input"
+                                                                type="text" autocomplete="off" />
+                                                        </div>
+                                                        <small class="text-left user-small-text">本欄位為必填</small>
+                                                        <div class="my-2">
+                                                            <span>地址</span>
+                                                            <input class="btn-block p-2 my-1 user-text-input"
+                                                                type="text" autocomplete="off"
+                                                                placeholder="例：台北市大安區復興南路一段390號2樓204室" />
+                                                        </div>
+                                                        <small class="text-left user-small-text">本欄位為必填</small>
+                                                        <div
+                                                            class="d-flex p-0 justify-content-between align-items-center mt-3 mb-1">
+                                                            <div class="">
+                                                                <input type="checkbox" name="checkbox" />
+                                                                <label class="user-darkblue-text"
+                                                                    for="checkbox">購買人資料同上</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="checkout-buyer">
+                                                        <div class="my-2">
+                                                            <span>購買人姓名</span>
+                                                            <input class="btn-block p-2 my-1 user-text-input"
+                                                                type="text" autocomplete="off" placeholder="真實姓名" />
+                                                        </div>
+                                                        <small class="text-left user-small-text">本欄位為必填</small>
+                                                        <div class="my-2">
+                                                            <span>收件人手機</span>
+                                                            <input class="btn-block p-2 my-1 user-text-input"
+                                                                type="text" autocomplete="off" />
+                                                        </div>
+                                                        <small class="text-left user-small-text">本欄位為必填</small>
+                                                        <div class="my-2">
+                                                            <span>地址</span>
+                                                            <input class="btn-block p-2 my-1 user-text-input"
+                                                                type="text" autocomplete="off"
+                                                                placeholder="例：台北市大安區復興南路一段390號2樓204室" />
+                                                        </div>
+                                                        <small class="text-left user-small-text">本欄位為必填</small>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn cancel shop-gray-text"
+                                                    data-dismiss="modal">取消</button>
+                                                <button type="button" class="btn user-orange-btn user-btn">使用地址</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-box mb-3">
+                        <div class="shop-vendor-name">
+                            雪場廠商名稱
+                        </div>
+                        <div class="col-12 d-flex">
+                            <div class="shop-item col-7 m-0 p-0 pr-4">
+                                <div class="d-flex mt-2 justify-content-between">
+                                    <div class="d-flex">
+                                        <div class="shop-product-photo"><a href="" class=" "><img class=""
+                                                    src="images/hotel/hotel_3.jpg" alt="商品照片"></a></div>
+                                        <div class="d-flex">
+                                            <div class="d-flex flex-column justify-content-between ml-2">
+                                                <div class="d-flex flex-column">
+                                                    <a href="" class="text-decoration-none text-dark">這裡放商品名稱</a>
+                                                    <span>品項內容</span>
+                                                </div>
+                                                <div>X 1</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="align-self-end flex-grow text-right">NT $價格</div>
+                                </div>
+                                <div class="shop-subtotal text-right pt-3">商品小計<span class="ml-2 user-darkblue-text">NT$
+                                        多少錢</span></div>
+                            </div>
+                            <div class="col-5 ml-2 align-self-center">
+                                <h5>收件資訊</h5>
+
+                                <p>付款後請至email確認商品</p>
+                                <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalScrollableTitle">請填寫收件人與購買人資料
+                                                </h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="" method="POST">
+                                                    <div class="checkout-receiver">
+                                                        <div>
+                                                            <span>收件人姓名</span>
+                                                            <input class="btn-block my-1 p-2 user-text-input"
+                                                                type="text" autocomplete="off" placeholder="真實姓名" />
+                                                        </div>
+                                                        <small class="text-left user-small-text">本欄位為必填</small>
+                                                        <div class="">
+                                                            <span>收件人手機</span>
+                                                            <input class="btn-block my-1 p-2 user-text-input"
+                                                                type="text" autocomplete="off" />
+                                                        </div>
+                                                        <small class="text-left user-small-text">本欄位為必填</small>
+                                                        <div class="my-2">
+                                                            <span>地址</span>
+                                                            <input class="btn-block p-2 my-1 user-text-input"
+                                                                type="text" autocomplete="off"
+                                                                placeholder="例：台北市大安區復興南路一段390號2樓204室" />
+                                                        </div>
+                                                        <small class="text-left user-small-text">本欄位為必填</small>
+                                                        <div
+                                                            class="d-flex p-0 justify-content-between align-items-center mt-3 mb-1">
+                                                            <div class="">
+                                                                <input type="checkbox" name="checkbox" />
+                                                                <label class="user-darkblue-text"
+                                                                    for="checkbox">購買人資料同上</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="checkout-buyer">
+                                                        <div class="my-2">
+                                                            <span>購買人姓名</span>
+                                                            <input class="btn-block p-2 my-1 user-text-input"
+                                                                type="text" autocomplete="off" placeholder="真實姓名" />
+                                                        </div>
+                                                        <small class="text-left user-small-text">本欄位為必填</small>
+                                                        <div class="my-2">
+                                                            <span>收件人手機</span>
+                                                            <input class="btn-block p-2 my-1 user-text-input"
+                                                                type="text" autocomplete="off" />
+                                                        </div>
+                                                        <small class="text-left user-small-text">本欄位為必填</small>
+                                                        <div class="my-2">
+                                                            <span>地址</span>
+                                                            <input class="btn-block p-2 my-1 user-text-input"
+                                                                type="text" autocomplete="off"
+                                                                placeholder="例：台北市大安區復興南路一段390號2樓204室" />
+                                                        </div>
+                                                        <small class="text-left user-small-text">本欄位為必填</small>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn cancel shop-gray-text"
+                                                    data-dismiss="modal">取消</button>
+                                                <button type="button" class="btn user-orange-btn user-btn">使用地址</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-end">
+                        <button class="btn user-orange-btn user-btn text-right">填寫信用卡資料</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="shop-bg-model justify-content-center align-items-center d-none">
+                <div class="shop-model-content">
+                    <div class="shop-address-title py-2 my-2">
+                        <span class="shop-gray-text ">請填寫收件人與購買人資料</span>
+                        <div class="shop-close-model">+</div>
+                    </div>
+                    <form action="" method="POST">
+                        <div class="checkout-receiver">
+                            <div class="my-2">
+                                <span>收件人姓名</span>
+                                <input class="btn-block p-2 user-text-input" type="text" autocomplete="off"
+                                    placeholder="真實姓名" />
+                            </div>
+                            <small class="text-left user-small-text">本欄位為必填</small>
+                            <div class="my-2">
+                                <span>收件人手機</span>
+                                <input class="btn-block p-2 user-text-input" type="text" autocomplete="off" />
+                            </div>
+                            <small class="text-left user-small-text">本欄位為必填</small>
+                            <div class="my-2">
+                                <span>地址</span>
+                                <input class="btn-block p-2 user-text-input" type="text" autocomplete="off"
+                                    placeholder="例：台北市大安區復興南路一段390號2樓204室" />
+                            </div>
+                            <small class="text-left user-small-text">本欄位為必填</small>
+                            <div class="d-flex p-0 justify-content-between align-items-center mt-3 mb-1">
+                                <div class="">
+                                    <input type="checkbox" name="checkbox" />
+                                    <label class="user-darkblue-text" for="checkbox">購買人資料同上</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout-buyer">
+                            <div class="my-2">
+                                <span>購買人姓名</span>
+                                <input class="btn-block p-2 user-text-input" type="text" autocomplete="off"
+                                    placeholder="真實姓名" />
+                            </div>
+                            <small class="text-left user-small-text">本欄位為必填</small>
+                            <div class="my-2">
+                                <span>收件人手機</span>
+                                <input class="btn-block p-2 user-text-input" type="text" autocomplete="off" />
+                            </div>
+                            <small class="text-left user-small-text">本欄位為必填</small>
+                            <div class="my-2">
+                                <span>地址</span>
+                                <input class="btn-block p-2 user-text-input" type="text" autocomplete="off"
+                                    placeholder="例：台北市大安區復興南路一段390號2樓204室" />
+                            </div>
+                            <small class="text-left user-small-text">本欄位為必填</small>
+                        </div>
+                    </form>
+                    <div class="checkout-footer position-sticky text-right">
+                        <button class="btn cancel shop-gray-text">取消</button>
+                        <button class="btn user-orange-btn user-btn">使用地址</button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- <script src="js/header.js"></script> -->
+    <script src="js/user_center_order.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>
