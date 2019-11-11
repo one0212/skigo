@@ -30,20 +30,19 @@ ul {
 }
 
 .logo{
-    display: block;
     width: 100px;
+    margin: 20px;
 }
 .logo img {
     height: 30px;
 }
 
-.footer-bottom p{
-    font-size: 14px;
-    padding-left:60px;
 
-}
+
 .right a{
+    display: inline;
     font-size: 24px;
     color: #ffffff;
-    padding-left:1.5rem;
+    padding-right:1.5rem;
+    align-items: center; 
 }
