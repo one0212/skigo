@@ -3,6 +3,10 @@ const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
 const figlet = require('figlet');
+const jsonServer = require('json-server');
+const fs = require('fs');
+
+const jRouter = jsonServer.router('db.json');
 const log = require('./config/winston');
 const userApi = require('./users/router');
 
@@ -33,7 +37,15 @@ const banner = figlet.textSync('SKIGO !!!', {
   verticalLayout: 'full',
 });
 
+// ============== reloadDB =================
+const reloadDB = (req, res, next) => {
+  const db = JSON.parse(fs.readFileSync('db.json', 'utf8'));
+  jRouter.db.setState(db);
+  next();
+};
+
 // ============== Routes ====================
 app.use('/api/user', userApi);
+app.use('/japi', reloadDB, jRouter);
 
 app.listen(port, () => log.info(`Server started, listening on port ${port} \n ${banner}`));
