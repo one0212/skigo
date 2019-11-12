@@ -80,7 +80,9 @@
 .card_star{
     color: orange;
 }
-
+.hotel_card_heart{
+    cursor: pointer;
+}
 .hotel_card_heart i{
     color: red;
 }
@@ -91,7 +93,7 @@
     left: 6%;
     color: #aaa;
 }
-.hotel_card_btn{
+.card .hotel_card_btn{
     position: absolute;
     bottom: 2%;
     right: 4%;
