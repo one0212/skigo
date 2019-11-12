@@ -1,80 +1,83 @@
-
-
-/* --------------麵包屑 */
-.breadcrumb-list {
-    display: flex;
-    /* list-style: none; */
-    padding: 10px 0;
-    margin: auto 0;
-    margin-bottom: 14px;
+body{
+    background-color: #f5f5f5;
 }
 
-.breadcrumb-list li {
-    padding: 0 10px;
+ul,li{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+.product-note{
+    margin-top: 20px;
 }
 
-.breadcrumb-list li+li {
-    padding-left: 0;
+
+
+.btn-red-orange{
+    color: #fff;
+    background-color: #FD702D;
+}
+.btn-red-orange:hover{
+    color: #fff;
+    background-color:#f54f00;
+}
+.btn-border{
+    border: 1px solid #ccc;
 }
 
-.breadcrumb-list li+li::before {
-    content: '/';
+.red-orange{
+    color:#FACC2E;
+}
+
+.product-price, .product-title{
+    margin-bottom:20px;
+    /* border-bottom: 1px solid #4e4e4e; */
+}
+.product-main-info{
+    margin: 20px auto;
+}
+
+.product-price span{
+    letter-spacing:0.05em;
     color: #272F43;
+}
+.price_c{
+    font-size: 1.5rem;
+}
+
+.price_n{
+    font-size: 2rem;
+    font-weight:600;
+
+}
+
+
+.product-title h2{
+    font-size: 1rem;
+    color:#4e4e4e;
+}
+.product-title h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4e4e4e;
+
+}
+
+/*   radio    */
+input[type=radio] {
+      display: none;
+    }
+.size-btn{
     margin-right: 10px;
 }
 
-.breadcrumb-list a {
-    color: #272F43;
-}
 
-.breadcrumb-list a:hover {
-    color: #FD702D;
-    text-decoration: none;
+.fas{
+    padding-right: 10px;
 }
 
 
-/* ------------- 圖片 */
+.fa-heart{
+    color:rgb(231, 76, 60, 0.5);
 
-.photos-content{
-    margin: 0 auto;
-}
-
-.product-img img{
-     /* width: 650px; */
-    height: 650px; 
-}
-
-
-/* ------------ 訊息*/
-
-.product-message{
-    margin: 1.5rem   0.5rem
-
-}
-
-
-.product-name{
-font-weight: 700;
-}
-
-.product-price{
-    font-size: 2rem;
-    font-weight: 500;
-    color: #FD702D;
-}
-
-.star-ratings{
-    padding: 10px 0;
-}
-.star-ratings a{
-    text-decoration:none
-}
-
-
-.size-btn{
-    margin-right: 15px;
-}
-
-.product-container{
-    padding: 3rem 2.75rem;
 }
