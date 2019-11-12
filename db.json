@@ -1,4 +1,9 @@
 {
   "users": [],
-  "orders": []
+  "orders": [],
+  "hotels": [],
+  "areas": [],
+  "attractions": [],
+  "coach": [],
+  "products": []
 }
