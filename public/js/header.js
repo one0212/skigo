@@ -157,7 +157,6 @@ document.querySelector('.navbar-btn').addEventListener('click', () => {
 });
 
 
-
 // 購物車點擊觸發登入  登入的話跳轉到購物車頁面
 $('.navbar-shopping').click(() => {
   fetch('/api/user/isLogin')
@@ -222,7 +221,6 @@ $('.user-back-login').click((e) => {
   $('.forget-content').toggle();
   $('.login-content').toggle();
 });
-
 
 // 頭像點擊下拉選單
 $('.navbar-user').click(() => {

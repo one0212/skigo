@@ -1,0 +1,133 @@
+.container_width{
+    max-width: 1440px;
+    box-sizing: border-box;
+}
+.slide_area{
+    height: 700px;
+    overflow: hidden;
+    width: 100%;
+}
+/* .carousel_img{
+    height: 500px;
+    overflow: hidden;
+    width: 100%;
+    display:  flex;
+    align-items: center;
+    justify-content:  center;
+} */
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.hotel_title_name{
+    margin-top: 10%;
+}
+.title_star{
+    color: orange;
+    font-size: 1.2rem;
+}
+.title_star li{
+    padding-right: 2%;
+}
+.title_star li:last-child{
+    padding-left: 20px;
+    color: #aaa;
+    font-size: 1rem;
+}
+.hotel_icon_area{
+    margin-top: 10%;
+}
+.hotel_icon_area::after{
+    content: " ";
+    display: block;
+    width: 100%;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+    margin-top: 10%;
+}
+.hotel_icon{
+    width: 200px;
+    height: 200px;
+    background: rgba(174, 202, 217, 0.3);
+    border-radius: 10%;
+}
+.hotel_icon p{
+    margin: 0;
+}
+.hotel_icon li i{
+    display: inline-block;
+    margin: 10%;
+    font-size: 2.5rem;
+    color: #8DAEC1;
+}
+.facility_area ul{
+    width: 480px;
+}
+.facility_area ul li{
+    float:left;
+    width: 33%;
+    height: 100%;
+}
+.facility_icon{
+    color: #ccc;
+}
+.facility_items{
+    content:" ";
+    display: block;
+    height: 100%;
+    border-left:1px solid #ccc;
+    margin-left: 2%;
+}
+.hotel_introduction_page_card .card{
+    width: 24%;
+    height: 500px;
+    margin:  2% 0.5% 0;
+    border: none;
+}
+.card{
+    position: relative;
+}
+.card:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card_text{
+    line-height: initial;
+    letter-spacing: 0.5px;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: #aaa;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.card_star{
+    color: orange;
+}
+.card_star li:last-child{
+    color: #ccc;
+    padding-left: 20px;
+}
+.hotel_card_heart{
+    cursor: pointer;
+}
+.hotel_card_heart i{
+    color: red;
+}
+.hotel_card_money{
+    position: absolute;
+    padding: 0;
+    bottom: 2%;
+    left: 6%;
+    color: #aaa;
+}
+.card .hotel_card_btn{
+    position: absolute;
+    bottom: 2%;
+    right: 4%;
+    padding: 0.3% 5%;
+    background: #ccc;
+    color: #fff;
+    border: none;
+}
