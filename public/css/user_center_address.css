@@ -28,3 +28,12 @@
 .user-address-data p {
     margin: 0.5rem 0;
 }
+.user-center-input {
+    outline: none;
+    box-shadow: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 22rem;
+    height: 2rem;
+    padding: 0.5rem;
+}

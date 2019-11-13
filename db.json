@@ -1,5 +1,27 @@
 {
-  "users": [],
+  "users": [
+    {
+      "id": "o0nddp4Q",
+      "email": "cuhaoyan@gmail.com",
+      "password": "dffdgd",
+      "activeCode": "wwAgTzrii.1573213577564",
+      "isActive": true
+    },
+    {
+      "id": "i0hWT4zv",
+      "email": "winniexx.0918@gmail.com",
+      "password": "sfgdz",
+      "activeCode": "xcOVrRVG5.1573243330655",
+      "isActive": false
+    },
+    {
+      "id": "z-rvizjJ",
+      "email": "ccc",
+      "password": "cc",
+      "activeCode": "zvJ3jtTHr.1573641638267",
+      "isActive": false
+    }
+  ],
   "orders": [],
   "hotels": [],
   "areas": [],

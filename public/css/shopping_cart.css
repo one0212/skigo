@@ -22,28 +22,30 @@
     width: 8rem;
     height: 2px;
 }
+/* 商品呈現 */
 .shop-box {
     padding: 1rem;
     border: 1px solid #eeeeee;
     border-radius: 3px;
-    margin: 0 0.75rem
+    margin: 0 0.75rem;
+    box-sizing: border-box;
 }
-/* .shop-item {
-    margin: 1rem 0;
-} */
-/* .shop-data {
-    margin: 1.5rem 0;
-} */
-.shop-vendor-name {
+.shop-vendor-title {
     font-size: 1.1rem;
     font-weight: 500;
     border-bottom: 1px solid #eeeeee;
     margin: 0 0 1rem;
     padding-bottom: 1rem;
+    box-sizing: border-box;
 }
 .shop-product-photo {
     width: 8rem;
     height: 8rem;
+}
+.shop-product-photo a img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
 }
 .shop-select select {
     z-index: 2;

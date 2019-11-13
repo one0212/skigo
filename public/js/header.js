@@ -200,18 +200,19 @@ $('.forget-pwd').click((e) => {
 // 忘記密碼input驗證
 $('.resend-pwd').click(() => {
   // 將jquery對象轉換成dom對象
-  const forget = $('#forget-pwd-input').get(0);
-  // loginValueRequired(forget);
+  const forget = document.querySelector('#forget-pwd-input');
   if (forget.value === '') {
     forget.setAttribute('style', 'border: 1px solid red');
     forget.parentNode.nextElementSibling.setAttribute('style', 'display: block');
     forget.parentNode.nextElementSibling.textContent = ' 電子郵件為必填 ';
+    return false;
   }
   if (!emailRegex.test(forget.value)) {
     forget.setAttribute('style', 'border: 1px solid red');
     forget.parentNode.nextElementSibling.setAttribute('style', 'display: block');
     forget.parentNode.nextElementSibling.textContent = ' 請輸入註冊所使用的電子郵件 ';
   }
+  return true;
 });
 
 
