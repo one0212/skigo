@@ -19,17 +19,53 @@
     height: 10px;
     border-radius: 100%;
 }
+.hotel_active{
+    display: none;
+}
 .title_area{
     position:absolute;
     left: 5%;
     right: 5%;
     top: 0;
 }
-.title{
+.hotel_title{
     font-family: 'Cormorant Garamond', serif;
     line-height: 4rem;
     text-shadow: 1px 1px 3px #00000058;
     padding: 25% 0 15% 0;
+}
+.search_area{
+    padding: 25% 0 15% 0;
+}
+.search_btn{
+    position: absolute;
+    top: 30%;
+    right: 6%;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+.hotel_keywords_search{
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    font-size: 36px;
+    color: #fff;
+    margin: 0;
+    white-space: nowrap;
+    width: 0;
+    height: 128px;
+    padding: 20px 20px 0;
+    cursor: pointer;
+}
+.hotel_keywords_search::placeholder{
+    color: rgba(255, 255, 255, 0.817);
+}
+.hotel_keywords_search:focus-within{
+    transition: width .5s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+    outline: none;
+    width: 700px;
+    border-bottom: 1px solid #fff;
+    cursor: text;
 }
 .year{
     position: absolute;
