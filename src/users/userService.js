@@ -1,6 +1,16 @@
 const nodemailer = require('nodemailer');
+const fs = require('fs');
 const log = require('../config/winston');
 const usersDAL = require('./usersDAL');
+
+const mailContent = fs.readFileSync(`${__dirname}/active_user_mail.html`,
+  'utf-8',
+  (err, buffer) => {
+    if (err) {
+      throw err;
+    }
+    process(buffer);
+  });
 
 const mailSender = nodemailer.createTransport({
   host: 'smtp.gmail.com',
@@ -43,11 +53,8 @@ export function createUser(req, res) {
   mailSender.sendMail({
     from: 'no-reply@skigo.com',
     to: email,
-    subject: '驗證您的 Skigo 帳號',
-    html: `<h1>驗證您的 Skigo 帳號</h1>
-          <button>
-            <a href='http://localhost:3000/active_user.html?email=${email}&code=${user.activeCode}'>點此按鈕啟用帳號</a>
-          </button>`,
+    subject: '驗證您的 SKIGO 帳號',
+    html: mailContent.replace(`${email}`, email).replace(`${user.activeCode}`, user.activeCode),
   }, (err, info) => {
     if (err) {
       log.error(`註冊信發送失敗. err=${JSON.stringify(err)}`);

@@ -111,7 +111,7 @@ body {
     outline: none;
     box-shadow: none;
     border-radius: 5px;
-    border: 1px solid #6A6A6A
+    border: 1px solid rgb(208, 208, 208)
 }
 .close-model {
     position: absolute;

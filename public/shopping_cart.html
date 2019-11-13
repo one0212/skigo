@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/user_center_account.css">
     <link rel="stylesheet" href="css/shopping_cart.css">
     <script src="lib/bootstrap/lib/jquery-3.4.1.js"></script>
     <title>會員購物車</title>
 </head>
+
 <body>
     <div class="wrapper">
         <div class="container">
@@ -27,9 +27,9 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <h5 class="shopping-cart-h4 m-0 px-4">購物車</h5>
+                    <h5 class="m-0 px-4">購物車</h5>
                     <span class="shop-step shop-lightblue-bg text-light text-center">1</span>
-                    <span class="shop-step-text">選擇要結帳的XXX</span>
+                    <span class="shop-step-text user-darkblue-text">選擇要結帳的XXX</span>
                     <span class="shop-step-line shop-gray-bg"></span>
                     <span class="shop-step shop-gray-bg text-light text-center">2</span>
                     <span class="shop-step-text shop-gray-text">填寫地址與付款</span>
@@ -40,35 +40,61 @@
     <div class="wrapper">
         <div class="container">
             <div class="row justify-content-center align-items-start">
-                <div class="col-7 shop-box">
-                    <div class="shop-vendor-name">
-                        廠商名稱
-                    </div>
-                    <div class="shop-item pr-4">
-                        <div class="shop-data d-flex justify-content-between">
-                            <a href="" class=" "><img class="shop-product-photo"
-                                    src="images/Product/10707106000150_1.png" alt="商品照片"></a>
-                            <div class="d-flex flex-column mt-2">
-                                <a href="" class="text-decoration-none text-dark">這裡放商品名稱</a>
-                                <span>品項內容</span>
-                            </div>
-                            <div class="shop-select position-relative mt-2">
-                                <select class="position-absolute d-inline-block">
-                                    <!-- <option selected>Open this select menu</option> -->
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                </select>
-                                <div class="shop-select-tri position-relative d-flex align-items-center">
-                                    <!-- 選擇數量動態修改 -->
-                                    <span class="">數量</span>
+                <div class="col-1"></div>
+                <div class="col-7">
+                    <div class="shop-item shop-box mb-4 position-relative">
+                        <div class="shop-vendor-title">
+                            <input class=" mx-1" type="checkbox" value="" id="defaultCheck1">
+                            品牌、雪場廠商名稱
+                        </div>
+                        <div class="shop-close-item mt-2">+</div>
+                        <div class=" pr-4">
+                            <div class="shop-data d-flex justify-content-between">
+                                <div class="shop-product-photo">
+                                    <a href="" class=" "><img class="" src="images/Product/10707106000150_1.png"
+                                            alt="商品照片"></a></div>
+                                <div class="d-flex flex-column mt-2">
+                                    <a href="" class="text-decoration-none text-dark">這裡放商品名稱</a>
+                                    <span>品項內容</span>
                                 </div>
+                                <div class="shop-select position-relative mt-2">
+                                    <select class="position-absolute d-inline-block">
+                                        <!-- <option selected>Open this select menu</option> -->
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                    <div class="shop-select-tri position-relative d-flex align-items-center">
+                                        <!-- 選擇數量動態修改 -->
+                                        <span class="">數量</span>
+                                    </div>
+                                </div>
+                                <div class="shop-item-price mt-2">NT$價格</div>
+
                             </div>
-                            <div class="shop-item-price mt-2">NT$價格</div>
-                            <div class="shop-close-item mt-2">+</div>
+                        </div>
+                    </div>
+                    <div class="shop-item shop-box mb-4 position-relative">
+                        <div class="shop-vendor-title">
+                            <input class="mx-2" type="checkbox" value="" id="defaultCheck1">
+                            <span>飯店(無數量修改)</span>
+                        </div>
+                        <div class="shop-close-item mt-2">+</div>
+                        <div class=" pr-4">
+                            <div class="shop-data d-flex justify-content-between">
+                                <div class="shop-product-photo">
+                                    <a href="" class=" "><img class="" src="images/hotel/28.jpeg" alt="商品照片"></a></div>
+                                <div class="d-flex flex-column mt-2">
+                                    <a href="" class="text-decoration-none text-dark">這裡放商品名稱</a>
+                                    <span>品項內容</span>
+                                </div>
+
+                                <div class="shop-item-price mt-2">NT$價格</div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -90,10 +116,15 @@
                             <!-- 加總訂單總額 -->
                             <span>NT$ 多少錢</span>
                         </div>
-                        <button class="user-orange-btn btn btn-block user-btn checkout"><a href=""
-                                class="text-light text-decoration-none">前往結帳</a></button>
+                        <button class="user-orange-btn btn btn-block user-btn checkout"><a
+                                href="http://localhost:3000/shopping_checkout.html"
+                                class="text-light text-decoration-none">前往結帳</a>
+                        </button>
+
                     </div>
                 </div>
+                <div class="col-1"></div>
+
             </div>
         </div>
     </div>

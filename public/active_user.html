@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>帳號啟用結果</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>帳號啟用結果</title>
 </head>
+
 <body>
-    <h1 id='result'></h1>
+  <h1 id='result'></h1>
+  
 </body>
 
 <script>
   // http://localhost:3000/active_user.html?email=xxxx&code=xxxxx 取 email, code 的值
   const params = location.href.split('?')[1].split('&');
   fetch('api/user/active', {
-    method:'put',
+    method: 'put',
     headers: {
       'Content-type': 'application/json',
     },
@@ -23,16 +26,17 @@
       activeCode: params[1].substr('code='.length),
     }),
   })
-  .then((res) => {
-    if (res.status === 200) {
-      result.innerText = '啟用成功';
-    } else {
-      result.innerText = '啟用連結已過期';
-    }
-  })
-  .catch((err) => {
-    result.innerText = '系統異常，請稍後再執行';
-    console.log(err);
-  });
+    .then((res) => {
+      if (res.status === 200) {
+        result.innerText = '啟用成功';
+      } else {
+        result.innerText = '啟用連結已過期';
+      }
+    })
+    .catch((err) => {
+      result.innerText = '系統異常，請稍後再執行';
+      console.log(err);
+    });
 </script>
+
 </html>
