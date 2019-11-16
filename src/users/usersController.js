@@ -6,11 +6,17 @@ function responseError(res, msg = 'Bad request') {
 }
 
 function verifySignup(req, res) {
-  const { email, password } = req.body;
+  const { email, password, role } = req.body;
   if (!email) {
     responseError(res, '信箱未填寫');
   } else if (!password) {
     responseError(res, '密碼未填寫');
+  } else if (!role) {
+    log.error('缺少重要參數 role');
+    responseError(res, '系統異常');
+  } else if (!/^(VISITOR|SKIGO|FB|G\+){1}$/.test(role)) {
+    log.error(`請求參數格式不正確 role=${role}`);
+    responseError(res, '系統異常');
   }
 }
 

@@ -2,6 +2,7 @@ const nodemailer = require('nodemailer');
 const fs = require('fs');
 const log = require('../config/winston');
 const usersDAL = require('./usersDAL');
+const UserSession = require('./UserSession');
 
 const mailContent = fs.readFileSync(`${__dirname}/active_user_mail.html`,
   'utf-8',
@@ -33,19 +34,19 @@ function saveSession(req, res, user) {
       responseError(res, 500, '登入失敗');
       return;
     }
-    req.session.loginUser = user.email;
+    req.session.user = new UserSession(user.email, user.role);
     res.sendStatus(200);
   });
 }
 
 export function createUser(req, res) {
-  const { email, password } = req.body;
+  const { email, password, role } = req.body;
   if (usersDAL.emailExist(email)) {
     responseError(res, 400, '信箱已被註冊');
     return;
   }
 
-  const user = usersDAL.createUser(email, password);
+  const user = usersDAL.createUser(email, password, role);
   if (!user) {
     responseError(res, 500, '系統錯誤');
     return;
