@@ -7,6 +7,11 @@ const adapter = new FileSync(
     defaultValue: {
       users: [],
       orders: [],
+      hotels: [],
+      areas: [],
+      attractions: [],
+      coach: [],
+      products: [],
     },
   },
 );

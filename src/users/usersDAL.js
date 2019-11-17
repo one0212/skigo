@@ -4,11 +4,13 @@ const db = require('../config/db');
 
 const expiredTime = 1000 * 60 * 60; // 啟動碼一小時後過期
 
-export function createUser(email, password) {
+export function createUser(email, password, role) {
   const user = {
     id: shortid.generate(),
     email,
     password,
+    role,
+    avatar: 'default.png',
     activeCode: `${shortid.generate()}.${Date.now() + expiredTime}`,
     isActive: false,
   };
