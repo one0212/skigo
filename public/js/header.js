@@ -60,6 +60,7 @@ signup.addEventListener('click', () => {
   const obj = {
     email: signupAccount.value,
     password: signupPassword.value,
+    role: 'VISITOR', // TODO: 應判斷當入方式，設定對應的 role
   };
   fetch('/api/user/signup', {
     body: JSON.stringify(obj),
