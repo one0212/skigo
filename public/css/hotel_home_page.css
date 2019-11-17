@@ -8,6 +8,7 @@
 .carousel_area{
     position: relative;
     color: #fff;
+    min-height: 900px;
 }
 .slide_img{
     max-height: 900px;
@@ -28,21 +29,41 @@
     right: 5%;
     top: 0;
 }
+.title_area .row{
+    height: 900px;
+}
 .hotel_title{
+    /* position: absolute; */
     font-family: 'Cormorant Garamond', serif;
     line-height: 4rem;
-    text-shadow: 1px 1px 3px #00000058;
-    padding: 25% 0 15% 0;
+    text-shadow: 1px 1px 3px hsla(0, 0%, 0%, 0.345);
+    /* padding: 25% 0 15% 0; */
 }
-.search_area{
-    padding: 25% 0 15% 0;
+/* 關鍵字搜尋開始 */
+.search_icon{
+    /* display: inline-block; */
+    justify-content: center;
 }
 .search_btn{
     position: absolute;
-    top: 30%;
+    top: 25%;
     right: 6%;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: lighter;
+    z-index: 1;
+    display: inline-block;
+    width: 50px;
+    cursor: pointer;
+}
+.hotel_keywords_search::placeholder{
+    color: rgba(255, 255, 255, 0.817);
+}
+.hotel_keywords_search:focus-within{
+    transition: width .5s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+    outline: none;
+    width: 700px;
+    border-bottom: 1px solid #fff;
+    cursor: text;
 }
 .hotel_keywords_search{
     background-color: transparent;
@@ -57,20 +78,36 @@
     padding: 20px 20px 0;
     cursor: pointer;
 }
-.hotel_keywords_search::placeholder{
-    color: rgba(255, 255, 255, 0.817);
+/* 關鍵字搜尋結束 */
+/* 搜尋日期開始 */
+.search_date_form{
+    background: rgba(255, 255, 255, 0.276);
+    padding: 20px ;
 }
-.hotel_keywords_search:focus-within{
-    transition: width .5s cubic-bezier(0.000, 0.795, 0.000, 1.000);
-    outline: none;
-    width: 700px;
-    border-bottom: 1px solid #fff;
-    cursor: text;
+.search_setting_bg input, .search_select select{
+    height: 60px;
+    width: 250px;
+    border: none; 
+    text-indent: 15%;
+    margin-right:10px ;
 }
+.search_select select{
+    background: url(../images/hotel/hotel_icons/person.svg) 5% 50% no-repeat;
+    background-color: #fff;
+}
+.search_date_area_input input{
+    background: url(../images/hotel/hotel_icons/map-pin.svg) 5% 50% no-repeat;
+    background-color: #fff;
+}
+.search_date_time_input input{
+    background: url(../images/hotel/hotel_icons/calendar.svg) 5% 50% no-repeat;
+    background-color: #fff;
+}
+/* 搜尋日期結束 */
 .year{
     position: absolute;
-    top: 30%;
-    left: 6%;
+    top: 25%;
+    left: 7%;
     font-size: 1rem;
     font-weight: lighter;
 }
@@ -85,6 +122,9 @@
     margin-top: 20px;
 }
 .temperature{
+    position: absolute;
+    right: 6%;
+    bottom: 5%;
     font-size: 1.5rem;
     font-weight: normal;
     padding-right: 40px;
@@ -98,6 +138,9 @@
     font-size: 1.5rem;
 }
 .carousel_number{
+    position: absolute;
+    left: 7%;
+    bottom: 5%;
     letter-spacing: 0.25rem;
 }
 .carousel_number ul li{
@@ -113,7 +156,6 @@
     font-size:20px;
     font-weight: lighter;
     padding-top: 20px;
-    /* width: 500px; */
 }
 
 /* ---------------------------------------- */
