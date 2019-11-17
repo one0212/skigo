@@ -1,11 +1,12 @@
+const Constants = require('../utils/Constants');
 
 const setRole = (req, res, next) => {
-  let role = 'VISITOR';
   if (req.session && req.session.user) {
-    role = req.session.user.role;
+    res.cookie(Constants.COOKIE.ROLE, req.session.user.role);
+  } else {
+    res.clearCookie(Constants.COOKIE.SESSION_ID);
+    res.cookie(Constants.COOKIE.ROLE, Constants.ROLE.VISITOR);
   }
-
-  res.cookie('role', role);
   return next();
 };
 

@@ -11,14 +11,15 @@ const cors = require('cors');
 const log = require('./config/winston');
 const userApi = require('./users/router');
 const setRole = require('./middleware/setRole');
+const Constants = require('./utils/Constants');
 
 const app = express();
 const port = process.env.PORT || 3001;
 
-app.use(morgan('combined', { stream: log.stream }));
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.static('public'));
+app.use(morgan('combined', { stream: log.stream }));
 
 // ============= CORS ===================
 const corsOptions = {
@@ -31,6 +32,7 @@ app.use(cors(corsOptions));
 
 // ============= Session ===================
 app.use(session({
+  name: Constants.COOKIE.SESSION_ID,
   secret: 'momo', // 之後再移到外部 config
   saveUninitialized: false,
   resave: false,
@@ -56,8 +58,8 @@ const reloadDB = (req, res, next) => {
 };
 
 // ============== Routes ====================
-app.use('/', setRole);
-app.use('/api/user', setRole, userApi);
-app.use('/japi', setRole, reloadDB, jRouter);
+app.use(setRole);
+app.use('/api/user', userApi);
+app.use('/japi', reloadDB, jRouter);
 
 app.listen(port, () => log.info(`Server started, listening on port ${port} \n ${banner}`));
