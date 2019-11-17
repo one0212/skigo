@@ -54,7 +54,7 @@ export function createUser(req, res) {
     from: 'no-reply@skigo.com',
     to: email,
     subject: '驗證您的 SKIGO 帳號',
-    html: mailContent.replace(`${email}`, email).replace(`${user.activeCode}`, user.activeCode),
+    html: mailContent.replace('{email}', email).replace('{activeCode}', user.activeCode),
   }, (err, info) => {
     if (err) {
       log.error(`註冊信發送失敗. err=${JSON.stringify(err)}`);
