@@ -1,0 +1,72 @@
+{
+  "users": [
+    {
+      "id": "rzFFU6xa",
+      "email": "aaa@gmail.com",
+      "password": "fgdgfdgd",
+      "avatar": "default.png",
+      "activeCode": "cGdIopP3i.1573989399414",
+      "isActive": false
+    },
+    {
+      "id": "MT7p5FVb",
+      "email": "sss@sss",
+      "password": "dfds",
+      "role": "VISITOR",
+      "avatar": "default.png",
+      "activeCode": "7RTekQsp8.1573990238910",
+      "isActive": false
+    },
+    {
+      "id": "cgv-fe-B",
+      "email": "fdfd@fdf",
+      "password": "dfdf",
+      "role": "VISITOR",
+      "avatar": "default.png",
+      "activeCode": "2ogY6g0Lr.1573990356329",
+      "isActive": false
+    },
+    {
+      "id": "kaA4Wrim",
+      "email": "fdfd@fdfdfd",
+      "password": "dfdf",
+      "role": "VISITOR",
+      "avatar": "default.png",
+      "activeCode": "2KuNx_AFJ.1573990463472",
+      "isActive": false
+    },
+    {
+      "id": "k8oismDu",
+      "email": "ffgf@dfd",
+      "password": "klkl",
+      "role": "VISITOR",
+      "avatar": "default.png",
+      "activeCode": "SDj1qKcet.1573991271842",
+      "isActive": false
+    },
+    {
+      "id": "yOnKPidc",
+      "email": "aaa@aaa",
+      "password": "aaa",
+      "role": "VISITOR",
+      "avatar": "default.png",
+      "activeCode": "ovEHr2uKh.1573992861795",
+      "isActive": false
+    },
+    {
+      "id": "p35zyqni",
+      "email": "aafdfa@aaaff",
+      "password": "aaa",
+      "role": "VISITOR",
+      "avatar": "default.png",
+      "activeCode": "HRkVFxSNA.1573992904144",
+      "isActive": false
+    }
+  ],
+  "orders": [],
+  "hotels": [],
+  "areas": [],
+  "attractions": [],
+  "coach": [],
+  "products": []
+}
