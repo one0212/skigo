@@ -9,6 +9,12 @@ const Constants = {
     SESSION_ID: 'connect.sid',
     ROLE: 'role',
   },
+  PROD_TABLE: {
+    PRODUCT: 'products',
+    HOTEL: 'hotels',
+    AREA: 'areas',
+    COACH: 'coaches',
+  },
 };
 
 module.exports = Constants;

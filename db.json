@@ -12,7 +12,7 @@
       "id": "MT7p5FVb",
       "email": "sss@sss",
       "password": "dfds",
-      "role": "VISITOR",
+      "role": "SKIGO",
       "avatar": "default.png",
       "activeCode": "7RTekQsp8.1573990238910",
       "isActive": false
@@ -21,7 +21,7 @@
       "id": "cgv-fe-B",
       "email": "fdfd@fdf",
       "password": "dfdf",
-      "role": "VISITOR",
+      "role": "SKIGO",
       "avatar": "default.png",
       "activeCode": "2ogY6g0Lr.1573990356329",
       "isActive": false
@@ -30,7 +30,7 @@
       "id": "kaA4Wrim",
       "email": "fdfd@fdfdfd",
       "password": "dfdf",
-      "role": "VISITOR",
+      "role": "SKIGO",
       "avatar": "default.png",
       "activeCode": "2KuNx_AFJ.1573990463472",
       "isActive": false
@@ -39,7 +39,7 @@
       "id": "k8oismDu",
       "email": "ffgf@dfd",
       "password": "klkl",
-      "role": "VISITOR",
+      "role": "SKIGO",
       "avatar": "default.png",
       "activeCode": "SDj1qKcet.1573991271842",
       "isActive": false
@@ -48,7 +48,7 @@
       "id": "yOnKPidc",
       "email": "aaa@aaa",
       "password": "aaa",
-      "role": "VISITOR",
+      "role": "SKIGO",
       "avatar": "default.png",
       "activeCode": "ovEHr2uKh.1573992861795",
       "isActive": false
@@ -127,9 +127,33 @@
     }
   ],
   "orders": [],
-  "hotels": [],
+  "hotels": [
+    {
+      "id": 1,
+      "name": "單人房",
+      "price": 800,
+      "qty": 99
+    },
+    {
+      "id": 2,
+      "name": "雙人房",
+      "price": 1200,
+      "qty": 99
+    },
+    {
+      "id": 3,
+      "name": "三人房",
+      "price": 2000,
+      "qty": 99
+    },
+    {
+      "id": 4,
+      "name": "四人房",
+      "price": 2500,
+      "qty": 99
+    }
+  ],
   "areas": [],
-  "attractions": [],
-  "coach": [],
+  "coaches": [],
   "products": []
 }

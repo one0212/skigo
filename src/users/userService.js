@@ -4,6 +4,7 @@ const log = require('../config/winston');
 const usersDAL = require('./usersDAL');
 const UserSession = require('./UserSession');
 const Constants = require('../utils/Constants');
+const Cart = require('../cart/Cart');
 
 const mailContent = fs.readFileSync(`${__dirname}/active_user_mail.html`,
   'utf-8',
@@ -35,7 +36,7 @@ function saveLoginedSession(req, res, user) {
       responseError(res, 500, '登入失敗');
       return;
     }
-    req.session.user = new UserSession(user.email, user.role, {});
+    req.session.user = new UserSession(user.email, user.role, new Cart());
     res.cookie(Constants.COOKIE.ROLE, user.role);
     res.sendStatus(200);
   });
@@ -94,12 +95,10 @@ export function activeUser(req, res) {
 }
 
 export function logout(req, res) {
-  log.info(JSON.stringify(req.session));
   req.session.destroy((err) => {
     if (err) {
       log.error(`Destroy session failed. err=${err}`);
     }
-
     res.clearCookie(Constants.COOKIE.SESSION_ID);
     res.cookie(Constants.COOKIE.ROLE, Constants.ROLE.VISITOR);
     res.sendStatus(200);

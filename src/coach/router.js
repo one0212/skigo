@@ -1,6 +1,6 @@
 const express = require('express');
-const router = express.Router();
 
+const router = express.Router();
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
 const bluebird = require('bluebird');
