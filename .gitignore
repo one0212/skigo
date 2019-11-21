@@ -62,3 +62,6 @@ typings/
 
 .DS_store
 .DS_Store
+
+# Output of react webpack
+build/*
