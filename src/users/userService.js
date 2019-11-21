@@ -95,8 +95,7 @@ export function activeUser(req, res) {
 
 export function logout(req, res) {
   log.info(JSON.stringify(req.session));
-  const sid = req.cookies[Constants.COOKIE.SESSION_ID];
-  req.session.destroy(sid, (err) => {
+  req.session.destroy((err) => {
     if (err) {
       log.error(`Destroy session failed. err=${err}`);
     }
