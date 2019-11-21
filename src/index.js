@@ -6,18 +6,16 @@ const figlet = require('figlet');
 const jsonServer = require('json-server');
 const fs = require('fs');
 // const appRoot = require('app-root-path');
+const moment = require('moment-timezone');
+const cors = require('cors');
 
 const jRouter = jsonServer.router('db.json');
-const cors = require('cors');
 const log = require('./config/winston');
 const userApi = require('./users/router');
 const coachApi = require('./coach/router');
-const setRole = require('./middleware/setRole');
+const cartApi = require('./cart/Route');
+const correctLoginState = require('./middleware/correctLoginState');
 const Constants = require('./utils/Constants');
-
-
-
-
 
 const app = express();
 const port = process.env.PORT || 3001;
@@ -25,11 +23,14 @@ const port = process.env.PORT || 3001;
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static('build'));
-app.use(morgan('combined', { stream: log.stream }));
-
-// ============= CORS + 白名單===================
+app.use(express.static('public'));
 app.use(cors({ credentials: true }));
+app.use(correctLoginState);
+
+// ============= Morgan ===================
+morgan.token('date', (req, res, tz) => moment().tz(tz).format('YYYY-MM-DD HH:mm:ss'));
+morgan.format('myformat', '[:date[Asia/Taipei]] ":method :url" :status - :response-time ms');
+app.use(morgan('myformat', { stream: log.stream }));
 
 // ============= Session ===================
 app.use(session({
@@ -60,10 +61,9 @@ const reloadDB = (req, res, next) => {
 
 // ============== Routes ====================
 app.use(coachApi);
-app.use(setRole);
 app.use('/api/user', userApi);
+app.use('/api/cart', cartApi);
 app.use('/japi', reloadDB, jRouter);
-
 
 // app.get('/*', (req, res) => {
 //   res.sendFile(`${appRoot.path}/build/index.html`);
