@@ -15,6 +15,10 @@ const coachApi = require('./coach/router');
 const setRole = require('./middleware/setRole');
 const Constants = require('./utils/Constants');
 
+
+
+
+
 const app = express();
 const port = process.env.PORT || 3001;
 
@@ -55,10 +59,11 @@ const reloadDB = (req, res, next) => {
 };
 
 // ============== Routes ====================
+app.use(coachApi);
 app.use(setRole);
 app.use('/api/user', userApi);
 app.use('/japi', reloadDB, jRouter);
-app.use('/', coachApi);
+
 
 // app.get('/*', (req, res) => {
 //   res.sendFile(`${appRoot.path}/build/index.html`);
