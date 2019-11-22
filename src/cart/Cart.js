@@ -7,7 +7,8 @@ class Cart {
   }
 
   addItem(item) {
-    let oldCartItem = this.items[item.prodId];
+    const key = `${item.prodType}-${item.prodId}`;
+    let oldCartItem = this.items[key];
     if (oldCartItem) {
       oldCartItem = new CartItem(
         item.prodId,
@@ -17,9 +18,9 @@ class Cart {
         item.price,
         item.totalAmt + oldCartItem.totalAmt,
       );
-      this.items[item.prodId] = oldCartItem;
+      this.items[key] = oldCartItem;
     } else {
-      this.items[item.prodId] = item;
+      this.items[key] = item;
     }
     // console.log(this.items);
     const allItems = Object.values(this.items);
