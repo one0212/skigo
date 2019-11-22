@@ -6,7 +6,7 @@ const ProductsDAL = require('../products/ProductsDAL');
 
 export function getCart(req, res) {
   const { items, totalAmt } = req.session.user.cart;
-  res.json({ item: Object.values(items), totalAmt });
+  res.json({ items: Object.values(items), totalAmt });
 }
 
 export function addItem(req, res) {
