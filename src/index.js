@@ -23,9 +23,8 @@ const port = process.env.PORT || 3001;
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static('build'));
 app.use(cors({ credentials: true }));
-app.use(correctLoginState);
 
 // ============= Morgan ===================
 morgan.token('date', (req, res, tz) => moment().tz(tz).format('YYYY-MM-DD HH:mm:ss'));
@@ -60,10 +59,11 @@ const reloadDB = (req, res, next) => {
 };
 
 // ============== Routes ====================
-app.use(coachApi);
+app.use(correctLoginState);
 app.use('/api/user', userApi);
 app.use('/api/cart', cartApi);
 app.use('/japi', reloadDB, jRouter);
+app.use(coachApi);
 
 // app.get('/*', (req, res) => {
 //   res.sendFile(`${appRoot.path}/build/index.html`);

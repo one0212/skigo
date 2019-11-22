@@ -8,9 +8,9 @@
     "lint": "node_modules/.bin/eslint --fix .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "pre-commit": [
-    "lint"
-  ],
+  // "pre-commit": [
+  //   "lint"
+  // ],
   "author": "",
   "license": "MIT",
   "dependencies": {

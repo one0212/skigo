@@ -80,6 +80,6 @@ export function activeUser(req, res) {
 }
 
 export function logout(req, res) {
-  log.info(`Logout api - user=${JSON.stringify(req.body.session.user)}`);
+  log.info(`Logout api - user=${JSON.stringify(req.session.user)}`);
   usersService.logout(req, res);
 }
