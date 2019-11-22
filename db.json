@@ -155,5 +155,12 @@
   ],
   "areas": [],
   "coaches": [],
-  "products": []
+  "products": [
+    {
+      "id": 123456,
+      "name": "雪板",
+      "price": 2500,
+      "qty": 99
+    }
+  ]
 }

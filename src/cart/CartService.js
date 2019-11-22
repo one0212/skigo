@@ -13,7 +13,7 @@ export function addItem(req, res) {
   const { prodId, prodType, qty } = req.body;
   const product = ProductsDAL.findByTableAndId(prodType, prodId);
   if (!product) {
-    log.error(`商品不存在. id=${product.id}`);
+    log.error(`商品不存在. id=${prodId}`);
     return;
   }
 
