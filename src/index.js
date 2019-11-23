@@ -13,7 +13,7 @@ const jRouter = jsonServer.router('db.json');
 const log = require('./config/winston');
 const userApi = require('./users/router');
 const coachApi = require('./coach/router');
-const cartApi = require('./cart/Route');
+const cartApi = require('./cart/router');
 const correctLoginState = require('./middleware/correctLoginState');
 const Constants = require('./utils/Constants');
 

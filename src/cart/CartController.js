@@ -1,6 +1,6 @@
 const Constants = require('../utils/Constants');
 const log = require('../config/winston');
-const CartService = require('./CartService');
+const cartService = require('./cartService');
 
 function responseError(res, code = 400, msg = 'Bad request') {
   res.status(code).json({ message: msg });
@@ -45,7 +45,7 @@ export function getCart(req, res) {
   if (!verifyBeforeGetCart(req, res)) {
     return;
   }
-  CartService.getCart(req, res);
+  cartService.getCart(req, res);
 }
 
 export function addItem(req, res) {
@@ -53,5 +53,5 @@ export function addItem(req, res) {
   if (!verifyBeforeAddItem(req, res)) {
     return;
   }
-  CartService.addItem(req, res);
+  cartService.addItem(req, res);
 }
