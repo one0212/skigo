@@ -18,7 +18,7 @@ const correctLoginState = (req, res, next) => {
   if (!logined && clientSessionId) {
     res.clearCookie(Constants.COOKIE.SESSION_ID);
   }
-  return next();
+  next();
 };
 
 module.exports = correctLoginState;
