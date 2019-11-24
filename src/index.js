@@ -23,8 +23,6 @@ const port = process.env.PORT || 3001;
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static('public'));
-app.use(express.static('build'));
 app.use(cors({ credentials: true }));
 
 // ============= Morgan ===================
@@ -65,6 +63,8 @@ app.use('/api/user', userApi);
 app.use('/api/cart', cartApi);
 app.use('/japi', reloadDB, jRouter);
 app.use(coachApi);
+app.use(express.static('public'));
+app.use(express.static('build'));
 
 app.get('/*', (req, res) => {
   res.sendFile(`${appRoot.path}/build/index.html`);

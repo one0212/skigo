@@ -119,14 +119,12 @@ export function addDeliveryInfo(req, res) {
 }
 
 export function getDeliveryInfos(req, res) {
-  if (!req.session && !req.session.user) {
+  if (!req.session || !req.session.user) {
     log.error('尚未登入');
     responseError(res, 401, '尚未登入');
-    res.sendStatus(401);
     return;
   }
   // const { receiver, mobile, address } = req.body;
   res.sendStatus(200);
   userDeliverInfosDAL.get(req.session.user.id);
 }
-
