@@ -2,6 +2,7 @@ const nodemailer = require('nodemailer');
 const fs = require('fs');
 const log = require('../config/winston');
 const usersDAL = require('./usersDAL');
+const userDeliverInfosDAL = require('./userDeliverInfosDAL');
 const UserSession = require('./UserSession');
 const Constants = require('../utils/Constants');
 const Cart = require('../cart/Cart');
@@ -36,7 +37,7 @@ function saveLoginedSession(req, res, user) {
       responseError(res, 500, '登入失敗');
       return;
     }
-    req.session.user = new UserSession(user.email, user.role, new Cart());
+    req.session.user = new UserSession(user.id, user.email, user.role, new Cart());
     res.cookie(Constants.COOKIE.ROLE, user.role);
     res.sendStatus(200);
   });
@@ -104,3 +105,17 @@ export function logout(req, res) {
     res.sendStatus(200);
   });
 }
+
+export function addDeliveryInfo(req, res) {
+  if (!req.session && !req.session.user) {
+    log.error('尚未登入');
+    responseError(res, 401, '尚未登入');
+    res.sendStatus(401);
+    return;
+  }
+  res.sendStatus(200);
+  const { receiver, mobile, address } = req.body;
+  userDeliverInfosDAL.insert(req.session.user.id, receiver, mobile, address);
+}
+
+// export function getDeliveryInfos

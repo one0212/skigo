@@ -11,6 +11,7 @@ const adapter = new FileSync(
       areas: [],
       coaches: [],
       products: [],
+      userDeliveryInfos: [],
     },
   },
 );

@@ -162,5 +162,14 @@
       "price": 2500,
       "qty": 99
     }
+  ],
+  "userDeliveryInfos": [
+    {
+      "id": "OBrvrpCP",
+      "userId": "s85551S1",
+      "receiver": "123",
+      "mobile": "0911",
+      "address": "我家"
+    }
   ]
 }
