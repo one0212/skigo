@@ -129,3 +129,4 @@ export function getDeliveryInfos(req, res) {
   res.sendStatus(200);
   userDeliverInfosDAL.get(req.session.user.id);
 }
+
