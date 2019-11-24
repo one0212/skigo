@@ -64,7 +64,7 @@ typings/
 .DS_Store
 
 # Output of react webpack
-# build/*
+build/*
 
 # debug
 .vscode/launch.json
