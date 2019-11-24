@@ -109,6 +109,9 @@ export function addDeliveryInfo(req, res) {
   usersService.addDeliveryInfo(req, res);
 }
 
+
 export function getDeliveryInfoList(req, res) {
   usersService.getDeliveryInfos(req, res);
 }
+
+
