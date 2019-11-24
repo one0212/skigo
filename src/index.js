@@ -5,7 +5,7 @@ const morgan = require('morgan');
 const figlet = require('figlet');
 const jsonServer = require('json-server');
 const fs = require('fs');
-// const appRoot = require('app-root-path');
+const appRoot = require('app-root-path');
 const moment = require('moment-timezone');
 const cors = require('cors');
 
@@ -23,6 +23,7 @@ const port = process.env.PORT || 3001;
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(express.static('public'));
 app.use(express.static('build'));
 app.use(cors({ credentials: true }));
 
@@ -65,8 +66,8 @@ app.use('/api/cart', cartApi);
 app.use('/japi', reloadDB, jRouter);
 app.use(coachApi);
 
-// app.get('/*', (req, res) => {
-//   res.sendFile(`${appRoot.path}/build/index.html`);
-// });
+app.get('/*', (req, res) => {
+  res.sendFile(`${appRoot.path}/build/index.html`);
+});
 
 app.listen(port, () => log.info(`Server started, listening on port ${port} \n ${banner}`));
