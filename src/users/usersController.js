@@ -55,6 +55,23 @@ function verifyActiveUser(req, res) {
   return true;
 }
 
+function verifyAddDeliveryInfo(req, res) {
+  const { receiver, mobile, address } = req.body;
+  if (!receiver) {
+    responseError(res, '缺少參數: receiver');
+    return false;
+  }
+  if (!mobile) {
+    responseError(res, '缺少參數: mobile');
+    return false;
+  }
+  if (!address) {
+    responseError(res, '缺少參數: address');
+    return false;
+  }
+  return true;
+}
+
 export function signup(req, res) {
   log.info(`Sign-up api - body=${JSON.stringify(req.body)}`);
   if (!verifySignup(req, res)) {
@@ -83,3 +100,15 @@ export function logout(req, res) {
   log.info(`Logout api - user=${JSON.stringify(req.session.user)}`);
   usersService.logout(req, res);
 }
+
+export function addDeliveryInfo(req, res) {
+  log.info(`AddDeliveryInfo api - body=${JSON.stringify(req.body)}`);
+  if (!verifyAddDeliveryInfo(req, res)) {
+    return;
+  }
+  usersService.addDeliveryInfo(req, res);
+}
+
+// export function getDeliveryInfoList(req, res) {
+//   usersService.getDeliveryInfo(req, res);
+// }
