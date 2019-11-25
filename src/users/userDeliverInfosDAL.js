@@ -15,5 +15,5 @@ export function insert(userId, receiver, mobile, address) {
 
 export function get(userId) {
   // log.info(db.read().get('userDeliveryInfos').find({ userId }).value());
-  return JSON.stringify(db.read().get('userDeliveryInfos').find({ userId }).value());
+  return db.read().get('userDeliveryInfos').filter({ userId }).value();
 }

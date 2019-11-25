@@ -124,7 +124,6 @@ export function getDeliveryInfos(req, res) {
     responseError(res, 401, '尚未登入');
     return;
   }
-  // const { receiver, mobile, address } = req.body;
-  res.sendStatus(200);
-  userDeliverInfosDAL.get(req.session.user.id);
+  const infos = userDeliverInfosDAL.get(req.session.user.id);
+  res.status(200).json(infos);
 }
