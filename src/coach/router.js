@@ -204,7 +204,7 @@ router.post('/coach-random', urlencodedParser, (req, res) => {
     output.sort(() => Math.random() - 0.5);
     console.log(output);
 
-    res.json(output.slice(0, 3));
+    res.json(output.slice(0, 5));
   });
 });
 
