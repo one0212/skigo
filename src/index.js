@@ -13,6 +13,7 @@ const jRouter = jsonServer.router('db.json');
 const log = require('./config/winston');
 const userApi = require('./users/router');
 const coachApi = require('./coach/router');
+const areasApi = require('./areas/router');
 const cartApi = require('./cart/router');
 const correctLoginState = require('./middleware/correctLoginState');
 const Constants = require('./utils/Constants');
@@ -63,6 +64,7 @@ app.use('/api/user', userApi);
 app.use('/api/cart', cartApi);
 app.use('/japi', reloadDB, jRouter);
 app.use(coachApi);
+app.use(areasApi);
 app.use(express.static('public'));
 app.use(express.static('build'));
 
