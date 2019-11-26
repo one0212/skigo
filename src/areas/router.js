@@ -108,6 +108,7 @@ router.post('/ticket-list', urlencodedParser, (req, res) => {
           output.push(el.ticket_sid);
           return el;
         }
+        return undefined
       });
       // console.log(output);
       res.json(output);

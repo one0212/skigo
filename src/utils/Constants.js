@@ -15,6 +15,9 @@ const Constants = {
     AREA: 'areas',
     COACH: 'coaches',
   },
+  ORDER_STATUS: {
+    PROCESSING: 'PROCESSING',
+  },
 };
 
 module.exports = Constants;

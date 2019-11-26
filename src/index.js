@@ -12,6 +12,7 @@ const cors = require('cors');
 const jRouter = jsonServer.router('db.json');
 const log = require('./config/winston');
 const userApi = require('./users/router');
+const orderApi = require('./orders/router');
 const coachApi = require('./coach/router');
 const areasApi = require('./areas/router');
 const cartApi = require('./cart/router');
@@ -61,6 +62,7 @@ const reloadDB = (req, res, next) => {
 // ============== Routes ====================
 app.use(correctLoginState);
 app.use('/api/user', userApi);
+app.use('/api/order', orderApi);
 app.use('/api/cart', cartApi);
 app.use('/japi', reloadDB, jRouter);
 app.use(coachApi);
