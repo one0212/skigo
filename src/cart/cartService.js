@@ -4,6 +4,17 @@ const Cart = require('./Cart');
 const log = require('../config/winston');
 const ProductsDAL = require('../products/ProductsDAL');
 
+
+const toCartItem = (product, prodType, qty) => new CartItem(
+  product.id,
+  prodType,
+  product.name,
+  qty,
+  product.price,
+  product.info,
+  product.vendor,
+);
+
 export function getCart(req, res) {
   const { items, totalAmt } = req.session.user.cart;
   res.json({ items: Object.values(items), totalAmt });
@@ -17,7 +28,8 @@ export function addItem(req, res) {
     return;
   }
 
-  const newItem = new CartItem(product.id, prodType, product.name, qty, product.price);
+
+  const newItem = toCartItem(product, prodType, qty);
   const existingItems = Object.values(req.session.user.cart.items) || [];
   const cart = new Cart();
   cart.addItem(newItem);
