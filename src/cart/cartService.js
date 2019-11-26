@@ -4,6 +4,7 @@ const Cart = require('./Cart');
 const log = require('../config/winston');
 const ProductsDAL = require('../products/ProductsDAL');
 
+
 const toCartItem = (product, prodType, qty) => new CartItem(
   product.id,
   prodType,
@@ -26,6 +27,7 @@ export function addItem(req, res) {
     log.error(`商品不存在. id=${prodId}`);
     return;
   }
+
 
   const newItem = toCartItem(product, prodType, qty);
   const existingItems = Object.values(req.session.user.cart.items) || [];
