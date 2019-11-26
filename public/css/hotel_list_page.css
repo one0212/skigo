@@ -52,12 +52,12 @@
     width: 30px;
     color: #aaa;
 }
-.filter_change_active{
+/* .filter_change_active{
     display: inline-block;
     padding: 10px 0 ;
     width: 30px;
     color: #8DAEC1;
-}
+} */
 .hotel_list_page_card .card{
     width: 24%;
     height: 400px;
