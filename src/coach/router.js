@@ -237,11 +237,11 @@ router.post('/coach-love', urlencodedParser, (req, res) => {
 // 教練資料庫6 同個教練的所有課程
 router.post('/coach-same', urlencodedParser, (req, res) => {
   console.log(req.body.coach);
-  const coach = mysql.escape(req.body.coach)//mysql內建 跳脫
-  const sql ='SELECT * FROM coach WHERE coach_name = ' + coach
+  const coach = mysql.escape(req.body.coach);// mysql內建 跳脫
+  const sql = `SELECT * FROM coach WHERE coach_name = ${coach}`;
   // SELECT * FROM `coach` WHERE `coach_name` ='Andrea'
 
-  console.log(sql)
+  console.log(sql);
   // console.log(`SELECT * FROM coach ${where} `);
   db.query(sql, (error, results) => {
     res.json(results);
