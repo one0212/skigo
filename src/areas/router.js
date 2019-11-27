@@ -27,7 +27,7 @@ router.post('/ticket-list', urlencodedParser, (req, res) => {
   if (req.body.sort === true) {
     Sort = 'ORDER BY `ticket_price` DESC ';
     // console.log(`從高到低${Sort}`);
-  } else if (req.body.sort == false) {
+  } else if (req.body.sort === false) {
     Sort = 'ORDER BY `ticket_price` ASC ';
     // console.log(`從低到高${Sort}`);
   } else {
