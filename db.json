@@ -9,42 +9,6 @@
       "isActive": false
     },
     {
-      "id": "MT7p5FVb",
-      "email": "sss@sss",
-      "password": "dfds",
-      "role": "SKIGO",
-      "avatar": "default.png",
-      "activeCode": "7RTekQsp8.1573990238910",
-      "isActive": false
-    },
-    {
-      "id": "cgv-fe-B",
-      "email": "fdfd@fdf",
-      "password": "dfdf",
-      "role": "SKIGO",
-      "avatar": "default.png",
-      "activeCode": "2ogY6g0Lr.1573990356329",
-      "isActive": false
-    },
-    {
-      "id": "kaA4Wrim",
-      "email": "fdfd@fdfdfd",
-      "password": "dfdf",
-      "role": "SKIGO",
-      "avatar": "default.png",
-      "activeCode": "2KuNx_AFJ.1573990463472",
-      "isActive": false
-    },
-    {
-      "id": "k8oismDu",
-      "email": "ffgf@dfd",
-      "password": "klkl",
-      "role": "SKIGO",
-      "avatar": "default.png",
-      "activeCode": "SDj1qKcet.1573991271842",
-      "isActive": false
-    },
-    {
       "id": "yOnKPidc",
       "email": "aaa@aaa",
       "password": "aaa",
@@ -63,51 +27,6 @@
       "isActive": false
     },
     {
-      "id": "aHBwwT8u",
-      "email": "ass@gmail.com",
-      "password": "123",
-      "role": "SKIGO",
-      "avatar": "default.png",
-      "activeCode": "P0s-KBnT0.1574017638099",
-      "isActive": false
-    },
-    {
-      "id": "wyVd0hAW",
-      "email": "aaa1234@gmail.com",
-      "password": "1234",
-      "role": "SKIGO",
-      "avatar": "default.png",
-      "activeCode": "pqX1Vgx6T.1574017705961",
-      "isActive": false
-    },
-    {
-      "id": "MpVPusrE",
-      "email": "5rf@gmail.com",
-      "password": "1234",
-      "role": "SKIGO",
-      "avatar": "default.png",
-      "activeCode": "8qwznFTSh.1574017751413",
-      "isActive": false
-    },
-    {
-      "id": "XiJCeqY1",
-      "email": "sss@gmail.com",
-      "password": "123",
-      "role": "SKIGO",
-      "avatar": "default.png",
-      "activeCode": "-5SWx6gjR.1574017814526",
-      "isActive": false
-    },
-    {
-      "id": "0j2mX4ob",
-      "email": "sdfdbv@gmail.com",
-      "password": "123",
-      "role": "SKIGO",
-      "avatar": "default.png",
-      "activeCode": "YcjW8q9Jj.1574018060130",
-      "isActive": false
-    },
-    {
       "id": "s85551S1",
       "email": "abc123@gmail.com",
       "password": "123",
@@ -115,54 +34,210 @@
       "avatar": "default.png",
       "activeCode": "OcS7DSNob.1574062169915",
       "isActive": false
-    },
-    {
-      "id": "GStustSi",
-      "email": "feliciajiang12@gmail.com",
-      "password": "123",
-      "role": "SKIGO",
-      "avatar": "default.png",
-      "activeCode": "mLx2It0vt.1574089954021",
-      "isActive": true
     }
   ],
-  "orders": [],
-  "hotels": [
+  "orders": [
+    {
+      "orderNo": "LE71XM5U",
+      "userId": "yOnKPidc",
+      "products": [
+        {
+          "prodId": 1,
+          "prodType": "coaches",
+          "name": "專業講師開班",
+          "qty": 1,
+          "price": "1200",
+          "info": "2小時的單板滑雪體驗課程",
+          "vendor": "北海道富良野雪場",
+          "totalAmt": 1200
+        },
+        {
+          "prodId": 2,
+          "prodType": "areas",
+          "name": "滑雪服租借券",
+          "qty": 2,
+          "price": "1500",
+          "info": "一般券",
+          "vendor": "富良野滑雪場",
+          "totalAmt": 3000
+        }
+      ],
+      "orderAmt": 4200,
+      "receiver": "",
+      "mobile": "",
+      "address": "",
+      "status": "PROCESSING",
+      "orderTime": 1574763424328
+    },
+    {
+      "orderNo": "0oLjORc0",
+      "userId": "yOnKPidc",
+      "products": [
+        {
+          "prodId": 4,
+          "prodType": "coaches",
+          "name": "專業講師開班",
+          "qty": 1,
+          "price": "1200",
+          "info": "2小時的單板滑雪體驗課程",
+          "vendor": "北海道富良野雪場",
+          "totalAmt": 1200
+        },
+        {
+          "prodId": 3,
+          "prodType": "areas",
+          "name": "滑雪服租借券",
+          "qty": 1,
+          "price": "1000",
+          "info": "優惠券",
+          "vendor": "富良野滑雪場",
+          "totalAmt": 1000
+        }
+      ],
+      "orderAmt": 2200,
+      "receiver": "",
+      "mobile": "",
+      "address": "",
+      "status": "PROCESSING",
+      "orderTime": 1574765438141
+    },
+    {
+      "orderNo": "ZBLJkd4J",
+      "userId": "yOnKPidc",
+      "products": [
+        {
+          "prodId": 1,
+          "prodType": "coaches",
+          "name": "專業講師開班",
+          "qty": 1,
+          "price": "1200",
+          "info": "2小時的單板滑雪體驗課程",
+          "vendor": "北海道富良野雪場",
+          "totalAmt": 1200
+        },
+        {
+          "prodId": 1,
+          "prodType": "areas",
+          "name": "纜車一日券",
+          "qty": 3,
+          "price": "2000",
+          "info": "一般券",
+          "vendor": "富良野滑雪場",
+          "totalAmt": 6000
+        }
+      ],
+      "orderAmt": 7200,
+      "receiver": "",
+      "mobile": "",
+      "address": "",
+      "status": "PROCESSING",
+      "orderTime": 1574796176911
+    }
+  ],
+  "hotels": [],
+  "areas": [
     {
       "id": 1,
-      "name": "單人房",
-      "price": 800,
-      "qty": 99
+      "vendor": "北海道富良野滑雪場",
+      "name": "纜車一日券(成人)",
+      "price": "2000",
+      "info": "使用期限至2020/3/11為止",
+      "coverImg": "/images/areas/areas-1.jpg"
+    },
+    {
+      "id": 7,
+      "vendor": "北海道富良野滑雪場",
+      "name": "纜車一日券(兒童)",
+      "price": "1800",
+      "info": "使用期限至2020/3/11為止",
+      "coverImg": "/images/areas/areas-1.jpg"
+    },
+    {
+      "id": 12,
+      "vendor": "北海道富良野滑雪場",
+      "name": "纜車二日券(成人)",
+      "price": "3700",
+      "info": "使用期限至2020/3/11為止",
+      "coverImg": "/images/areas/areas-1.jpg"
+    },
+    {
+      "id": 13,
+      "vendor": "北海道富良野滑雪場",
+      "name": "纜車三日券(成人)",
+      "price": "4800",
+      "info": "使用期限至2020/3/11為止",
+      "coverImg": "/images/areas/areas-1.jpg"
+    },
+    {
+      "id": 21,
+      "vendor": "北海道富良野滑雪場",
+      "name": "纜車二日券(兒童)",
+      "price": "3500",
+      "info": "使用期限至2020/3/11為止",
+      "coverImg": "/images/areas/areas-1.jpg"
+    }
+  ],
+  "coaches": [
+    {
+      "id": 1,
+      "field_sid": "1",
+      "vendor": "北海道富良野雪場",
+      "name": "專業講師開班",
+      "info": "2小時的單板滑雪體驗課程",
+      "coach_love": null,
+      "price": "1200"
     },
     {
       "id": 2,
-      "name": "雙人房",
-      "price": 1200,
-      "qty": 99
+      "field_sid": "6",
+      "vendor": "新潟縣苗場雪場",
+      "class_pic": "c2.jpg",
+      "coach_name": "AN",
+      "name": "中級滑雪課程",
+      "info": "給喜歡滑雪的你，最精采的體驗!",
+      "coach_love": null,
+      "price": "2000"
     },
     {
       "id": 3,
-      "name": "三人房",
-      "price": 2000,
-      "qty": 99
+      "field_sid": "3",
+      "vendor": "青森縣八甲田雪場",
+      "class_pic": "c3.jpeg",
+      "coach_name": "JUI",
+      "name": "高級滑雪課程",
+      "info": "給懂滑雪的你最刺激的感受",
+      "coach_love": null,
+      "price": "1100"
     },
     {
       "id": 4,
-      "name": "四人房",
-      "price": 2500,
-      "qty": 99
-    }
-  ],
-  "areas": [],
-  "coaches": [],
-  "products": [
+      "field_sid": "1",
+      "vendor": "北海道富良野雪場",
+      "name": "專業講師開班",
+      "info": "2小時的單板滑雪體驗課程",
+      "coach_love": null,
+      "price": "1200"
+    },
     {
-      "id": 123456,
-      "name": "雪板",
-      "price": 2500,
-      "qty": 99
+      "id": 5,
+      "field_sid": "1",
+      "vendor": "北海道富良野雪場",
+      "name": "專業講師開班",
+      "info": "2小時的單板滑雪體驗課程",
+      "coach_love": null,
+      "price": "1200"
+    },
+    {
+      "id": 6,
+      "field_sid": "6",
+      "vendor": "新瀉縣苗場雪場",
+      "name": "中級滑雪課程",
+      "info": "給喜歡滑雪的你，最精采的體驗!",
+      "coach_love": null,
+      "price": "2200"
     }
   ],
+  "products": [],
   "userDeliveryInfos": [
     {
       "id": "OBrvrpCP",
