@@ -13,6 +13,7 @@ const toCartItem = (product, prodType, qty) => new CartItem(
   product.price,
   product.info,
   product.vendor,
+  product.coverImg,
 );
 
 export function getCart(req, res) {

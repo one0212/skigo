@@ -12,10 +12,14 @@ const createOrder = (req, res) => {
     responseError(res, 401, '尚未登入');
     return;
   }
-  res.sendStatus(200);
   const { receiver, mobile, address } = req.body;
   const { id, cart } = req.session.user;
-  ordersDAL.insert(id, Object.values(cart.items), cart.totalAmt, receiver, mobile, address);
+  const orderNo = ordersDAL.insert(id, Object.values(cart.items),
+    cart.totalAmt,
+    receiver,
+    mobile,
+    address);
+  res.status(200).json({ orderNo });
 };
 
 const getUserOrder = (req, res) => {
