@@ -262,6 +262,31 @@
       "price": 3500,
       "info": "使用期限至2020/3/11為止",
       "coverImg": "/images/areas/areas-1.jpg"
+      "id": "GStustSi",
+      "email": "feliciajiang12@gmail.com",
+      "password": "123",
+      "role": "SKIGO",
+      "avatar": "default.png",
+      "activeCode": "mLx2It0vt.1574089954021",
+      "isActive": true
+    },
+    {
+      "id": "VrbbTCjA",
+      "email": "www@www",
+      "password": "www",
+      "role": "SKIGO",
+      "avatar": "default.png",
+      "activeCode": "f18E9-dgA.1574776989134",
+      "isActive": false
+    },
+    {
+      "id": "VileXmz0",
+      "email": "winniexx.0918@gmail.com",
+      "password": "www",
+      "role": "SKIGO",
+      "avatar": "default.png",
+      "activeCode": "ZHcD1UEMm.1574931017510",
+      "isActive": true
     }
   ],
   "coaches": [
@@ -320,6 +345,76 @@
       "info": "2小時的單板滑雪體驗課程",
       "price": 1200,
       "coverImg": "/images/coach/c1.jpg"
+      "vendor": "北海道",
+      "name": "凱撒大飯店",
+      "info": "房型: 四人房\r\n小孩: 1 大人: 2\r\n入住日期: 2019/12/4",
+      "slogan": "ksdjflkdjildjfijd;j dlcmla;m",
+      "text": "因為韓國人都很愛攜家帶眷去度假，因此房間大多可容納4個人以上，非常適合闔家出遊～除了西式的床外，房間內還有另外一個小房間可以鋪床睡，想要體驗韓國的『溫突』式火坑一定要來這裡！它是利用天然氣燃燒所產生的熱氣，通過房屋下面的管道來烘暖整個屋內，所以地板一點也不冷冰冰，還很溫暖呢！浴室是採乾溼分離的設計，還有小廚房跟餐桌，非常溫馨～渡假村裡附有旋轉木馬、保齡球館和超市等，像一個小型遊樂園，休閒娛樂都顧到！",
+      "phone": "021321300000",
+      "price": "4567",
+      "address": "Seascapes Resort Town, 麥丹島, 宿霧, 菲律賓 - 查看地圖&週邊景點"
+    },
+    {
+      "id": 2,
+      "vendor": "北海道",
+      "name": "凱撒大飯店",
+      "text": "房間乾淨整齊,佈置和照片相當一致 此次八人同行一起入住,在客廳聊天很有家的氛圍,很推薦團體旅行選擇 地點步行離捷運站有點距離",
+      "phone": "000000000",
+      "price": "5567",
+      "address": "Seascapes Resort Town, 麥丹島, 宿霧, 菲律賓 - 查看地圖&週邊景點",
+      "room": [
+        {
+          "id": 1,
+          "name": "好好四人房",
+          "info": "房型: 四人房\r\n小孩: 1 大人: 2\r\n入住日期: 2019/12/4",
+          "text": "房間乾淨整齊,佈置和照片相當一致 此次八人同行一起入住,在客廳聊天很有家的氛圍,很推薦團體旅行選擇 地點步行離捷運站有點距離",
+          "price": "1390",
+          "otherPrice": "686",
+          "tax": "234"
+        }
+      ]
+    }
+  ],
+  "hotel_rooms": [
+    {
+      "id": 1,
+      "hotelId": 1,
+      "name": "好好四人房",
+      "info": "房型: 四人房\r\n小孩: 1 大人: 2\r\n入住日期: 2019/12/4",
+      "text": "房間乾淨整齊,佈置和照片相當一致 此次八人同行一起入住,在客廳聊天很有家的氛圍,很推薦團體旅行選擇 地點步行離捷運站有點距離",
+      "price": "4567",
+      "otherPrice": "686",
+      "tax": "234"
+    },
+    {
+      "id": 2,
+      "hotelId": 1,
+      "name": "好好四人房",
+      "info": "房型: 四人房\r\n小孩: 1 大人: 2\r\n入住日期: 2019/12/4",
+      "text": "房間乾淨整齊,佈置和照片相當一致 此次八人同行一起入住,在客廳聊天很有家的氛圍,很推薦團體旅行選擇 地點步行離捷運站有點距離",
+      "price": "4567",
+      "otherPrice": "686",
+      "tax": "234"
+    },
+    {
+      "id": 3,
+      "hotelId": 1,
+      "name": "好好四人房",
+      "info": "房型: 四人房\r\n小孩: 1 大人: 2\r\n入住日期: 2019/12/4",
+      "text": "房間乾淨整齊,佈置和照片相當一致 此次八人同行一起入住,在客廳聊天很有家的氛圍,很推薦團體旅行選擇 地點步行離捷運站有點距離",
+      "price": "4567",
+      "otherPrice": "686",
+      "tax": "234"
+    },
+    {
+      "id": 4,
+      "hotelId": 2,
+      "name": "水水兩人房",
+      "info": "房型: 兩人房\r\n小孩: 1 大人: 2\r\n入住日期: 2019/12/4",
+      "text": "房間乾淨整齊,佈置和照片相當一致 此次八人同行一起入住,在客廳聊天很有家的氛圍,很推薦團體旅行選擇 地點步行離捷運站有點距離",
+      "price": "1233",
+      "otherPrice": "322",
+      "tax": "123"
     }
   ],
   "products": [
