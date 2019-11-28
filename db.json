@@ -106,7 +106,39 @@
       "orderTime": 1574921214497
     }
   ],
-  "hotels": [],
+  "hotels": [
+    {
+      "id": 1,
+      "vendor": "北海道",
+      "name": "凱撒大飯店",
+      "info": "房型: 四人房\r\n小孩: 1 大人: 2\r\n入住日期: 2019/12/4",
+      "slogan": "ksdjflkdjildjfijd;j dlcmla;m",
+      "text": "因為韓國人都很愛攜家帶眷去度假，因此房間大多可容納4個人以上，非常適合闔家出遊～除了西式的床外，房間內還有另外一個小房間可以鋪床睡，想要體驗韓國的『溫突』式火坑一定要來這裡！它是利用天然氣燃燒所產生的熱氣，通過房屋下面的管道來烘暖整個屋內，所以地板一點也不冷冰冰，還很溫暖呢！浴室是採乾溼分離的設計，還有小廚房跟餐桌，非常溫馨～渡假村裡附有旋轉木馬、保齡球館和超市等，像一個小型遊樂園，休閒娛樂都顧到！",
+      "phone": "021321300000",
+      "price": "4567",
+      "address": "Seascapes Resort Town, 麥丹島, 宿霧, 菲律賓 - 查看地圖&週邊景點"
+    },
+    {
+      "id": 2,
+      "vendor": "北海道",
+      "name": "凱撒大飯店",
+      "text": "房間乾淨整齊,佈置和照片相當一致 此次八人同行一起入住,在客廳聊天很有家的氛圍,很推薦團體旅行選擇 地點步行離捷運站有點距離",
+      "phone": "000000000",
+      "price": "5567",
+      "address": "Seascapes Resort Town, 麥丹島, 宿霧, 菲律賓 - 查看地圖&週邊景點",
+      "room": [
+        {
+          "id": 1,
+          "name": "好好四人房",
+          "info": "房型: 四人房\r\n小孩: 1 大人: 2\r\n入住日期: 2019/12/4",
+          "text": "房間乾淨整齊,佈置和照片相當一致 此次八人同行一起入住,在客廳聊天很有家的氛圍,很推薦團體旅行選擇 地點步行離捷運站有點距離",
+          "price": "1390",
+          "otherPrice": "686",
+          "tax": "234"
+        }
+      ]
+    }
+  ],
   "areas": [
     {
       "id": 1,
@@ -210,336 +242,374 @@
   "products": [
     {
       "id": 1,
-      "vendor":"Burton",
+      "vendor": "Burton",
       "name": "Custom Camber 單板雪板",
-      "No":"10707106000150",
-      "info":"ALL MOUNTAIN SNOWBOARD",
-      "coverImg":"方形縮圖",
-      "type":"snowboards",
-      "img":["/images/Product/10707106000150_1.png",
+      "No": "10707106000150",
+      "info": "ALL MOUNTAIN SNOWBOARD",
+      "coverImg": "方形縮圖",
+      "type": "snowboards",
+      "img": [
+        "/images/Product/10707106000150_1.png",
         "/images/Product/10707106000150_2.png",
         "/images/Product/10707106000150_3.png",
         "/images/Product/10707106000150_4.png",
         "/images/Product/10707106000150_5.png",
-        "/images/Product/10707106000150_6.png"],
+        "/images/Product/10707106000150_6.png"
+      ],
       "price": 18000,
-      "size":"150"
+      "size": "150"
     },
     {
       "id": 2,
-      "vendor":"Burton",
+      "vendor": "Burton",
       "name": "Custom Camber 單板雪板",
-      "No":"10707106000150",
-      "info":"ALL MOUNTAIN SNOWBOARD",
-      "coverImg":"方形縮圖",
-      "type":"snowboards",
-      "img":["/images/Product/10707106000150_1.png",
+      "No": "10707106000150",
+      "info": "ALL MOUNTAIN SNOWBOARD",
+      "coverImg": "方形縮圖",
+      "type": "snowboards",
+      "img": [
+        "/images/Product/10707106000150_1.png",
         "/images/Product/10707106000150_2.png",
         "/images/Product/10707106000150_3.png",
         "/images/Product/10707106000150_4.png",
         "/images/Product/10707106000150_5.png",
-        "/images/Product/10707106000150_6.png"],
+        "/images/Product/10707106000150_6.png"
+      ],
       "price": 18000,
-      "size":"155"
+      "size": "155"
     },
     {
       "id": 3,
-      "vendor":"Burton",
+      "vendor": "Burton",
       "name": "Custom Camber 單板雪板",
-      "No":"10707106000150",
-      "info":"ALL MOUNTAIN SNOWBOARD",
-      "coverImg":"方形縮圖",
-      "type":"snowboards",
-      "img":["/images/Product/10707106000150_1.png",
+      "No": "10707106000150",
+      "info": "ALL MOUNTAIN SNOWBOARD",
+      "coverImg": "方形縮圖",
+      "type": "snowboards",
+      "img": [
+        "/images/Product/10707106000150_1.png",
         "/images/Product/10707106000150_2.png",
         "/images/Product/10707106000150_3.png",
         "/images/Product/10707106000150_4.png",
         "/images/Product/10707106000150_5.png",
-        "/images/Product/10707106000150_6.png"],
+        "/images/Product/10707106000150_6.png"
+      ],
       "price": 18000,
-      "size":"160"
+      "size": "160"
     },
     {
       "id": 4,
-      "vendor":"Burton",
+      "vendor": "Burton",
       "name": "Custom X Camber 單板雪板",
-      "No":"106891",
-      "info":"ALL MOUNTAIN SNOWBOARD",
-      "coverImg":"方形縮圖",
-      "type":"snowboards",
-      "img":["/images/Product/106891_1.png",
+      "No": "106891",
+      "info": "ALL MOUNTAIN SNOWBOARD",
+      "coverImg": "方形縮圖",
+      "type": "snowboards",
+      "img": [
+        "/images/Product/106891_1.png",
         "/images/Product/106891_2.png",
         "/images/Product/106891_3.png",
         "/images/Product/106891_4.png",
         "/images/Product/106891_5.png",
-        "/images/Product/106891_6.png"],
+        "/images/Product/106891_6.png"
+      ],
       "price": 22500,
-      "size":"150"
+      "size": "150"
     },
     {
       "id": 5,
-      "vendor":"Burton",
+      "vendor": "Burton",
       "name": "Custom X Camber 單板雪板",
-      "No":"106891",
-      "info":"ALL MOUNTAIN SNOWBOARD",
-      "coverImg":"方形縮圖",
-      "type":"snowboards",
-      "img":["/images/Product/106891_1.png",
+      "No": "106891",
+      "info": "ALL MOUNTAIN SNOWBOARD",
+      "coverImg": "方形縮圖",
+      "type": "snowboards",
+      "img": [
+        "/images/Product/106891_1.png",
         "/images/Product/106891_2.png",
         "/images/Product/106891_3.png",
         "/images/Product/106891_4.png",
         "/images/Product/106891_5.png",
-        "/images/Product/106891_6.png"],
+        "/images/Product/106891_6.png"
+      ],
       "price": 22500,
-      "size":"154"
+      "size": "154"
     },
     {
       "id": 6,
-      "vendor":"Burton",
+      "vendor": "Burton",
       "name": "Custom X Camber 單板雪板",
-      "No":"106891",
-      "info":"ALL MOUNTAIN SNOWBOARD",
-      "coverImg":"方形縮圖",
-      "type":"snowboards",
-      "img":["/images/Product/106891_1.png",
+      "No": "106891",
+      "info": "ALL MOUNTAIN SNOWBOARD",
+      "coverImg": "方形縮圖",
+      "type": "snowboards",
+      "img": [
+        "/images/Product/106891_1.png",
         "/images/Product/106891_2.png",
         "/images/Product/106891_3.png",
         "/images/Product/106891_4.png",
         "/images/Product/106891_5.png",
-        "/images/Product/106891_6.png"],
+        "/images/Product/106891_6.png"
+      ],
       "price": 22500,
-      "size":"156"
+      "size": "156"
     },
     {
       "id": 7,
-      "vendor":"Burton",
+      "vendor": "Burton",
       "name": "Custom X Camber 單板雪板",
-      "No":"106891",
-      "info":"ALL MOUNTAIN SNOWBOARD",
-      "coverImg":"方形縮圖",
-      "type":"snowboards",
-      "img":["/images/Product/106891_1.png",
+      "No": "106891",
+      "info": "ALL MOUNTAIN SNOWBOARD",
+      "coverImg": "方形縮圖",
+      "type": "snowboards",
+      "img": [
+        "/images/Product/106891_1.png",
         "/images/Product/106891_2.png",
         "/images/Product/106891_3.png",
         "/images/Product/106891_4.png",
         "/images/Product/106891_5.png",
-        "/images/Product/106891_6.png"],
+        "/images/Product/106891_6.png"
+      ],
       "price": 22500,
-      "size":"158"
+      "size": "158"
     },
     {
       "id": 8,
-      "vendor":"Burton",
+      "vendor": "Burton",
       "name": "Custom X Camber 單板雪板",
-      "No":"106891",
-      "info":"ALL MOUNTAIN SNOWBOARD",
-      "coverImg":"方形縮圖",
-      "type":"snowboards",
-      "img":["/images/Product/106891_1.png",
+      "No": "106891",
+      "info": "ALL MOUNTAIN SNOWBOARD",
+      "coverImg": "方形縮圖",
+      "type": "snowboards",
+      "img": [
+        "/images/Product/106891_1.png",
         "/images/Product/106891_2.png",
         "/images/Product/106891_3.png",
         "/images/Product/106891_4.png",
         "/images/Product/106891_5.png",
-        "/images/Product/106891_6.png"],
+        "/images/Product/106891_6.png"
+      ],
       "price": 22500,
-      "size":"162"
+      "size": "162"
     },
     {
       "id": 9,
-      "vendor":"Burton",
+      "vendor": "Burton",
       "name": "Custom X Camber 單板雪板",
-      "No":"106891",
-      "info":"ALL MOUNTAIN SNOWBOARD",
-      "coverImg":"方形縮圖",
-      "type":"snowboards",
-      "img":["/images/Product/106891_1.png",
+      "No": "106891",
+      "info": "ALL MOUNTAIN SNOWBOARD",
+      "coverImg": "方形縮圖",
+      "type": "snowboards",
+      "img": [
+        "/images/Product/106891_1.png",
         "/images/Product/106891_2.png",
         "/images/Product/106891_3.png",
         "/images/Product/106891_4.png",
         "/images/Product/106891_5.png",
-        "/images/Product/106891_6.png"],
+        "/images/Product/106891_6.png"
+      ],
       "price": 22500,
-      "size":"164"
+      "size": "164"
     },
     {
       "id": 10,
-      "vendor":"Burton",
+      "vendor": "Burton",
       "name": "Kilroy Twin Camber 單板雪板",
-      "No":"1953318888",
-      "info":"ALL MOUNTAIN SNOWBOARD",
-      "coverImg":"方形縮圖",
-      "type":"snowboards",
-      "img":["/images/Product/195331_1.png",
+      "No": "1953318888",
+      "info": "ALL MOUNTAIN SNOWBOARD",
+      "coverImg": "方形縮圖",
+      "type": "snowboards",
+      "img": [
+        "/images/Product/195331_1.png",
         "/images/Product/195331_2.png",
         "/images/Product/195331_3.png",
         "/images/Product/195331_4.png",
         "/images/Product/195331_5.png",
-        "/images/Product/195331_6.png"],
+        "/images/Product/195331_6.png"
+      ],
       "price": 12000,
-      "size":"164"
+      "size": "164"
     },
     {
       "id": 11,
-      "vendor":"Burton",
+      "vendor": "Burton",
       "name": "Skeleton Key Camber 單板雪板",
-      "No":"17983103000150",
-      "info":"ALL MOUNTAIN / POWDER SNOWBOARD",
-      "coverImg":"方形縮圖",
-      "type":"snowboards",
-      "img":["/images/Product/17983103000150_1.png",
+      "No": "17983103000150",
+      "info": "ALL MOUNTAIN / POWDER SNOWBOARD",
+      "coverImg": "方形縮圖",
+      "type": "snowboards",
+      "img": [
+        "/images/Product/17983103000150_1.png",
         "/images/Product/17983103000150_2.png",
         "/images/Product/17983103000150_3.png",
         "/images/Product/17983103000150_4.png",
         "/images/Product/17983103000150_5.png",
-        "/images/Product/17983103000150_6.png"],
+        "/images/Product/17983103000150_6.png"
+      ],
       "price": 15000,
-      "size":"166"
+      "size": "166"
     },
     {
       "id": 12,
-      "vendor":"Burton",
+      "vendor": "Burton",
       "name": "Name Dropper Camber 單板雪板",
-      "No":"17983103000150",
-      "info":"ALL MOUNTAIN / PARK SNOWBOARD",
-      "coverImg":"方形縮圖",
-      "type":"snowboards",
-      "img":["/images/Product/17983103000150_1.png",
+      "No": "17983103000150",
+      "info": "ALL MOUNTAIN / PARK SNOWBOARD",
+      "coverImg": "方形縮圖",
+      "type": "snowboards",
+      "img": [
+        "/images/Product/17983103000150_1.png",
         "/images/Product/17983103000150_2.png",
         "/images/Product/17983103000150_3.png",
         "/images/Product/17983103000150_4.png",
         "/images/Product/17983103000150_5.png",
-        "/images/Product/17983103000150_6.png"],
+        "/images/Product/17983103000150_6.png"
+      ],
       "price": 14100,
-      "size":"166"
+      "size": "166"
     },
     {
       "id": 20,
-      "vendor":"Burton",
+      "vendor": "Burton",
       "name": "Malavita Re:Flex 雪板固定器",
-      "No":"10549106620",
-      "info":"ALL MOUNTAIN / PARK SNOWBOARD",
-      "coverImg":"方形縮圖",
-      "type":"bindings",
-      "img":["/images/Product/10549106620_1.png",
+      "No": "10549106620",
+      "info": "ALL MOUNTAIN / PARK SNOWBOARD",
+      "coverImg": "方形縮圖",
+      "type": "bindings",
+      "img": [
+        "/images/Product/10549106620_1.png",
         "/images/Product/10549106620_2.png",
         "/images/Product/10549106620_3.png",
-        "/images/Product/10549106620_4.png"],
+        "/images/Product/10549106620_4.png"
+      ],
       "price": 9600,
-      "size":"7"
+      "size": "7"
     },
     {
       "id": 30,
-      "vendor":"Burton",
+      "vendor": "Burton",
       "name": "Ruler StepOn®單板滑雪靴",
-      "No":"10622106080",
-      "info":"ALL MOUNTAIN SNOWBOARD",
-      "coverImg":"方形縮圖",
-      "type":"boots",
-      "img":["/images/Product/10622106080_1.png",
+      "No": "10622106080",
+      "info": "ALL MOUNTAIN SNOWBOARD",
+      "coverImg": "方形縮圖",
+      "type": "boots",
+      "img": [
+        "/images/Product/10622106080_1.png",
         "/images/Product/10622106080_2.png",
         "/images/Product/10622106080_3.png",
         "/images/Product/10622106080_4.png",
-        "/images/Product/10622106080_5.png"],
+        "/images/Product/10622106080_5.png"
+      ],
       "price": 9000,
-      "size":"7"
+      "size": "7"
     },
     {
       "id": 31,
-      "vendor":"Burton",
+      "vendor": "Burton",
       "name": "Ruler StepOn®單板滑雪靴",
-      "No":"10622106080",
-      "info":"ALL MOUNTAIN SNOWBOARD",
-      "coverImg":"方形縮圖",
-      "type":"類別",
-      "img":["/images/Product/10622106080_1.png",
+      "No": "10622106080",
+      "info": "ALL MOUNTAIN SNOWBOARD",
+      "coverImg": "方形縮圖",
+      "type": "類別",
+      "img": [
+        "/images/Product/10622106080_1.png",
         "/images/Product/10622106080_2.png",
         "/images/Product/10622106080_3.png",
         "/images/Product/10622106080_4.png",
-        "/images/Product/10622106080_5.png"],
+        "/images/Product/10622106080_5.png"
+      ],
       "price": 9000,
-      "size":"8"
+      "size": "8"
     },
     {
       "id": 32,
-      "vendor":"Burton",
+      "vendor": "Burton",
       "name": "Ruler StepOn®單板滑雪靴",
-      "No":"10622106080",
-      "info":"ALL MOUNTAIN SNOWBOARD",
-      "coverImg":"方形縮圖",
-      "type":"boots",
-      "img":["/images/Product/10622106080_1.png",
+      "No": "10622106080",
+      "info": "ALL MOUNTAIN SNOWBOARD",
+      "coverImg": "方形縮圖",
+      "type": "boots",
+      "img": [
+        "/images/Product/10622106080_1.png",
         "/images/Product/10622106080_2.png",
         "/images/Product/10622106080_3.png",
         "/images/Product/10622106080_4.png",
-        "/images/Product/10622106080_5.png"],
+        "/images/Product/10622106080_5.png"
+      ],
       "price": 9000,
-      "size":"9"
+      "size": "9"
     },
     {
       "id": 33,
-      "vendor":"burton",
+      "vendor": "burton",
       "name": "Ruler StepOn®單板滑雪靴",
-      "No":"10622106080",
-      "info":"ALL MOUNTAIN SNOWBOARD",
-      "coverImg":"方形縮圖",
-      "type":"boots",
-      "img":["/images/Product/10622106080_1.png",
+      "No": "10622106080",
+      "info": "ALL MOUNTAIN SNOWBOARD",
+      "coverImg": "方形縮圖",
+      "type": "boots",
+      "img": [
+        "/images/Product/10622106080_1.png",
         "/images/Product/10622106080_2.png",
         "/images/Product/10622106080_3.png",
         "/images/Product/10622106080_4.png",
-        "/images/Product/10622106080_5.png"],
+        "/images/Product/10622106080_5.png"
+      ],
       "price": 9000,
-      "size":"10"
+      "size": "10"
     },
     {
       "id": 40,
-      "vendor":"burton",
+      "vendor": "burton",
       "name": "GORE‑TEX 2L Swash 夾克",
-      "No":"110001106401",
-      "info":"ALL MOUNTAIN SNOWBOARD",
-      "coverImg":"方形縮圖",
-      "type":"jackets",
-      "img":["/images/Product/10001106401_1.png",
+      "No": "110001106401",
+      "info": "ALL MOUNTAIN SNOWBOARD",
+      "coverImg": "方形縮圖",
+      "type": "jackets",
+      "img": [
+        "/images/Product/10001106401_1.png",
         "/images/Product/110001106401_2.png",
         "/images/Product/10001106401_3.png",
         "/images/Product/10001106401_4.png",
         "/images/Product/10001106401_5.png",
-        "/images/Product/10001106401_6.png"],
+        "/images/Product/10001106401_6.png"
+      ],
       "price": 9000,
-      "size":"10"
-    }
-    ,
+      "size": "10"
+    },
     {
       "id": 50,
-      "vendor":"burton",
+      "vendor": "burton",
       "name": "Southside Pant 復古款",
-      "No":"10193106251",
-      "info":"WINTER SNOW PANT",
-      "coverImg":"方形縮圖",
-      "type":"Pants",
-      "img":["/images/Product/10193106251_1.png",
+      "No": "10193106251",
+      "info": "WINTER SNOW PANT",
+      "coverImg": "方形縮圖",
+      "type": "Pants",
+      "img": [
+        "/images/Product/10193106251_1.png",
         "/images/Product/10193106251_2.png",
         "/images/Product/10193106251_3.png",
         "/images/Product/10193106251_4.png",
         "/images/Product/10193106251_5.png",
-        "/images/Product/10193106251_6.png"],
+        "/images/Product/10193106251_6.png"
+      ],
       "price": 4500,
-      "size":"10"
-    }
-    ,
+      "size": "10"
+    },
     {
       "id": 60,
-      "vendor":"burton",
+      "vendor": "burton",
       "name": "Anon Raider 3 安全帽",
-      "No":"21429100638",
-      "info":"SKI & SNOWBOARD HELMET",
-      "coverImg":"方形縮圖",
-      "type":"Helmets",
-      "img":["/images/Product/21429100638_1.png",
+      "No": "21429100638",
+      "info": "SKI & SNOWBOARD HELMET",
+      "coverImg": "方形縮圖",
+      "type": "Helmets",
+      "img": [
+        "/images/Product/21429100638_1.png",
         "/images/Product/21429100638_2.png",
-        "/images/Product/21429100638_3.png"],
+        "/images/Product/21429100638_3.png"
+      ],
       "price": 1950,
-      "size":"10"
+      "size": "10"
     }
   ],
   "userDeliveryInfos": [
