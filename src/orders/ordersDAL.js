@@ -15,6 +15,7 @@ const insert = (userId, products, orderAmt, receiver, mobile, address) => {
     orderTime: new Date().getTime(),
   };
   db.read().get('orders').push(orders).write();
+  return orders.orderNo;
 };
 
 function findByUserId(userId) {

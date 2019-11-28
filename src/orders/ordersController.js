@@ -1,5 +1,7 @@
 import ordersService from './ordersService';
 
+const log = require('../config/winston');
+
 // function responseError(res, msg = 'Bad request') {
 //   res.status(400).json({ message: msg });
 // }
@@ -22,6 +24,7 @@ import ordersService from './ordersService';
 // }
 
 const createOrder = (req, res) => {
+  log.info(`CreateOrder api - body=${req.body}`);
   // if (!verifyCreateOrder(req, res)) {
   //   return;
   // }
