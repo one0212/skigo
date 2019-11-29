@@ -92,7 +92,7 @@ router.post('/ticket-list', urlencodedParser, (req, res) => {
   if (day.length) {
     where += ` AND ticket_use_day IN ('${day.join("','")}') `;
   }
-  console.log(where);
+  // console.log(where);
   // console.log(`SELECT * FROM ticket ${where} `);
   db.query(`SELECT * FROM ticket ${where} ${Sort}`, (error, results) => {
     // 印出變數代稱是否有成功撈到(為字串)
@@ -102,7 +102,7 @@ router.post('/ticket-list', urlencodedParser, (req, res) => {
     // 並用map重新return，存入output陣列
 
     // console.log(results);
-    console.log(results);
+    // console.log(results);
     output = results.map((el) => {
       if (output.indexOf(el.ticket_sid) === -1) {
         output.push(el.ticket_sid);
@@ -126,11 +126,11 @@ router.get('/ticket-area/:areaSid?', (req, res) => {
   const sql = `SELECT * FROM ticket WHERE area_sid = '${areaSid}'`;
   // const sql = 'SELECT * FROM ticket';
 
-  console.log(req.params);
+  // console.log(req.params);
 
   db.query(sql, (error, results) => {
     // 印出變數代稱是否有成功撈到(為字串)
-    console.log(results);
+    // console.log(results);
     res.json(results);
   });
 });
@@ -138,8 +138,8 @@ router.get('/ticket-area/:areaSid?', (req, res) => {
 // 票券資料庫三
 router.get('/ticket-page/:ticketSid?', (req, res) => {
   const { ticketSid } = req.params;
-  console.log(req.params);
-  console.log(typeof (ticketSid));
+  // console.log(req.params);
+  // console.log(typeof (ticketSid));
 
 
   // SQL篩選路由輸入的變數的資料

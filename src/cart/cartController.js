@@ -2,7 +2,7 @@ const Constants = require('../utils/Constants');
 const log = require('../config/winston');
 const cartService = require('./cartService');
 
-function responseError(res, code = 400, msg = 'Bad request') {
+function responseError(res, code, msg) {
   res.status(code).json({ message: msg });
 }
 
@@ -24,17 +24,17 @@ function verifyBeforeAddItem(req, res) {
   const { prodId, prodType, qty } = req.body;
   if (!prodId) {
     log.error(`不正確的商品id. prodId=${prodId}`);
-    responseError(res, `不正確的商品id. prodId=${prodId}`);
+    responseError(res, 400, `不正確的商品id. prodId=${prodId}`);
     return false;
   }
   if (!prodType || !Object.values(Constants.PROD_TABLE).indexOf(prodType) === -1) {
     log.error(`不正確的商品類型. prodType=${prodType}`);
-    responseError(res, `不正確的商品數量. prodType=${prodType}`);
+    responseError(res, 400, `不正確的商品數量. prodType=${prodType}`);
     return false;
   }
   if (!qty || qty < 1) {
     log.error(`不正確的商品數量. qty=${qty}`);
-    responseError(res, `不正確的商品數量. qty=${qty}`);
+    responseError(res, 400, `不正確的商品數量. qty=${qty}`);
     return false;
   }
   return true;
