@@ -13,9 +13,12 @@ class Cart {
       oldCartItem = new CartItem(
         item.prodId,
         item.prodType,
-        item.prodName,
+        item.name,
         item.qty + oldCartItem.qty,
         item.price,
+        item.info,
+        item.vendor,
+        item.coverImg,
         item.totalAmt + oldCartItem.totalAmt,
       );
       this.items[key] = oldCartItem;
@@ -27,7 +30,8 @@ class Cart {
     if (allItems.length === 1) {
       this.totalAmt = allItems[0].totalAmt;
     } else {
-      this.totalAmt = allItems.reduce((a, b) => a.totalAmt + b.totalAmt);
+      this.totalAmt = allItems.map((v) => v.totalAmt)
+        .reduce((a, b) => a + b);
     }
   }
 }

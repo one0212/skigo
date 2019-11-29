@@ -24,7 +24,7 @@ const log = require('../config/winston');
 // }
 
 const createOrder = (req, res) => {
-  log.info(`CreateOrder api - body=${req.body}`);
+  log.info(`CreateOrder api - body=${JSON.stringify(req.body)}`);
   // if (!verifyCreateOrder(req, res)) {
   //   return;
   // }
