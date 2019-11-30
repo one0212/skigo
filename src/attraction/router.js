@@ -35,10 +35,10 @@ router.post('/attractionAdd', urlencodedParser, (req, res) => {
   // 所需接收資料如下 : sid 為需增加的 AttractionsDataNew 內sid
   // {"sid":4,"day":2}
 
-  console.log(req.body.sid);
+  // console.log(req.body.sid);
 
   const sql = `INSERT INTO AttractionsDay (Attraction_sid , day) VALUES (${req.body.sid},${req.body.day} )`;
-  console.log(sql);
+  // console.log(sql);
   db.query(sql, () => {
     // 印出變數代稱是否有成功撈到(為字串)
     // console.log(req.params.class_sid);
@@ -51,10 +51,10 @@ router.post('/attractionDel', urlencodedParser, (req, res) => {
   // 所需接收資料如下 : sid 為 AttractionsDay 要刪除資料的 sid
   // {"sid":4}
 
-  console.log(req.body.sid);
+  // console.log(req.body.sid);
 
   const sql = `DELETE FROM AttractionsDay WHERE \`sid\` = ${req.body.sid}`;
-  console.log(sql);
+  // console.log(sql);
   db.query(sql, () => {
     // 印出變數代稱是否有成功撈到(為字串)
     // console.log(req.params.class_sid);
@@ -67,11 +67,11 @@ router.post('/attractionUpdate', urlencodedParser, (req, res) => {
   // 所需接收資料如下 : sid 要修改的流水號 stay 停留時間
   // {"sid":4 , "stay" :20}
 
-  console.log(req.body.sid);
-  console.log(req.body.stay);
+  // console.log(req.body.sid);
+  // console.log(req.body.stay);
 
   const sql = `UPDATE AttractionsDay SET stay_time = ${req.body.stay} WHERE sid =${req.body.sid}`;
-  console.log(sql);
+  // console.log(sql);
   db.query(sql, () => {
     // 印出變數代稱是否有成功撈到(為字串)
     // console.log(req.params.class_sid);
