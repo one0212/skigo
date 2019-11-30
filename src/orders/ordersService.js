@@ -1,4 +1,5 @@
 import ordersDAL from './ordersDAL';
+import Cart from '../cart/Cart';
 
 const log = require('../config/winston');
 
@@ -19,6 +20,7 @@ const createOrder = (req, res) => {
     receiver,
     mobile,
     address);
+  req.session.user.cart = new Cart();
   res.status(200).json({ orderNo });
 };
 

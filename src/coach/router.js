@@ -20,16 +20,16 @@ db.connect();// 連線
 bluebird.promisifyAll(db);
 
 router.post('/coach-list', urlencodedParser, (req, res) => {
-  console.log(req.body);
+  // console.log(req.body);
   let Sort = '';
   if (req.body.sort === true) {
     Sort = 'ORDER BY `class_price` DESC ';
-    console.log(`從高到低${Sort}`);
+    // console.log(`從高到低${Sort}`);
   } else if (req.body.sort === false) {
     Sort = 'ORDER BY `class_price` ASC ';
-    console.log(`從低到高${Sort}`);
+    // console.log(`從低到高${Sort}`);
   } else {
-    console.log('no sort!');
+    // console.log('no sort!');
     Sort = '';
   }
 
@@ -128,7 +128,7 @@ router.post('/coach-list', urlencodedParser, (req, res) => {
       }
       return undefined;
     });
-    console.log(output);
+    // console.log(output);
 
     res.json(output);
   });
@@ -177,7 +177,7 @@ router.get('/coach-book/:coachSid?', (req, res) => {
 // 教練資料庫四 - 隨機排序
 
 router.post('/coach-random', urlencodedParser, (req, res) => {
-  console.log(req.body);
+  // console.log(req.body);
 
   // output 過濾重複課程的陣列
   let output = [];
@@ -202,7 +202,7 @@ router.post('/coach-random', urlencodedParser, (req, res) => {
     output = output.filter((v) => !!v);
 
     output.sort(() => Math.random() - 0.5);
-    console.log(output);
+    // console.log(output);
 
     res.json(output.slice(0, 5));
   });
@@ -211,19 +211,19 @@ router.post('/coach-random', urlencodedParser, (req, res) => {
 // 教練資料庫五 加最愛
 
 router.post('/coach-love', urlencodedParser, (req, res) => {
-  console.log(req.body.loveState);
+  // console.log(req.body.loveState);
 
   let { loveNum } = req.body;
   const { coachSid } = req.body;
-  console.log(loveNum);
-  console.log(coachSid);
+  // console.log(loveNum);
+  // console.log(coachSid);
 
   if (req.body.loveState === true) {
     loveNum += 1;
-    console.log(`我要加愛心${loveNum}`);
+    // console.log(`我要加愛心${loveNum}`);
   } else {
     loveNum -= 1;
-    console.log(`我要減愛心${loveNum}`);
+    // console.log(`我要減愛心${loveNum}`);
   }
 
   const sql = `UPDATE coach SET \`coach_love\` =${loveNum}  WHERE \`coach_sid\` = ${coachSid}`;
@@ -236,12 +236,12 @@ router.post('/coach-love', urlencodedParser, (req, res) => {
 
 // 教練資料庫6 同個教練的所有課程
 router.post('/coach-same', urlencodedParser, (req, res) => {
-  console.log(req.body.coach);
+  // console.log(req.body.coach);
   const coach = mysql.escape(req.body.coach);// mysql內建 跳脫
   const sql = `SELECT * FROM coach WHERE coach_name = ${coach}`;
   // SELECT * FROM `coach` WHERE `coach_name` ='Andrea'
 
-  console.log(sql);
+  // console.log(sql);
   // console.log(`SELECT * FROM coach ${where} `);
   db.query(sql, (error, results) => {
     res.json(results);
