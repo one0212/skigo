@@ -153,5 +153,19 @@ router.get('/ticket-page/:ticketSid?', (req, res) => {
   });
 });
 
+// 票券資料庫四 其他相關票券
+router.post('/ticket-same', urlencodedParser, (req, res) => {
+  // console.log(req.body.ticket);
+  const ticket = mysql.escape(req.body.ticket);// mysql內建 跳脫
+  const sql = `SELECT * FROM ticket WHERE ticket_name = ${ticket}`;
+  // SELECT * FROM `ticket` WHERE `ticket_name` =''
+
+  // console.log(sql);
+  // console.log(`SELECT * FROM ticket ${where} `);
+  db.query(sql, (error, results) => {
+    res.json(results);
+  });
+});
+
 
 module.exports = router;
