@@ -29,460 +29,14 @@
     {
       "id": "s85551S1",
       "email": "abc123@gmail.com",
-      "password": "123",
+      "password": "123456",
       "role": "SKIGO",
       "avatar": "default.png",
       "activeCode": "OcS7DSNob.1574062169915",
       "isActive": false
-    },
-    {
-      "id": "NPZdknG0",
-      "email": "feliciajiang12@gmail.com",
-      "password": "123456",
-      "role": "SKIGO",
-      "avatar": "default.png",
-      "activeCode": "4pMVxj2o_.1575300171136",
-      "isActive": true
     }
   ],
-  "orders": [
-    {
-      "orderNo": "lDNeqUBn",
-      "userId": "yOnKPidc",
-      "products": [
-        {
-          "prodId": 11,
-          "prodType": "products",
-          "name": "Skeleton Key Camber 單板雪板",
-          "qty": 1,
-          "price": 15000,
-          "info": [
-            "測試"
-          ],
-          "vendor": "Burton",
-          "coverImg": "方形縮圖",
-          "totalAmt": 15000
-        },
-        {
-          "prodId": 1,
-          "prodType": "products",
-          "name": "Custom Camber 單板雪板",
-          "qty": 1,
-          "price": 18000,
-          "info": [
-            "測試"
-          ],
-          "vendor": "Burton",
-          "coverImg": "10707106000150_0.png",
-          "totalAmt": 18000
-        },
-        {
-          "prodId": 5,
-          "prodType": "hotels",
-          "name": "新富良野王子大飯店",
-          "qty": 1,
-          "price": 10052,
-          "info": [
-            "房型: 豪華四人房",
-            "成人: 4人",
-            "入住日期:2019/12/13~2019/12/15"
-          ],
-          "vendor": "北海道富良野雪場",
-          "coverImg": "/images/hotel/r-3.jpg",
-          "totalAmt": 10052
-        },
-        {
-          "prodId": 4,
-          "prodType": "coaches",
-          "name": "專業講師開班",
-          "qty": 1,
-          "price": 1200,
-          "info": [
-            "2小時的單板滑雪體驗課程",
-            "使用日期: 12/5"
-          ],
-          "vendor": "北海道富良野雪場",
-          "coverImg": "/images/coach/c1.jpg",
-          "totalAmt": 1200
-        },
-        {
-          "prodId": 7,
-          "prodType": "areas",
-          "name": "纜車一日券(兒童)",
-          "qty": 1,
-          "price": 1800,
-          "info": [
-            "使用期限至2020/3/11為止"
-          ],
-          "vendor": "北海道富良野雪場",
-          "coverImg": "/images/areas/areas-1.jpg",
-          "totalAmt": 1800
-        }
-      ],
-      "orderAmt": 46052,
-      "receiver": "123",
-      "mobile": "ergw",
-      "address": "dfs",
-      "status": "PROCESSING",
-      "orderTime": 1575274321065
-    },
-    {
-      "orderNo": "0pIoRC-r",
-      "userId": "yOnKPidc",
-      "products": [
-        {
-          "prodId": 1,
-          "prodType": "coaches",
-          "name": "專業講師開班",
-          "qty": 1,
-          "price": 1200,
-          "info": [
-            "2小時的單板滑雪體驗課程",
-            "使用日期: 12/5"
-          ],
-          "vendor": "北海道富良野雪場",
-          "coverImg": "/images/coach/c1.jpg",
-          "totalAmt": 1200
-        },
-        {
-          "prodId": 1,
-          "prodType": "areas",
-          "name": "纜車一日券(成人)",
-          "qty": 1,
-          "price": 2000,
-          "info": [
-            "使用期限至2020/3/11為止"
-          ],
-          "vendor": "北海道富良野雪場",
-          "coverImg": "/images/areas/areas-1.jpg",
-          "totalAmt": 2000
-        }
-      ],
-      "orderAmt": 3200,
-      "receiver": "",
-      "mobile": "",
-      "address": "",
-      "status": "PROCESSING",
-      "orderTime": 1575274803026
-    },
-    {
-      "orderNo": "CrTDDYtT",
-      "userId": "yOnKPidc",
-      "products": [
-        {
-          "prodId": 5,
-          "prodType": "hotels",
-          "name": "新富良野王子大飯店",
-          "qty": 1,
-          "price": 10052,
-          "info": [
-            "房型: 豪華四人房",
-            "成人: 4人",
-            "入住日期:2019/12/13~2019/12/15"
-          ],
-          "vendor": "北海道富良野雪場",
-          "coverImg": "/images/hotel/r-3.jpg",
-          "totalAmt": 10052
-        },
-        {
-          "prodId": 4,
-          "prodType": "coaches",
-          "name": "專業講師開班",
-          "qty": 1,
-          "price": 1200,
-          "info": [
-            "2小時的單板滑雪體驗課程",
-            "使用日期: 12/5"
-          ],
-          "vendor": "北海道富良野雪場",
-          "coverImg": "/images/coach/c1.jpg",
-          "totalAmt": 1200
-        },
-        {
-          "prodId": 1,
-          "prodType": "products",
-          "name": "Custom Camber 單板雪板",
-          "qty": 1,
-          "price": 18000,
-          "info": [
-            "測試"
-          ],
-          "vendor": "Burton",
-          "coverImg": "10707106000150_0.png",
-          "totalAmt": 18000
-        }
-      ],
-      "orderAmt": 29252,
-      "receiver": "",
-      "mobile": "",
-      "address": "",
-      "status": "PROCESSING",
-      "orderTime": 1575274867395
-    },
-    {
-      "orderNo": "tmZVce0G",
-      "userId": "yOnKPidc",
-      "products": [
-        {
-          "prodId": 1,
-          "prodType": "products",
-          "name": "Custom Camber 單板雪板",
-          "qty": 1,
-          "price": 18000,
-          "info": [
-            "測試"
-          ],
-          "vendor": "Burton",
-          "coverImg": "10707106000150_0.png",
-          "totalAmt": 18000
-        },
-        {
-          "prodId": 5,
-          "prodType": "hotels",
-          "name": "新富良野王子大飯店",
-          "qty": 1,
-          "price": 10052,
-          "info": [
-            "房型: 豪華四人房",
-            "成人: 4人",
-            "入住日期:2019/12/13~2019/12/15"
-          ],
-          "vendor": "北海道富良野雪場",
-          "coverImg": "/images/hotel/r-3.jpg",
-          "totalAmt": 10052
-        },
-        {
-          "prodId": 1,
-          "prodType": "coaches",
-          "name": "專業講師開班",
-          "qty": 1,
-          "price": 1200,
-          "info": [
-            "2小時的單板滑雪體驗課程",
-            "使用日期: 12/5"
-          ],
-          "vendor": "北海道富良野雪場",
-          "coverImg": "/images/coach/c1.jpg",
-          "totalAmt": 1200
-        }
-      ],
-      "orderAmt": 29252,
-      "receiver": "",
-      "mobile": "",
-      "address": "",
-      "status": "PROCESSING",
-      "orderTime": 1575276175479
-    },
-    {
-      "orderNo": "KMnoRAIB",
-      "userId": "yOnKPidc",
-      "products": [
-        {
-          "prodId": 1,
-          "prodType": "areas",
-          "name": "纜車一日券(成人)",
-          "qty": 1,
-          "price": 2000,
-          "info": [
-            "使用期限至2020/3/11為止"
-          ],
-          "vendor": "北海道富良野雪場",
-          "coverImg": "/images/areas/areas-1.jpg",
-          "totalAmt": 2000
-        },
-        {
-          "prodId": 4,
-          "prodType": "products",
-          "name": "Custom X Camber 單板雪板",
-          "qty": 1,
-          "price": 22500,
-          "info": [
-            "測試"
-          ],
-          "vendor": "Burton",
-          "coverImg": "方形縮圖",
-          "totalAmt": 22500
-        },
-        {
-          "prodId": 1,
-          "prodType": "coaches",
-          "name": "專業講師開班",
-          "qty": 1,
-          "price": 1200,
-          "info": [
-            "2小時的單板滑雪體驗課程",
-            "使用日期: 12/5"
-          ],
-          "vendor": "北海道富良野雪場",
-          "coverImg": "/images/coach/c1.jpg",
-          "totalAmt": 1200
-        }
-      ],
-      "orderAmt": 25700,
-      "receiver": "",
-      "mobile": "",
-      "address": "",
-      "status": "PROCESSING",
-      "orderTime": 1575277070071
-    },
-    {
-      "orderNo": "T2jkcEbH",
-      "userId": "yOnKPidc",
-      "products": [
-        {
-          "prodId": 1,
-          "prodType": "products",
-          "name": "Custom Camber 單板雪板",
-          "qty": 1,
-          "price": 18000,
-          "info": [
-            "測試"
-          ],
-          "vendor": "Burton",
-          "coverImg": "10707106000150_0.png",
-          "totalAmt": 18000
-        },
-        {
-          "prodId": 1,
-          "prodType": "coaches",
-          "name": "專業講師開班",
-          "qty": 1,
-          "price": 1200,
-          "info": [
-            "2小時的單板滑雪體驗課程",
-            "使用日期: 12/5"
-          ],
-          "vendor": "北海道富良野雪場",
-          "coverImg": "/images/coach/c1.jpg",
-          "totalAmt": 1200
-        },
-        {
-          "prodId": 1,
-          "prodType": "areas",
-          "name": "纜車一日券(成人)",
-          "qty": 1,
-          "price": 2000,
-          "info": [
-            "使用期限至2020/3/11為止"
-          ],
-          "vendor": "北海道富良野雪場",
-          "coverImg": "/images/areas/areas-1.jpg",
-          "totalAmt": 2000
-        }
-      ],
-      "orderAmt": 21200,
-      "receiver": "",
-      "mobile": "",
-      "address": "",
-      "status": "PROCESSING",
-      "orderTime": 1575277915738
-    },
-    {
-      "orderNo": "YfwHg9Z6",
-      "userId": "yOnKPidc",
-      "products": [
-        {
-          "prodId": 1,
-          "prodType": "products",
-          "name": "Custom Camber 單板雪板",
-          "qty": 1,
-          "price": 18000,
-          "info": [
-            "測試"
-          ],
-          "vendor": "Burton",
-          "coverImg": "10707106000150_0.png",
-          "totalAmt": 18000
-        },
-        {
-          "prodId": 1,
-          "prodType": "areas",
-          "name": "纜車一日券(成人)",
-          "qty": 1,
-          "price": 2000,
-          "info": [
-            "使用期限至2020/3/11為止"
-          ],
-          "vendor": "北海道富良野雪場",
-          "coverImg": "/images/areas/areas-1.jpg",
-          "totalAmt": 2000
-        }
-      ],
-      "orderAmt": 20000,
-      "receiver": "",
-      "mobile": "",
-      "address": "",
-      "status": "PROCESSING",
-      "orderTime": 1575283267140
-    },
-    {
-      "orderNo": "jIgRZVt7",
-      "userId": "NPZdknG0",
-      "products": [
-        {
-          "prodId": 1,
-          "prodType": "products",
-          "name": "Custom Camber 單板雪板",
-          "qty": 1,
-          "price": 18000,
-          "info": [
-            "測試"
-          ],
-          "vendor": "Burton",
-          "coverImg": "10707106000150_0.png",
-          "totalAmt": 18000
-        },
-        {
-          "prodId": 5,
-          "prodType": "hotels",
-          "name": "新富良野王子大飯店",
-          "qty": 1,
-          "price": 10052,
-          "info": [
-            "房型: 豪華四人房",
-            "成人: 4人",
-            "入住日期:2019/12/13~2019/12/15"
-          ],
-          "vendor": "北海道富良野雪場",
-          "coverImg": "/images/hotel/r-3.jpg",
-          "totalAmt": 10052
-        },
-        {
-          "prodId": 1,
-          "prodType": "coaches",
-          "name": "專業講師開班",
-          "qty": 1,
-          "price": 1200,
-          "info": [
-            "2小時的單板滑雪體驗課程",
-            "使用日期: 12/5"
-          ],
-          "vendor": "北海道富良野雪場",
-          "coverImg": "/images/coach/c1.jpg",
-          "totalAmt": 1200
-        },
-        {
-          "prodId": 1,
-          "prodType": "areas",
-          "name": "纜車一日券(成人)",
-          "qty": 1,
-          "price": 2000,
-          "info": [
-            "使用期限至2020/3/11為止"
-          ],
-          "vendor": "北海道富良野雪場",
-          "coverImg": "/images/areas/areas-1.jpg",
-          "totalAmt": 2000
-        }
-      ],
-      "orderAmt": 31252,
-      "receiver": "周杰倫",
-      "mobile": "09110012355",
-      "address": "台北市大安區復興南路一段390號2樓204室",
-      "status": "PROCESSING",
-      "orderTime": 1575298369836
-    }
-  ],
+  "orders": [],
   "hotels": [
     {
       "id": 1,
@@ -3464,11 +3018,13 @@
       "vendor": "Burton",
       "name": "Custom Camber 單板雪板",
       "No": "10707106000150",
-      "info": ["全域型滑雪板"],
+      "info": [
+        "全域型滑雪板"
+      ],
       "info_name": "ALL MOUNTAIN SNOWBOARD",
       "coverImg": "/images/Product/10707106000150_0.png",
       "type": "snowboards",
-      "type1":"ALL MOUNTAIN",
+      "type1": "ALL MOUNTAIN",
       "img": [
         "/images/Product/10707106000150_1.png",
         "/images/Product/10707106000150_2.png",
@@ -3485,11 +3041,13 @@
       "vendor": "Burton",
       "name": "Custom Camber 單板雪板",
       "No": "10707106000150",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "ALL MOUNTAIN SNOWBOARD",
       "coverImg": "/images/Product/10707106000150_0.png",
       "type": "snowboards",
-      "type1":"ALL MOUNTAIN",
+      "type1": "ALL MOUNTAIN",
       "img": [
         "/images/Product/10707106000150_1.png",
         "/images/Product/10707106000150_2.png",
@@ -3506,11 +3064,13 @@
       "vendor": "Burton",
       "name": "Custom Camber 單板雪板",
       "No": "10707106000150",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "ALL MOUNTAIN SNOWBOARD",
       "coverImg": "/images/Product/10707106000150_0.png",
       "type": "snowboards",
-      "type1":"ALL MOUNTAIN",
+      "type1": "ALL MOUNTAIN",
       "img": [
         "/images/Product/10707106000150_1.png",
         "/images/Product/10707106000150_2.png",
@@ -3527,11 +3087,13 @@
       "vendor": "Burton",
       "name": "Custom X Camber 單板雪板",
       "No": "106891",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "ALL MOUNTAIN SNOWBOARD",
       "coverImg": "方形縮圖",
       "type": "snowboards",
-      "type1":"ALL MOUNTAIN",
+      "type1": "ALL MOUNTAIN",
       "img": [
         "/images/Product/106891_1.png",
         "/images/Product/106891_2.png",
@@ -3548,7 +3110,9 @@
       "vendor": "Burton",
       "name": "Custom X Camber 單板雪板",
       "No": "106891",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "ALL MOUNTAIN SNOWBOARD",
       "coverImg": "方形縮圖",
       "type": "snowboards",
@@ -3568,11 +3132,13 @@
       "vendor": "Burton",
       "name": "Custom X Camber 單板雪板",
       "No": "106891",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "ALL MOUNTAIN SNOWBOARD",
       "coverImg": "方形縮圖",
       "type": "snowboards",
-      "type1":"ALL MOUNTAIN",
+      "type1": "ALL MOUNTAIN",
       "img": [
         "/images/Product/106891_1.png",
         "/images/Product/106891_2.png",
@@ -3589,11 +3155,13 @@
       "vendor": "Burton",
       "name": "Custom X Camber 單板雪板",
       "No": "106891",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "ALL MOUNTAIN SNOWBOARD",
       "coverImg": "方形縮圖",
       "type": "snowboards",
-      "type1":"ALL MOUNTAIN",
+      "type1": "ALL MOUNTAIN",
       "img": [
         "/images/Product/106891_1.png",
         "/images/Product/106891_2.png",
@@ -3610,11 +3178,13 @@
       "vendor": "Burton",
       "name": "Custom X Camber 單板雪板",
       "No": "106891",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "ALL MOUNTAIN SNOWBOARD",
       "coverImg": "方形縮圖",
       "type": "snowboards",
-      "type1":"ALL MOUNTAIN",
+      "type1": "ALL MOUNTAIN",
       "img": [
         "/images/Product/106891_1.png",
         "/images/Product/106891_2.png",
@@ -3631,11 +3201,13 @@
       "vendor": "Burton",
       "name": "Custom X Camber 單板雪板",
       "No": "106891",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "ALL MOUNTAIN SNOWBOARD",
       "coverImg": "方形縮圖",
       "type": "snowboards",
-      "type1":"ALL MOUNTAIN",
+      "type1": "ALL MOUNTAIN",
       "img": [
         "/images/Product/106891_1.png",
         "/images/Product/106891_2.png",
@@ -3652,11 +3224,13 @@
       "vendor": "Burton",
       "name": "Kilroy Twin Camber 單板雪板",
       "No": "1953318888",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "ALL MOUNTAIN SNOWBOARD",
       "coverImg": "方形縮圖",
       "type": "snowboards",
-      "type1":"ALL MOUNTAIN",
+      "type1": "ALL MOUNTAIN",
       "img": [
         "/images/Product/195331_1.png",
         "/images/Product/195331_2.png",
@@ -3673,11 +3247,13 @@
       "vendor": "Burton",
       "name": "Skeleton Key Camber 單板雪板",
       "No": "17983103000150",
-      "info": ["測試"],
-      "info_name":"ALL MOUNTAIN / POWDER SNOWBOARD",
+      "info": [
+        "測試"
+      ],
+      "info_name": "ALL MOUNTAIN / POWDER SNOWBOARD",
       "coverImg": "方形縮圖",
       "type": "snowboards",
-      "type1":"ALL MOUNTAIN",
+      "type1": "ALL MOUNTAIN",
       "img": [
         "/images/Product/17983103000150_1.png",
         "/images/Product/17983103000150_2.png",
@@ -3694,11 +3270,13 @@
       "vendor": "Burton",
       "name": "Name Dropper Camber 單板雪板",
       "No": "17983103000150",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "ALL MOUNTAIN / PARK SNOWBOARD",
       "coverImg": "方形縮圖",
       "type": "snowboards",
-      "type1":"ALL MOUNTAIN",
+      "type1": "ALL MOUNTAIN",
       "img": [
         "/images/Product/17983103000150_1.png",
         "/images/Product/17983103000150_2.png",
@@ -3715,11 +3293,13 @@
       "vendor": "Burton",
       "name": "Free Thinker Camber 單板雪板",
       "No": "13219105000150",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "ALL MOUNTAIN / PARK SNOWBOARD",
       "coverImg": "方形縮圖",
       "type": "snowboards",
-      "type1":"ALL MOUNTAIN",
+      "type1": "ALL MOUNTAIN",
       "img": [
         "/images/Product/13219105000150_1.png",
         "/images/Product/13219105000150_2.png",
@@ -3736,11 +3316,13 @@
       "vendor": "Burton",
       "name": "Ripcord Flat Top 單板雪板",
       "No": "10704106000145",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "ALL MOUNTAIN SNOWBOARD",
       "coverImg": "方形縮圖",
       "type": "snowboards",
-      "type1":"ALL MOUNTAIN",
+      "type1": "ALL MOUNTAIN",
       "img": [
         "/images/Product/10704106000145_1.png",
         "/images/Product/10704106000145_2.png",
@@ -3757,11 +3339,13 @@
       "vendor": "Burton",
       "name": "Instigator Flat Top 單板雪板",
       "No": "10695106000140",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "ALL MOUNTAIN SNOWBOARD",
       "coverImg": "方形縮圖",
       "type": "snowboards",
-      "type1":"ALL MOUNTAIN",
+      "type1": "ALL MOUNTAIN",
       "img": [
         "/images/Product/10695106000140_1.png",
         "/images/Product/10695106000140_2.png",
@@ -3778,11 +3362,13 @@
       "vendor": "Burton",
       "name": "Name Dropper Camber 單板雪板",
       "No": "13221105000148",
-      "info": ["測試"],
-      "info_name":"ALL MOUNTAIN / PARK SNOWBOARD",
+      "info": [
+        "測試"
+      ],
+      "info_name": "ALL MOUNTAIN / PARK SNOWBOARD",
       "coverImg": "方形縮圖",
       "type": "snowboards",
-      "type1":"Park",
+      "type1": "Park",
       "img": [
         "/images/Product/13221105000148_1.png",
         "/images/Product/13221105000148_2.png",
@@ -3799,11 +3385,13 @@
       "vendor": "Burton",
       "name": "Family Tree Backseat Driver Flat Top 單板雪板",
       "No": "21407100000140",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "POWDER SNOWBOARD",
       "coverImg": "方形縮圖",
       "type": "snowboards",
-      "type1":"Powder",
+      "type1": "Powder",
       "img": [
         "/images/Product/21407100000140_1.png",
         "/images/Product/21407100000140_2.png",
@@ -3820,11 +3408,13 @@
       "vendor": "Burton",
       "name": "Deep Thinker Camber 單板雪板",
       "No": "17200103000154",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "POWDER SNOWBOARD",
       "coverImg": "方形縮圖",
       "type": "snowboards",
-      "type1":"Powder",
+      "type1": "Powder",
       "img": [
         "/images/Product/17200103000154_1.png",
         "/images/Product/17200103000154_2.png",
@@ -3841,11 +3431,13 @@
       "vendor": "Burton",
       "name": "Descendant Camber 單板雪板",
       "No": "10793106000148",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "ALL MOUNTAIN / PARK SNOWBOARD",
       "coverImg": "方形縮圖",
       "type": "snowboards",
-      "type1":"Powder",
+      "type1": "Powder",
       "img": [
         "/images/Product/10793106000148_1.png",
         "/images/Product/10793106000148_2.png",
@@ -3862,7 +3454,9 @@
       "vendor": "Burton",
       "name": "Malavita Re:Flex 雪板固定器",
       "No": "10549106620",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "RE:FLEX SNOWBOARD BINDING",
       "coverImg": "方形縮圖",
       "type": "bindings",
@@ -3880,7 +3474,9 @@
       "vendor": "Burton",
       "name": "Malavita Re:Flex 雪板固定器",
       "No": "10549106620",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "RE:FLEX SNOWBOARD BINDING",
       "coverImg": "方形縮圖",
       "type": "bindings",
@@ -3898,7 +3494,9 @@
       "vendor": "Burton",
       "name": "Clutch Re:Flex 雪板固定器",
       "No": "19858102030",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "RE:FLEX SNOWBOARD BINDING",
       "coverImg": "方形縮圖",
       "type": "bindings",
@@ -3916,7 +3514,9 @@
       "vendor": "Burton",
       "name": "Clutch Re:Flex 雪板固定器",
       "No": "19858102030",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "RE:FLEX SNOWBOARD BINDING",
       "coverImg": "方形縮圖",
       "type": "bindings",
@@ -3934,7 +3534,9 @@
       "vendor": "Burton",
       "name": "Clutch Re:Flex 雪板固定器",
       "No": "19858102030",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "RE:FLEX SNOWBOARD BINDING",
       "coverImg": "方形縮圖",
       "type": "bindings",
@@ -3952,7 +3554,9 @@
       "vendor": "Burton",
       "name": "Genesis X EST 雪板固定器",
       "No": "16911103004",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "EST SNOWBOARD BINDING",
       "coverImg": "方形縮圖",
       "type": "bindings",
@@ -3970,7 +3574,9 @@
       "vendor": "Burton",
       "name": "Genesis X EST 雪板固定器",
       "No": "16911103004",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "EST SNOWBOARD BINDING",
       "coverImg": "方形縮圖",
       "type": "bindings",
@@ -3988,7 +3594,9 @@
       "vendor": "Burton",
       "name": "Genesis X EST 雪板固定器",
       "No": "10544106305",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "RE:FLEX SNOWBOARD BINDING",
       "coverImg": "方形縮圖",
       "type": "bindings",
@@ -4006,7 +3614,9 @@
       "vendor": "Burton",
       "name": "Genesis X EST 雪板固定器",
       "No": "10544106305",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "RE:FLEX SNOWBOARD BINDING",
       "coverImg": "方形縮圖",
       "type": "bindings",
@@ -4024,7 +3634,9 @@
       "vendor": "Burton",
       "name": "Custom Re:Flex 雪板固定器",
       "No": "10542106350",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "RE:FLEX SNOWBOARD BINDING",
       "coverImg": "方形縮圖",
       "type": "bindings",
@@ -4042,7 +3654,9 @@
       "vendor": "Burton",
       "name": "Genesis Re:Flex 雪板固定器",
       "No": "10547106082",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "RE:FLEX SNOWBOARD BINDING",
       "coverImg": "方形縮圖",
       "type": "bindings",
@@ -4060,7 +3674,9 @@
       "vendor": "Burton",
       "name": "Genesis Re:Flex 雪板固定器",
       "No": "10547106082",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "RE:FLEX SNOWBOARD BINDING",
       "coverImg": "方形縮圖",
       "type": "bindings",
@@ -4078,7 +3694,9 @@
       "vendor": "Burton",
       "name": "Mission EST 雪板固定器",
       "No": "10546106990",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "RE:FLEX SNOWBOARD BINDING",
       "coverImg": "方形縮圖",
       "type": "bindings",
@@ -4097,7 +3715,9 @@
       "vendor": "Burton",
       "name": "Ruler StepOn®滑雪靴",
       "No": "10622106080",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "ALL ",
       "coverImg": "方形縮圖",
       "type": "boots",
@@ -4116,8 +3736,10 @@
       "vendor": "Burton",
       "name": "Ruler StepOn®滑雪靴",
       "No": "10622106080",
-      "info": ["測試"],
-      "info_name":"ALL MOUNTAIN SNOWBOARD",
+      "info": [
+        "測試"
+      ],
+      "info_name": "ALL MOUNTAIN SNOWBOARD",
       "coverImg": "方形縮圖",
       "type": "類別",
       "img": [
@@ -4135,7 +3757,9 @@
       "vendor": "Burton",
       "name": "Ruler StepOn®滑雪靴",
       "No": "10622106080",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "EST SNOWBOARD BINDING",
       "coverImg": "方形縮圖",
       "type": "boots",
@@ -4154,8 +3778,10 @@
       "vendor": "burton",
       "name": "Ruler StepOn®滑雪靴",
       "No": "10622106080",
-      "info": ["測試"],
-      "info_name":"EST SNOWBOARD BINDING",
+      "info": [
+        "測試"
+      ],
+      "info_name": "EST SNOWBOARD BINDING",
       "coverImg": "方形縮圖",
       "type": "boots",
       "img": [
@@ -4173,8 +3799,10 @@
       "vendor": "burton",
       "name": "Limelight Step On®滑雪靴",
       "No": "17288103511",
-      "info": ["測試"],
-      "info_name":"EST SNOWBOARD BINDING",
+      "info": [
+        "測試"
+      ],
+      "info_name": "EST SNOWBOARD BINDING",
       "coverImg": "方形縮圖",
       "type": "boots",
       "img": [
@@ -4192,8 +3820,10 @@
       "vendor": "burton",
       "name": "Mini-Grom 滑雪靴",
       "No": "10645103001",
-      "info": ["測試"],
-      "info_name":"SNOWBOARD BOOT",
+      "info": [
+        "測試"
+      ],
+      "info_name": "SNOWBOARD BOOT",
       "coverImg": "方形縮圖",
       "type": "boots",
       "img": [
@@ -4210,8 +3840,10 @@
       "vendor": "burton",
       "name": "Burton Zipline Boa® 滑雪靴",
       "No": "13191104045",
-      "info": ["測試"],
-      "info_name":"SNOWBOARD BOOT WITH BOA® FIT SYSTEM",
+      "info": [
+        "測試"
+      ],
+      "info_name": "SNOWBOARD BOOT WITH BOA® FIT SYSTEM",
       "coverImg": "方形縮圖",
       "type": "boots",
       "img": [
@@ -4229,8 +3861,10 @@
       "vendor": "burton",
       "name": "Burton Zipline Boa® 滑雪靴",
       "No": "13179105512",
-      "info": ["測試"],
-      "info_name":"SNOWBOARD BOOT WITH BOA® FIT SYSTEM",
+      "info": [
+        "測試"
+      ],
+      "info_name": "SNOWBOARD BOOT WITH BOA® FIT SYSTEM",
       "coverImg": "方形縮圖",
       "type": "boots",
       "img": [
@@ -4248,8 +3882,10 @@
       "vendor": "burton",
       "name": "Ritual Snowboard 滑雪靴",
       "No": "10624106419",
-      "info": ["測試"],
-      "info_name":"SNOWBOARD BOOT WITH SPEEDZONE LACING",
+      "info": [
+        "測試"
+      ],
+      "info_name": "SNOWBOARD BOOT WITH SPEEDZONE LACING",
       "coverImg": "方形縮圖",
       "type": "boots",
       "img": [
@@ -4267,7 +3903,9 @@
       "vendor": "burton",
       "name": "GORE‑TEX 2L Swash 夾克",
       "No": "110001106401",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "ALL MOUNTAIN SNOWBOARD",
       "coverImg": "方形縮圖",
       "type": "jackets",
@@ -4287,8 +3925,10 @@
       "vendor": "burton",
       "name": "GORE-TEX Breach 夾克",
       "No": "21433100960",
-      "info": ["測試"],
-      "info_name":"WINTER GORE-TEX JACKET",
+      "info": [
+        "測試"
+      ],
+      "info_name": "WINTER GORE-TEX JACKET",
       "coverImg": "方形縮圖",
       "type": "jackets",
       "img": [
@@ -4307,8 +3947,10 @@
       "vendor": "burton",
       "name": "Analog® Greed 夾克",
       "No": "21474100001",
-      "info": ["測試"],
-      "info_name":"WINTER GORE-TEX JACKET",
+      "info": [
+        "測試"
+      ],
+      "info_name": "WINTER GORE-TEX JACKET",
       "coverImg": "方形縮圖",
       "type": "jackets",
       "img": [
@@ -4327,8 +3969,10 @@
       "vendor": "burton",
       "name": "Hilltop 夾克",
       "No": "13066105700",
-      "info": ["測試"],
-      "info_name":"WINTER JACKET",
+      "info": [
+        "測試"
+      ],
+      "info_name": "WINTER JACKET",
       "coverImg": "方形縮圖",
       "type": "jackets",
       "img": [
@@ -4347,8 +3991,10 @@
       "vendor": "burton",
       "name": "Analog Chainlink Anorak 夾克",
       "No": "20620101400",
-      "info": ["測試"],
-      "info_name":"WINTER JACKET",
+      "info": [
+        "測試"
+      ],
+      "info_name": "WINTER JACKET",
       "coverImg": "方形縮圖",
       "type": "jackets",
       "img": [
@@ -4367,8 +4013,10 @@
       "vendor": "burton",
       "name": "[ak] GORE-TEX 3L Pro Hover 夾克",
       "No": "10009106250",
-      "info": ["測試"],
-      "info_name":"WINTER GORE-TEX JACKET",
+      "info": [
+        "測試"
+      ],
+      "info_name": "WINTER GORE-TEX JACKET",
       "coverImg": "方形縮圖",
       "type": "jackets",
       "img": [
@@ -4387,8 +4035,10 @@
       "vendor": "burton",
       "name": "Frostner Anorak 夾克",
       "No": "21470100001",
-      "info": ["測試"],
-      "info_name":"WINTER JACKET",
+      "info": [
+        "測試"
+      ],
+      "info_name": "WINTER JACKET",
       "coverImg": "方形縮圖",
       "type": "jackets",
       "img": [
@@ -4407,8 +4057,10 @@
       "vendor": "burton",
       "name": "Analog Blast 夾克",
       "No": "20617101001",
-      "info": ["測試"],
-      "info_name":"WINTER JACKET",
+      "info": [
+        "測試"
+      ],
+      "info_name": "WINTER JACKET",
       "coverImg": "方形縮圖",
       "type": "jackets",
       "img": [
@@ -4427,8 +4079,10 @@
       "vendor": "burton",
       "name": "Analog® Solitary 夾克",
       "No": "21475100200",
-      "info": ["測試"],
-      "info_name":"WINTER JACKET",
+      "info": [
+        "測試"
+      ],
+      "info_name": "WINTER JACKET",
       "coverImg": "方形縮圖",
       "type": "jackets",
       "img": [
@@ -4447,7 +4101,9 @@
       "vendor": "burton",
       "name": "Southside 復古款雪褲",
       "No": "10193106251",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "WINTER SNOW PANT",
       "coverImg": "方形縮圖",
       "type": "pants",
@@ -4467,7 +4123,9 @@
       "vendor": "burton",
       "name": "[ak] GORE-TEX 2L Kimmy Bib 雪褲",
       "No": "21284100400",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "WINTER SNOW PANT",
       "coverImg": "方形縮圖",
       "type": "pants",
@@ -4487,7 +4145,9 @@
       "vendor": "burton",
       "name": "Southside Pant 復古款",
       "No": "10193106251",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "WINTER SNOW PANT",
       "coverImg": "方形縮圖",
       "type": "pants",
@@ -4507,7 +4167,9 @@
       "vendor": "burton",
       "name": "Covert 雪褲",
       "No": "13139105961",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "WINTER SNOW PANT",
       "coverImg": "方形縮圖",
       "type": "pants",
@@ -4527,7 +4189,9 @@
       "vendor": "burton",
       "name": "Reserve Bib 雪褲",
       "No": "15003104401",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "WINTER SNOW BIB PANT",
       "coverImg": "方形縮圖",
       "type": "pants",
@@ -4547,7 +4211,9 @@
       "vendor": "burton",
       "name": "Anon Raider 3 安全帽",
       "No": "21429100638",
-      "info": ["測試"],
+      "info": [
+        "測試"
+      ],
       "info_name": "SKI & SNOWBOARD HELMET",
       "coverImg": "方形縮圖",
       "type": "Helmets",
