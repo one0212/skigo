@@ -14,6 +14,8 @@ const log = require('./config/winston');
 const userApi = require('./users/router');
 const orderApi = require('./orders/router');
 const coachApi = require('./coach/router');
+const attractionApi =require('./attraction/router');
+const attractionApiText =require('./attraction/router-text');
 const areasApi = require('./areas/router');
 const cartApi = require('./cart/router');
 const correctLoginState = require('./middleware/correctLoginState');
@@ -67,6 +69,8 @@ app.use('/api/cart', cartApi);
 app.use('/japi', reloadDB, jRouter);
 app.use(coachApi);
 app.use(areasApi);
+app.use(attractionApi);
+app.use(attractionApiText);
 app.use(express.static('public'));
 app.use(express.static('build'));
 
