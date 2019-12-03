@@ -4,7 +4,7 @@
       "id": "rzFFU6xa",
       "email": "aaa@gmail.com",
       "password": "fgdgfdgd",
-      "avatar": "default.png",
+      "avatar": "/images/avatar/default.png",
       "activeCode": "cGdIopP3i.1573989399414",
       "isActive": false
     },
@@ -13,7 +13,7 @@
       "email": "aaa@aaa",
       "password": "aaa",
       "role": "SKIGO",
-      "avatar": "default.png",
+      "avatar": "/images/avatar/default.png",
       "activeCode": "ovEHr2uKh.1573992861795",
       "isActive": false
     },
@@ -22,7 +22,7 @@
       "email": "aaa123@gmail.com",
       "password": "123",
       "role": "SKIGO",
-      "avatar": "default.png",
+      "avatar": "/images/avatar/default.png",
       "activeCode": "N-hLkLXbw.1574005544157",
       "isActive": false
     },
@@ -31,8 +31,17 @@
       "email": "abc123@gmail.com",
       "password": "123456",
       "role": "SKIGO",
-      "avatar": "default.png",
+      "avatar": "/images/avatar/default.png",
       "activeCode": "OcS7DSNob.1574062169915",
+      "isActive": false
+    },
+    {
+      "id": "fZfnLZzo",
+      "email": "sads@awds",
+      "password": "saasd",
+      "role": "SKIGO",
+      "avatar": "/images/avatar/default.png",
+      "activeCode": "Ki2KIODWP.1575387119152",
       "isActive": false
     }
   ],

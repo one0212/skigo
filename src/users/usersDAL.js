@@ -10,7 +10,7 @@ export function createUser(email, password, role) {
     email,
     password,
     role,
-    avatar: 'default.png',
+    avatar: '/images/avatar/default.png',
     activeCode: `${shortid.generate()}.${Date.now() + expiredTime}`,
     isActive: false,
   };
