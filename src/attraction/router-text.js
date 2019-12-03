@@ -22,7 +22,8 @@ bluebird.promisifyAll(db);
 
 // 資料表一:顯示 Attraction
 // router.get('/attraction-text', (req, res) => {
-//   const sql = 'SELECT * FROM `AttractionsDataNew` INNER JOIN ASnowField ON ASnowField.ASFsid=AttractionsDataNew.ASnowFieldID';
+//   const sql = 'SELECT * FROM `AttractionsDataNew` INNER JOIN ASnowField ON ASnowField.ASFsid=
+// AttractionsDataNew.ASnowFieldID';
 //   db.query(sql, (error, results) => {
 //     // 印出變數代稱是否有成功撈到(為字串)
 //     // console.log(req.params.class_sid);
@@ -31,20 +32,16 @@ bluebird.promisifyAll(db);
 // });
 
 
-
-
-
-
 // 篩選
-router.post('/attraction-text', urlencodedParser, (req, res) =>{
-  let a = req.body.select  ;//single
-  let b = req.body.slectstate ; // more
+router.post('/attraction-text', urlencodedParser, (req, res) => {
+  const a = req.body.select;// single
+  const b = req.body.slectstate; // more
   let single = '';
 
-  let fieldData=['景點','美食','購物','遊樂園']
+  const fieldData = ['景點', '美食', '購物', '遊樂園'];
   const fieldB = b.slice(0, 4);
 
-  let field = [];
+  const field = [];
 
   fieldB.forEach((v, i) => {
     if (v) {
@@ -57,33 +54,33 @@ router.post('/attraction-text', urlencodedParser, (req, res) =>{
     where += ` AND ACateGory IN ('${field.join("','")}') `;
   }
 
-  
-  console.log(req.body)
-  console.log(a)
-  console.log(b)
 
-  if( a==1){
-    single= ' AND AttractionsDataNew.ASnowFieldID=1'
-    console.log(single)
-  }else if(a==2){
-    single= ' AND AttractionsDataNew.ASnowFieldID=2'
-    console.log(single)
-  }else if(a==3){
-    single= ' AND AttractionsDataNew.ASnowFieldID=3'
-    console.log(single)
-  }else{
-    single= ''
-    console.log('no date!!!')
+  console.log(req.body);
+  console.log(a);
+  console.log(b);
+
+  if (a === 1) {
+    single = ' AND AttractionsDataNew.ASnowFieldID=1';
+    console.log(single);
+  } else if (a === 2) {
+    single = ' AND AttractionsDataNew.ASnowFieldID=2';
+    console.log(single);
+  } else if (a === 3) {
+    single = ' AND AttractionsDataNew.ASnowFieldID=3';
+    console.log(single);
+  } else {
+    single = '';
+    console.log('no date!!!');
   }
 
-  const sql = 'SELECT * FROM `AttractionsDataNew` INNER JOIN ASnowField ON ASnowField.ASFsid=AttractionsDataNew.ASnowFieldID' + where + single;
-  console.log(sql)
+  const sql = `SELECT * FROM \`AttractionsDataNew\` INNER JOIN ASnowField ON ASnowField.ASFsid=AttractionsDataNew.ASnowFieldID${where}${single}`;
+  console.log(sql);
 
   db.query(sql, (error, results) => {
     // 印出變數代稱是否有成功撈到(為字串)
     // console.log(req.params.class_sid);
     res.json(results);
   });
-})
+});
 
 module.exports = router;
