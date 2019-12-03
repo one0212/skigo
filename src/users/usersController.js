@@ -72,6 +72,15 @@ function verifyAddDeliveryInfo(req, res) {
   return true;
 }
 
+function verifySocialLogin(req, res) {
+  const { token } = req.body;
+  if (!token) {
+    responseError(res, '缺少參數: token');
+    return false;
+  }
+  return true;
+}
+
 export function signup(req, res) {
   log.info(`Sign-up api - body=${JSON.stringify(req.body)}`);
   if (!verifySignup(req, res)) {
@@ -86,6 +95,22 @@ export function login(req, res) {
     return;
   }
   usersService.doLogin(req, res);
+}
+
+export function gLogin(req, res) {
+  log.info(`G-login api - body=${JSON.stringify(req.body)}`);
+  if (!verifySocialLogin(req, res)) {
+    return;
+  }
+  usersService.doGLogin(req, res);
+}
+
+export function fbLogin(req, res) {
+  log.info(`FB-login api - body=${JSON.stringify(req.body)}`);
+  if (!verifySocialLogin(req, res)) {
+    return;
+  }
+  usersService.doFbLogin(req, res);
 }
 
 export function activeUser(req, res) {
