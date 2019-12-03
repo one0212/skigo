@@ -1,11 +1,16 @@
 const nodemailer = require('nodemailer');
 const fs = require('fs');
+const { OAuth2Client } = require('google-auth-library');
+const shortid = require('shortid');
 const log = require('../config/winston');
 const usersDAL = require('./usersDAL');
 const userDeliverInfosDAL = require('./userDeliverInfosDAL');
 const UserSession = require('./UserSession');
 const Constants = require('../utils/Constants');
 const Cart = require('../cart/Cart');
+
+const CLIENT_ID = '71115162347-h4vb50788t99f79o1pata6n1u164m3ms.apps.googleusercontent.com';
+const gClient = new OAuth2Client(CLIENT_ID);
 
 const mailContent = fs.readFileSync(`${__dirname}/active_user_mail.html`,
   'utf-8',
@@ -30,7 +35,7 @@ function responseError(res, code, msg) {
   res.status(code).json({ message: msg });
 }
 
-function saveLoginedSession(req, res, user) {
+function saveLoggedInSession(req, res, user) {
   req.session.regenerate((err) => {
     if (err) {
       log.error(err);
@@ -39,8 +44,16 @@ function saveLoginedSession(req, res, user) {
     }
     req.session.user = new UserSession(user.id, user.email, user.role, new Cart());
     res.cookie(Constants.COOKIE.ROLE, user.role);
-    res.sendStatus(200);
+    res.status(200).json({ avatar: user.avatar });
   });
+}
+
+async function verifyGoogleToken(token) {
+  const ticket = await gClient.verifyIdToken({
+    idToken: token,
+    audience: CLIENT_ID,
+  });
+  return ticket.payload;
 }
 
 export function createUser(req, res) {
@@ -67,7 +80,7 @@ export function createUser(req, res) {
       log.info(`註冊信發送成功. info=${JSON.stringify(info)}`);
     }
   });
-  saveLoginedSession(req, res, user);
+  saveLoggedInSession(req, res, user);
 }
 
 export function doLogin(req, res) {
@@ -77,7 +90,33 @@ export function doLogin(req, res) {
     responseError(res, 400, '帳號密碼錯誤');
     return;
   }
-  saveLoginedSession(req, res, user);
+  saveLoggedInSession(req, res, user);
+}
+
+export function doGLogin(req, res) {
+  const { token } = req.body;
+  verifyGoogleToken(token)
+    .then((userInfo) => {
+      saveLoggedInSession(req, res,
+        {
+          id: shortid.generate(),
+          email: userInfo.email,
+          avatar: userInfo.picture,
+          role: Constants.ROLE.GOOGLE,
+        });
+    })
+    .catch((err) => {
+      log.error(err);
+      responseError(res, 500, 'google login token 驗證失敗');
+    });
+}
+
+export function doFbLogin(req, res) {
+  saveLoggedInSession(req, res,
+    {
+      id: shortid.generate(),
+      role: Constants.ROLE.FB,
+    });
 }
 
 export function activeUser(req, res) {

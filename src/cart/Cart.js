@@ -25,7 +25,7 @@ class Cart {
     } else {
       this.items[key] = item;
     }
-    // console.log(this.items);
+    console.log(this.items);
     const allItems = Object.values(this.items);
     if (allItems.length === 1) {
       this.totalAmt = allItems[0].totalAmt;

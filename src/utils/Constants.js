@@ -3,7 +3,7 @@ const Constants = {
     VISITOR: 'VISITOR',
     SKIGO: 'SKIGO',
     FB: 'FB',
-    GOOGLE: 'G+',
+    GOOGLE: 'GOOGLE',
   },
   COOKIE: {
     SESSION_ID: 'connect.sid',
