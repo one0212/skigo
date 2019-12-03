@@ -59,13 +59,13 @@ router.post('/attraction-text', urlencodedParser, (req, res) => {
   console.log(a);
   console.log(b);
 
-  if (a === 1) {
+  if (a == 1) {
     single = ' AND AttractionsDataNew.ASnowFieldID=1';
     console.log(single);
-  } else if (a === 2) {
+  } else if (a == 2) {
     single = ' AND AttractionsDataNew.ASnowFieldID=2';
     console.log(single);
-  } else if (a === 3) {
+  } else if (a == 3) {
     single = ' AND AttractionsDataNew.ASnowFieldID=3';
     console.log(single);
   } else {
