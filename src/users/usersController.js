@@ -134,7 +134,11 @@ export function addDeliveryInfo(req, res) {
   usersService.addDeliveryInfo(req, res);
 }
 
-
 export function getDeliveryInfoList(req, res) {
   usersService.getDeliveryInfos(req, res);
+}
+
+export function getAvatar(req, res) {
+  console.log(req.session.user.avatar);
+  return res.status(200).json({ avatar: req.session.user.avatar });
 }

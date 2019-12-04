@@ -43,9 +43,86 @@
       "avatar": "/images/avatar/default.png",
       "activeCode": "Ki2KIODWP.1575387119152",
       "isActive": false
+    },
+    {
+      "id": "ZcRPeVkt",
+      "email": "marksong0976@gmail.com",
+      "password": "123456",
+      "role": "SKIGO",
+      "avatar": "/images/avatar/default.png",
+      "activeCode": "MBSbcPYo6.1575432362654",
+      "isActive": true
     }
   ],
-  "orders": [],
+  "orders": [
+    {
+      "orderNo": "aAK29QiH",
+      "userId": "ZcRPeVkt",
+      "products": [
+        {
+          "prodId": 5,
+          "prodType": "hotels",
+          "name": "新富良野王子大飯店",
+          "qty": 1,
+          "price": 10052,
+          "info": [
+            "房型: 豪華四人房",
+            "成人: 4人",
+            "入住日期:2019/12/13~2019/12/15"
+          ],
+          "vendor": "北海道富良野雪場",
+          "coverImg": "/images/hotel/r-3.jpg",
+          "totalAmt": 10052
+        },
+        {
+          "prodId": 1,
+          "prodType": "coaches",
+          "name": "專業講師開班",
+          "qty": 1,
+          "price": 1200,
+          "info": [
+            "2小時的單板滑雪體驗課程",
+            "使用日期: 12/13"
+          ],
+          "vendor": "北海道富良野雪場",
+          "coverImg": "/images/coach/c1.jpg",
+          "totalAmt": 1200
+        },
+        {
+          "prodId": 2,
+          "prodType": "products",
+          "name": "Custom Camber 單板雪板",
+          "qty": 1,
+          "price": 18000,
+          "info": [
+            "全域型滑雪板"
+          ],
+          "vendor": "Burton",
+          "coverImg": "/images/Product/10707106000150_1.png",
+          "totalAmt": 18000
+        },
+        {
+          "prodId": 1,
+          "prodType": "areas",
+          "name": "纜車一日券(成人)",
+          "qty": 4,
+          "price": 2000,
+          "info": [
+            "使用期限至2020/3/11為止"
+          ],
+          "vendor": "北海道富良野雪場",
+          "coverImg": "/images/areas/areas-1.jpg",
+          "totalAmt": 8000
+        }
+      ],
+      "orderAmt": 37252,
+      "receiver": "周截淪",
+      "mobile": "0912345678",
+      "address": "台北市大安區復興南路一段390號2樓204室",
+      "status": "PROCESSING",
+      "orderTime": 1575429427678
+    }
+  ],
   "hotels": [
     {
       "id": 1,
@@ -3051,10 +3128,10 @@
       "name": "Custom Camber 單板雪板",
       "No": "10707106000150",
       "info": [
-        "測試"
+        "全域型滑雪板"
       ],
       "info_name": "ALL MOUNTAIN SNOWBOARD",
-      "coverImg": "/images/Product/10707106000150_0.png",
+      "coverImg": "/images/Product/10707106000150_1.png",
       "type": "snowboards",
       "type1": "ALL MOUNTAIN",
       "img": [
@@ -3066,7 +3143,7 @@
         "/images/Product/10707106000150_6.png"
       ],
       "price": 18000,
-      "size": "155"
+      "size": "154"
     },
     {
       "id": 3,
@@ -3074,10 +3151,10 @@
       "name": "Custom Camber 單板雪板",
       "No": "10707106000150",
       "info": [
-        "測試"
+        "全域型滑雪板"
       ],
       "info_name": "ALL MOUNTAIN SNOWBOARD",
-      "coverImg": "/images/Product/10707106000150_0.png",
+      "coverImg": "/images/Product/10707106000150_1.png",
       "type": "snowboards",
       "type1": "ALL MOUNTAIN",
       "img": [
@@ -3089,7 +3166,7 @@
         "/images/Product/10707106000150_6.png"
       ],
       "price": 18000,
-      "size": "160"
+      "size": "156"
     },
     {
       "id": 4,
@@ -4237,38 +4314,10 @@
   ],
   "userDeliveryInfos": [
     {
-      "id": "lwknPJRb",
-      "userId": "yOnKPidc",
-      "receiver": "c8 c8",
-      "mobile": "8vc ",
-      "address": "sdf"
-    },
-    {
-      "id": "GeGTBObb",
-      "userId": "yOnKPidc",
-      "receiver": "123",
-      "mobile": "345",
-      "address": "666"
-    },
-    {
-      "id": "RiYQL3yf",
-      "userId": "yOnKPidc",
-      "receiver": "123",
-      "mobile": "345",
-      "address": "78"
-    },
-    {
-      "id": "ZZF-EwA4",
-      "userId": "yOnKPidc",
-      "receiver": "123",
-      "mobile": "ergw",
-      "address": "dfs"
-    },
-    {
-      "id": "5XDkW0-n",
-      "userId": "NPZdknG0",
-      "receiver": "周杰倫",
-      "mobile": "09110012355",
+      "id": "6699vaQe",
+      "userId": "ZcRPeVkt",
+      "receiver": "周截淪",
+      "mobile": "0912345678",
       "address": "台北市大安區復興南路一段390號2樓204室"
     }
   ]

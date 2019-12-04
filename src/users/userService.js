@@ -36,13 +36,14 @@ function responseError(res, code, msg) {
 }
 
 function saveLoggedInSession(req, res, user) {
+  console.log(req.session);
   req.session.regenerate((err) => {
     if (err) {
       log.error(err);
       responseError(res, 500, '登入失敗');
       return;
     }
-    req.session.user = new UserSession(user.id, user.email, user.role, new Cart());
+    req.session.user = new UserSession(user.id, user.email, user.role, user.avatar, new Cart());
     res.cookie(Constants.COOKIE.ROLE, user.role);
     res.status(200).json({ avatar: user.avatar });
   });
