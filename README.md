@@ -1,4 +1,4 @@
-# skigo
+# SKIGO (Backend Node.js)
 
 ## 開發環境
 
